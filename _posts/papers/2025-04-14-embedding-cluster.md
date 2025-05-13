@@ -13,7 +13,8 @@ venue-shorthand: arXiv
 year: 2025
 url: /papers/embedding-cluster
 pdf: https://arxiv.org/abs/2504.07285
-# code: 
+code: https://github.com/apple/embedding-atlas
+demo: https://apple.github.io/embedding-atlas/
 # preview: 
 # video: 
 doi: 10.48550/arXiv.2504.07285
