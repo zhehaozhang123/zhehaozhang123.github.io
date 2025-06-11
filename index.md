@@ -56,6 +56,21 @@ title: Home
 </div>
 
 <br>
+<h2 class="feature-title">Apple <a href="https://developer.apple.com/design/human-interface-guidelines/">Human Interface Guidelines</a></h2>
+
+<p class="feature-text">
+	Guidance and best practices to help designers and developers create great experience for any Apple platform.
+</p>
+
+<div class="cover-wrapper cover-wrapper-3-col l-page">
+	{% for feature in site.data.designs %}
+		{% if feature.featured == true %}
+			{% include feature.html feature=feature %}
+		{% endif %}
+	{% endfor %}
+</div>
+
+<br>
 <h2 class="feature-title">Featured <a href="/dissertation">Dissertation Publications</a></h2>
 
 <p class="feature-text">
@@ -70,21 +85,6 @@ title: Home
 	{% assign sortedPublications = site.categories.papers | sort: 'feature-order' %}
 	{% for feature in sortedPublications %}
 		{% if feature.dissertation == true %}
-			{% include feature.html feature=feature %}
-		{% endif %}
-	{% endfor %}
-</div>
-
-<br>
-<h2 class="feature-title">Apple <a href="https://developer.apple.com/design/human-interface-guidelines/">Chart Design Guidelines</a></h2>
-
-<p class="feature-text">
-	Guidance and best practices to help designers and developers create the best charts for Apple platforms.
-</p>
-
-<div class="cover-wrapper cover-wrapper-2-col l-middle">
-	{% for feature in site.data.designs %}
-		{% if feature.featured == true %}
 			{% include feature.html feature=feature %}
 		{% endif %}
 	{% endfor %}

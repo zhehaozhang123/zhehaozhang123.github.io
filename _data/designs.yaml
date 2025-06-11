@@ -1,30 +1,44 @@
-- title: "Patterns: Charting Data"
+- title: "Generative AI"
+  date: 2025
+  venue: Apple Human Interface Guidelines
+  description: Generative AI empowers you to enhance your app or game with dynamic content and offer intelligent features that unlock new levels of creativity, connection, and productivity
+  url: https://developer.apple.com/design/human-interface-guidelines/patterns/charting-data
+  venue-shorthand: ""
+  year: 2025
+  recording: 
+  featured: true
+  feature-order: 1
+  feature-title: Generative AI
+  feature-description: Generative AI empowers you to enhance your app or game with dynamic content and offer intelligent features that unlock new levels of creativity, connection, and productivity
+  image: /images/featured/technologies-generative-ai-intro@2x.png
+
+- title: "Charting Data"
   date: 2022
   venue: Apple Human Interface Guidelines
   description: Presenting data in a chart can help you communicate information with clarity and appeal
   url: https://developer.apple.com/design/human-interface-guidelines/patterns/charting-data
-  venue-shorthand: Apple Human Interface Guidelines
+  venue-shorthand: ""
   year: 2022
   recording: 
   featured: true
   feature-order: 1
-  feature-title: Charting Data Patterns
+  feature-title: Charting Data
   feature-description: Presenting data in a chart can help you communicate information with clarity and appeal
-  image: /images/featured/patterns.png
+  image: /images/featured/patterns-charting-data-intro@2x.png
 
-- title: "Components: Charts"
+- title: "Charts"
   date: 2022
   venue: Apple Human Interface Guidelines
-  description: A chart helps you communicate data in a graphical, approachable way
+  description: Organize data in a chart to communicate information with clarity and visual appeal
   url: https://developer.apple.com/design/human-interface-guidelines/components/content/charts
-  venue-shorthand: Apple Human Interface Guidelines
+  venue-shorthand: ""
   year: 2022
   recording: 
   featured: true
   feature-order: 2
-  feature-title: Chart Components
-  feature-description: A chart helps you communicate data in a graphical, approachable way
-  image: /images/featured/components.png
+  feature-title: Charts
+  feature-description: Organize data in a chart to communicate information with clarity and visual appeal
+  image: /images/featured/components-charts-intro@2x.png
 
 - title: "IDEA Workshop Proceedings Cover (2017, 2018)"
   date: "2017 — 2018"
