@@ -1,3 +1,21 @@
+- name: Angie Boggust
+  intern: Apple
+  intern-url: https://www.apple.com/
+  year: "Summer 2025"
+  degree: "Ph.D. in Computer Science, Massachusetts Institute of Technology"
+  description: "Large language model interpretability"
+  awards:
+    - "Apple Scholar, PhD Fellowship in Human Centered AI"
+  url: http://angieboggust.com/
+
+- name: Alex Oesterling
+  intern: Apple
+  intern-url: https://www.apple.com/
+  year: "Summer 2025"
+  degree: "Ph.D. in Computer Science, Harvard University"
+  description: "Dictionary learning for responsible AI"
+  url: https://alexoesterling.com/
+
 - name: Catherine Yeh
   intern: Apple
   intern-url: https://www.apple.com/
@@ -6,7 +24,7 @@
   description: "Interactive techniques for data augmentation"
   url: https://catherinesyeh.github.io/
 
-- name: Michele S. Lam
+- name: Michelle S. Lam
   intern: Apple
   intern-url: https://www.apple.com/
   year: "Summer 2024"
