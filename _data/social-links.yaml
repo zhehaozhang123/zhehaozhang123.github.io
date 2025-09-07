@@ -7,10 +7,10 @@
   cv-group: 1
 
 - id: twitter
-  description: "@zhehao_zhang"
+  description: "@Zhehao_Zhang123"
   color: "#000000"
-  class: "fab fa-x-twitter"
-  url: https://x.com/zhehao_zhang
+  class: "fab fa-twitter"
+  url: https://x.com/Zhehao_Zhang123
   on-homepage: true
   cv-group: 2
 
