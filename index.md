@@ -9,7 +9,7 @@ title: Home
 			<img id="intro-image" src="/images/zhehao.jpg"></div>
 		<div id="intro-title-text-wrapper">
 			<h1 id="intro-title">Hi, I'm Zhehao Zhang</h1>
-			<div id="intro-subtitle">I'm a Master Student in Computer Science at Dartmouth College</div>
+			<div id="intro-subtitle">I'm a PhD Student in Computer Science at The Ohio State University</div>
 			<div id="intro-title-socials">
 				{% for link in site.data.social-links %}
 					{% if link.on-homepage == true %}
@@ -26,15 +26,15 @@ title: Home
 		<a href="{{ site.url }}/everything-else"><div><i class="fa fa-list-ul icon icon-right-space"></i>Everything Else</div></a>
 	</div>
 	<div>
-		I am a second year Master student in <a href="https://web.cs.dartmouth.edu/">Computer Science</a> at <a href="https://home.dartmouth.edu/">Dartmouth College</a>. Currently, I am a research intern at <a href="https://saltlab.stanford.edu/">Stanford SALT Lab</a> under the supervision of <a href="https://cs.stanford.edu/~diyiy/index.html">Diyi Yang</a>. Previously, I worked as a Research Intern at <a href="https://research.adobe.com/">Adobe Research</a> and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Lab – Asia</a>. I received my bachelor's degree in <a href="https://zsb.sjtu.edu.cn/web/jdzsb/3810055-3810000002464.htm">Artificial Intelligence Honor Class</a> at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.
+		I am a first year PhD student in <a href="https://cse.osu.edu/">Computer Science & Engineering</a> at <a href="https://www.osu.edu/">The Ohio State University</a> and a member of the <a href="https://x.com/osunlp?lang=en">OSU NLP Lab</a>, advised by <a href="https://ysu1989.github.io/">Prof. Yu Su</a> and closely collaborating with <a href="https://u.osu.edu/ihudas/people/">Prof. Huan Sun</a>. Previously, I worked as a Research Intern at <a href="https://saltlab.stanford.edu/">Stanford SALT Lab</a>, <a href="https://www.amazon.com/">Amazon</a>, <a href="https://research.adobe.com/">Adobe Research</a>, and <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Lab – Asia</a>. I received my Master's degree from <a href="https://home.dartmouth.edu/">Dartmouth College</a> and Bachelor's degree in <a href="https://zsb.sjtu.edu.cn/web/jdzsb/3810055-3810000002464.htm">Artificial Intelligence Honor Class</a> at <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.
 	</div>
 	<div style="height: 1rem"></div>
 	<div>
-		My research interests lie in Natural Language Processing (NLP), including Language Agents, Synthetic Data and Dynamic Evaluation of LLMs, Computational Social Science, and Multi-Modal Large Language Models.
+		My research interests lie in Language Agent Safety and Robustness of Large Language Models (LLMs), Alignment, and general human-centered Natural Language Processsing (NLP). I focus on developing methods to evaluate and improve the safety and reliability of LLMs in real-world applications.
 	</div>
 	<div style="height: 1rem"></div>
 	<div>
-		I am actively seeking a PhD position in NLP in the USA for Fall 2025. Please feel free to contact me by email!
+		Please feel free to contact me by email for collaboration opportunities!
 	</div>
 </div>
 

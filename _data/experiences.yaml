@@ -1,8 +1,30 @@
+- institution: Amazon
+  location: "Seattle, WA"
+  position: Applied Scientist Intern
+  group: "People eXperience and Technology (PXT) Central Science"
+  year: "Nov 2024 — Jun 2025"
+  description: "Work as an applied scientist intern on evaluating and mitigating the refusal behavior of LLMs."
+  institution-url: https://www.amazon.com/
+  group-url: https://www.amazon.com/
+  type: industry
+
+- institution: The Ohio State University
+  location: "Columbus, OH"
+  position: PhD Student
+  group: "OSU NLP Lab"
+  year: "2025 — Present"
+  mentors:
+    - Yu Su
+  description: "Research in Language Agent Safety and Robustness of LLMs, Alignment. Advised by Prof. Yu Su and Prof. Huan Sun."
+  institution-url: https://www.osu.edu/
+  group-url: https://x.com/osunlp?lang=en
+  type: academic
+
 - institution: Stanford University
   location: "Stanford, CA"
   position: Research Intern
   group: "Social and Language Technologies (SALT) Lab"
-  year: "Present"
+  year: "2024"
   mentors:
     - Diyi Yang
   description: "Research in Natural Language Processing, focusing on synthetic data and dynamic evaluation of large language models."

@@ -1,8 +1,21 @@
+- degree: "Ph.D. in Computer Science"
+  institution: The Ohio State University
+  location: "Columbus, OH"
+  years: "2024 —"
+  years-extra: "Present"
+  advisor: Yu Su
+  co-advisor: Huan Sun
+  institution-url: https://www.osu.edu/
+  group-url: https://x.com/osunlp?lang=en
+  description:
+    - "Research focus: Language Agent Safety and Robustness of LLMs, Alignment"
+    - "Advised by Prof. Yu Su and Prof. Huan Sun"
+
 - degree: "M.S. in Computer Science"
   institution: Dartmouth College
   location: "Hanover, NH"
   years: "2023 —"
-  years-extra: "2025 (expected)"
+  years-extra: "2024"
   institution-url: https://home.dartmouth.edu/
   description:
     - "Research focus: Natural Language Processing"

@@ -8,7 +8,7 @@ jsarr:
 
 <h1 id="cv-title"><a href="{{ site.url }}">Zhehao Zhang</a></h1>
 
-<p id="cv-subtitle"><i>Master Student in Computer Science (<span class="cv-vis">NLP</span> + <span class="cv-ai">LLMs</span>)</i></p>
+<p id="cv-subtitle"><i>PhD Student in Computer Science & Engineering (<span class="cv-vis">Language Agent Safety</span> + <span class="cv-ai">LLM Alignment</span>)</i></p>
 
 <!-- <div id="cv-toc">
 <ul class="cv-description">
@@ -30,13 +30,13 @@ jsarr:
 </div> -->
 
 <div>
-I am a second year Master student in <b><span class="cv-vis">Computer Science</span></b> at Dartmouth College, with research interests in <b><span class="cv-ai">Natural Language Processing</span></b> and Large Language Models. My work focuses on synthetic data generation, dynamic evaluation frameworks, and multi-modal language models.
+I am a first year PhD student in <b><span class="cv-vis">Computer Science & Engineering</span></b> at The Ohio State University, with research interests in <b><span class="cv-ai">Language Agent Safety and Robustness of Large Language Models</span></b> and Alignment. My work focuses on evaluating and mitigating the refusal behavior of LLMs, developing methods to improve the safety and reliability of language models in real-world applications.
 </div>
 
 <div class="cv-spacer"></div>
 
 <div>
-I have collaborated with researchers at Stanford SALT Lab, Adobe Research, and Microsoft Research Lab – Asia, working on cutting-edge NLP research and applications.
+Previously I have worked as an Applied Scientist Intern at Amazon and have collaborated with researchers at Stanford SALT Lab, Adobe Research, and Microsoft Research Lab – Asia, working on cutting-edge NLP research and applications.
 </div>
 
 <div class="cv-spacer"></div>
