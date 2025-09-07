@@ -1,0 +1,251 @@
+- id: darg
+  title: "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph"
+  authors: 
+    - Zhehao Zhang
+    - Jiaao Chen
+    - Diyi Yang
+  venue: "Advances in Neural Information Processing Systems"
+  venue-shorthand: "NeurIPS"
+  location: "Vancouver, Canada"
+  year: 2024
+  url: /papers/darg
+  pdf: https://arxiv.org/abs/2406.17271
+  code: https://github.com/SALT-NLP/DARG
+  demo: https://salt-nlp.github.io/DARG_website/
+  feature-title: DARG
+  feature-description: "Dynamic evaluation of large language models via adaptive reasoning graph"
+  image: /images/framework.png
+  feature-order: 1
+  featured: true
+  selected: true
+  type: conference
+  bibtex: |-
+    @inproceedings{zhang2024darg,
+      title={DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph},
+      author={Zhang, Zhehao and Chen, Jiaao and Yang, Diyi},
+      booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+      year={2024}
+    }
+
+- id: vipact
+  title: "VipAct: Visual-Perception Enhancement via Specialized VLM Agent Collaboration and Tool-use"
+  authors: 
+    - Zhehao Zhang
+    - Ryan A. Rossi
+    - Tong Yu
+    - Franck Dernoncourt
+    - Ruiyi Zhang
+    - Jiuxiang Gu
+    - Sungchul Kim
+    - Xiang Chen
+    - Zichao Wang
+    - Nedim Lipka
+  venue: "arXiv preprint"
+  venue-shorthand: "arXiv"
+  year: 2024
+  url: /papers/vipact
+  pdf: https://arxiv.org/abs/2410.16400
+  feature-title: VipAct
+  feature-description: "Visual-perception enhancement via specialized VLM agent collaboration and tool-use"
+  image: /images/vipact.png
+  featured: true
+  feature-order: 2
+  selected: true
+  type: arxiv
+  bibtex: |-
+    @article{zhang2024vipact,
+      title={VipAct: Visual-Perception Enhancement via Specialized VLM Agent Collaboration and Tool-use},
+      author={Zhang, Zhehao and Rossi, Ryan A. and Yu, Tong and Dernoncourt, Franck and Zhang, Ruiyi and Gu, Jiuxiang and Kim, Sungchul and Chen, Xiang and Wang, Zichao and Lipka, Nedim},
+      journal={arXiv preprint arXiv:2410.16400},
+      year={2024}
+    }
+
+- id: vlm-charts
+  title: "Is GPT-4V (ision) All You Need for Automating Academic Data Visualization? Exploring Vision-Language Models' Capability in Reproducing Academic Charts"
+  authors: 
+    - Zhehao Zhang
+    - Weicheng Ma
+    - Soroush Vosoughi
+  venue: "Findings of the 2024 Conference on Empirical Methods in Natural Language Processing"
+  venue-shorthand: "EMNLP"
+  location: "Miami, FL, USA"
+  year: 2024
+  url: /papers/vlm-charts
+  pdf: https://aclanthology.org/2024.findings-emnlp.485/
+  code: https://github.com/zzh-SJTU/AcademiaChart
+  feature-title: "Vision-Language Models for Academic Charts"
+  feature-description: "Exploring vision-language models' capability in reproducing academic charts"
+  image: /images/vlm.png
+  featured: true
+  feature-order: 3
+  selected: true
+  type: conference
+  bibtex: |-
+    @inproceedings{zhang2024gpt4v,
+      title={Is GPT-4V (ision) All You Need for Automating Academic Data Visualization? Exploring Vision-Language Models' Capability in Reproducing Academic Charts},
+      author={Zhang, Zhehao and Ma, Weicheng and Vosoughi, Soroush},
+      booktitle={Findings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+      year={2024}
+    }
+
+- id: personalization-survey
+  title: "Personalization of Large Language Models: A Survey"
+  authors: 
+    - Zhehao Zhang
+    - Ryan A. Rossi
+    - Branislav Kveton
+    - Yijia Shao
+    - Diyi Yang
+    - Hamed Zamani
+    - Franck Dernoncourt
+    - Joe Barrow
+    - Tong Yu
+    - Sungchul Kim
+    - Ruiyi Zhang
+    - Jiuxiang Gu
+    - Tyler Derr
+    - Hongjie Chen
+    - Junda Wu
+    - Xiang Chen
+    - Zichao Wang
+    - Subrata Mitra
+    - Nedim Lipka
+    - Nesreen Ahmed
+    - Yu Wang
+  venue: "arXiv preprint"
+  venue-shorthand: "arXiv"
+  year: 2024
+  url: /papers/personalization-survey
+  pdf: https://arxiv.org/abs/2411.00027
+  feature-title: "Personalization Survey"
+  feature-description: "A comprehensive survey of personalized large language models"
+  image: /images/personalization.png
+  featured: true
+  feature-order: 4
+  selected: true
+  type: arxiv
+  bibtex: |-
+    @article{zhang2024personalization,
+      title={Personalization of Large Language Models: A Survey},
+      author={Zhang, Zhehao and Rossi, Ryan A. and Kveton, Branislav and Shao, Yijia and Yang, Diyi and Zamani, Hamed and Dernoncourt, Franck and Barrow, Joe and Yu, Tong and Kim, Sungchul and Zhang, Ruiyi and Gu, Jiuxiang and Derr, Tyler and Chen, Hongjie and Wu, Junda and Chen, Xiang and Wang, Zichao and Mitra, Subrata and Lipka, Nedim and Ahmed, Nesreen and Wang, Yu},
+      journal={arXiv preprint arXiv:2411.00027},
+      year={2024}
+    }
+
+- id: e5
+  title: "E5: Zero-shot Hierarchical Table Analysis using Augmented LLMs via Explain, Extract, Execute, Exhibit, and Extrapolate"
+  authors: 
+    - Zhehao Zhang
+    - Yan Gao
+    - Jian-Guang Lou
+  venue: "Proceedings of the 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics"
+  venue-shorthand: "NAACL"
+  location: "Mexico City, Mexico"
+  year: 2024
+  url: /papers/e5
+  pdf: https://aclanthology.org/2024.naacl-long.68/
+  code: https://github.com/zzh-SJTU/E5-Hierarchical-Table-Analysis
+  feature-title: E5
+  feature-description: "Zero-shot hierarchical table analysis using augmented LLMs"
+  image: /images/e5.png
+  featured: true
+  feature-order: 5
+  selected: true
+  type: conference
+  bibtex: |-
+    @inproceedings{zhang2024e5,
+      title={E5: Zero-shot Hierarchical Table Analysis using Augmented LLMs via Explain, Extract, Execute, Exhibit, and Extrapolate},
+      author={Zhang, Zhehao and Gao, Yan and Lou, Jian-Guang},
+      booktitle={Proceedings of the 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)},
+      year={2024}
+    }
+
+- id: crt-qa
+  title: "CRT-QA: A Dataset of Complex Reasoning Question Answering over Tabular Data"
+  authors: 
+    - Zhehao Zhang
+    - Xitao Li
+    - Yan Gao
+    - Jian-Guang Lou
+  venue: "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing"
+  venue-shorthand: "EMNLP"
+  location: "Singapore"
+  year: 2023
+  url: /papers/crt-qa
+  pdf: https://aclanthology.org/2023.emnlp-main.132/
+  code: https://github.com/zzh-SJTU/CRT-QA
+  feature-title: CRT-QA
+  feature-description: "A dataset of complex reasoning question answering over tabular data"
+  image: /images/CRT.png
+  featured: true
+  feature-order: 6
+  selected: true
+  type: conference
+  bibtex: |-
+    @inproceedings{zhang2023crt,
+      title={CRT-QA: A Dataset of Complex Reasoning Question Answering over Tabular Data},
+      author={Zhang, Zhehao and Li, Xitao and Gao, Yan and Lou, Jian-Guang},
+      booktitle={Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+      year={2023}
+    }
+
+- id: hate-speech
+  title: "Mitigating Biases in Hate Speech Detection from A Causal Perspective"
+  authors: 
+    - Zhehao Zhang
+    - Jiaao Chen
+    - Diyi Yang
+  venue: "Findings of the 2023 Conference on Empirical Methods in Natural Language Processing"
+  venue-shorthand: "EMNLP"
+  location: "Singapore"
+  year: 2023
+  url: /papers/hate-speech
+  pdf: https://aclanthology.org/2023.findings-emnlp.440.pdf
+  code: https://github.com/SALT-NLP/Bias_Hate_Causal
+  feature-title: "Hate Speech Detection"
+  feature-description: "Mitigating biases in hate speech detection from a causal perspective"
+  image: /images/hate.png
+  featured: true
+  feature-order: 7
+  selected: true
+  type: conference
+  bibtex: |-
+    @inproceedings{zhang2023hate,
+      title={Mitigating Biases in Hate Speech Detection from A Causal Perspective},
+      author={Zhang, Zhehao and Chen, Jiaao and Yang, Diyi},
+      booktitle={Findings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+      year={2023}
+    }
+
+- id: css-llm
+  title: "Can Large Language Models Transform Computational Social Science?"
+  authors: 
+    - Caleb Ziems
+    - William Held
+    - Omar Shaikh
+    - Jiaao Chen
+    - Zhehao Zhang
+    - Diyi Yang
+  venue: "Computational Linguistics"
+  venue-shorthand: "CL"
+  year: 2023
+  url: /papers/css-llm
+  pdf: https://direct.mit.edu/coli/article/50/1/237/118498/Can-Large-Language-Models-Transform-Computational
+  code: https://github.com/SALT-NLP/LLMs_for_CSS
+  feature-title: "LLMs for Computational Social Science"
+  feature-description: "Can large language models transform computational social science?"
+  image: /images/css.png
+  featured: true
+  feature-order: 8
+  selected: true
+  type: journal
+  bibtex: |-
+    @article{ziems2023llm,
+      title={Can Large Language Models Transform Computational Social Science?},
+      author={Ziems, Caleb and Held, William and Shaikh, Omar and Chen, Jiaao and Zhang, Zhehao and Yang, Diyi},
+      journal={Computational Linguistics},
+      volume={50},
+      number={1},
+      pages={237--280},
+      year={2023}
+    }

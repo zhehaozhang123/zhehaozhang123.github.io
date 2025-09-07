@@ -1,0 +1,31 @@
+- institution: Stanford University
+  location: "Stanford, CA"
+  position: Research Intern
+  group: "Social and Language Technologies (SALT) Lab"
+  year: "Present"
+  mentors:
+    - Diyi Yang
+  description: "Research in Natural Language Processing, focusing on synthetic data and dynamic evaluation of large language models."
+  institution-url: https://saltlab.stanford.edu/
+  group-url: https://saltlab.stanford.edu/
+  type: academic
+
+- institution: Adobe Research
+  location: "San Jose, CA"
+  position: Research Intern
+  group: "Adobe Research"
+  year: "Summer 2024"
+  description: "Research in multi-modal large language models and visual perception enhancement."
+  institution-url: https://research.adobe.com/
+  group-url: https://research.adobe.com/
+  type: industry
+
+- institution: Microsoft Research Lab – Asia
+  location: "Beijing, China"
+  position: Research Intern
+  group: "Data, Knowledge, and Intelligence Group"
+  year: "2023"
+  description: "Research in hierarchical table analysis and complex reasoning question answering over tabular data."
+  institution-url: https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/
+  group-url: https://www.microsoft.com/en-us/research/group/data-knowledge-intelligence/
+  type: industry

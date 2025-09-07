@@ -1,0 +1,17 @@
+- degree: "M.S. in Computer Science"
+  institution: Dartmouth College
+  location: "Hanover, NH"
+  years: "2023 —"
+  years-extra: "2025 (expected)"
+  institution-url: https://home.dartmouth.edu/
+  description:
+    - "Research focus: Natural Language Processing"
+
+- degree: "B.Eng. in Artificial Intelligence (Honor Class)"
+  institution: Shanghai Jiao Tong University
+  location: "Shanghai, China"
+  years: "2019 —"
+  years-extra: "2023"
+  institution-url: https://en.sjtu.edu.cn/
+  description:
+    - "Honor Class in Artificial Intelligence"
