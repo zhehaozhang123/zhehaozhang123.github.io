@@ -1,8 +1,8 @@
 - id: email
-  description: "fredhohman@apple.com"
+  description: "zhehao.zhang.gr@dartmouth.edu"
   color: "#515151"
   class: "fas fa-envelope icon"
-  url: "mailto:fredhohman@apple.com"
+  url: "mailto:zhehao.zhang.gr@dartmouth.edu"
   on-homepage: true
   cv-group: 1
 
@@ -15,10 +15,10 @@
   cv-group: 2
 
 - id: github
-  description: "@fredhohman"
+  description: "@zzh-SJTU"
   color: "#6e5494"
   class: "fab fa-github icon"
-  url: "https://github.com/fredhohman"
+  url: "https://github.com/zzh-SJTU"
   on-homepage: true
   cv-group: 2
 
@@ -37,10 +37,10 @@
   on-homepage: true
 
 - id: home
-  description: "fredhohman.com"
+  description: "zhehaozhang123.github.io"
   color: "#515151"
   class: "fas fa-home icon"
-  url: "https://fredhohman.com"
+  url: "https://zhehaozhang123.github.io"
   on-homepage: false
   cv-group: 1
 
@@ -48,7 +48,7 @@
   description: "Google Scholar"
   color: "#515151"
   class: "fa fa-graduation-cap icon"
-  url: "https://scholar.google.com/citations?user=1w0TLT8AAAAJ&hl=en"
+  url: "https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en"
   on-homepage: true
   cv-group: 2
 
@@ -56,7 +56,7 @@
   description: CV PDF
   color: "#ba2818"
   class: "far fa-file-pdf icon"
-  url: "/cv.pdf"
+  url: "/images/cv_b.pdf"
   on-homepage: false
   cv-group: 1
 

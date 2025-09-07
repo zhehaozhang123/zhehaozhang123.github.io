@@ -6,9 +6,9 @@ jsarr:
 - js/scripts.js
 ---
 
-<h1 id="cv-title"><a href="{{ site.url }}">Fred Hohman</a></h1>
+<h1 id="cv-title"><a href="{{ site.url }}">Zhehao Zhang</a></h1>
 
-<p id="cv-subtitle"><i>Research Scientist (<span class="cv-vis">HCI</span> + <span class="cv-ai">ML</span>)</i></p>
+<p id="cv-subtitle"><i>Master Student in Computer Science (<span class="cv-vis">NLP</span> + <span class="cv-ai">LLMs</span>)</i></p>
 
 <!-- <div id="cv-toc">
 <ul class="cv-description">
@@ -30,13 +30,13 @@ jsarr:
 </div> -->
 
 <div>
-I design and develop <b><span class="cv-vis">interactive interfaces</span></b> to help people <b><span class="cv-ai">understand machine learning</span></b> models and data-driven systems. Besides building tools, I also create data visualizations and write interactive articles to simply communicate complex ideas.
+I am a second year Master student in <b><span class="cv-vis">Computer Science</span></b> at Dartmouth College, with research interests in <b><span class="cv-ai">Natural Language Processing</span></b> and Large Language Models. My work focuses on synthetic data generation, dynamic evaluation frameworks, and multi-modal language models.
 </div>
 
 <div class="cv-spacer"></div>
 
 <div>
-I have collaborated with researchers, designers, developers, and artists while working at Apple, Microsoft Research, NASA Jet Propulsion Lab, and Pacific Northwest National Lab.
+I have collaborated with researchers at Stanford SALT Lab, Adobe Research, and Microsoft Research Lab – Asia, working on cutting-edge NLP research and applications.
 </div>
 
 <div class="cv-spacer"></div>
@@ -96,7 +96,7 @@ I have collaborated with researchers, designers, developers, and artists while w
 
 {% assign selectedBoolForBibtex = true %}
 
-{% assign selected = site.categories.papers | where: 'selected', true %}
+{% assign selected = site.data.publications | where: 'selected', true %}
 {% for pub in selected %}
 {% include cv/publication.html pub=pub %}
 {% endfor %}
@@ -107,57 +107,57 @@ I have collaborated with researchers, designers, developers, and artists while w
 
 ### Tech Report
 
-{% assign tech-report = site.categories.papers | where: 'type', "tech-report" %}
+{% assign tech-report = site.data.publications | where: 'type', "tech-report" %}
 {% for pub in tech-report %}
 {% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
 {% endfor %}
 
 ### Journal
 
-{% assign journal = site.categories.papers | where: 'type', "journal" %}
+{% assign journal = site.data.publications | where: 'type', "journal" %}
 {% for pub in journal %}
 {% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
 {% endfor %}
 
 ### Conference
 
-{% assign conference = site.categories.papers | where: 'type', "conference" %}
+{% assign conference = site.data.publications | where: 'type', "conference" %}
 {% for pub in conference %}
 {% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
 {% endfor %}
 
 ### Preprint
 
-{% assign preprint = site.categories.papers | where: 'type', "preprint" %}
+{% assign preprint = site.data.publications | where: 'type', "arxiv" %}
 {% for pub in preprint %}
 {% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
 {% endfor %}
 
 ### Workshop
 
-{% assign workshop = site.categories.papers | where: 'type', "workshop" %}
+{% assign workshop = site.data.publications | where: 'type', "workshop" %}
 {% for pub in workshop %}
 {% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
 {% endfor %}
 
 ### Poster
 
-{% assign poster = site.categories.papers | where: 'type', "poster" %}
+{% assign poster = site.data.publications | where: 'type', "poster" %}
 {% for pub in poster %}
 {% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
 {% endfor %}
 
 ### Demo
 
-{% assign demo = site.categories.papers | where: 'type', "demo" %}
+{% assign demo = site.data.publications | where: 'type', "demo" %}
 {% for pub in demo %}
 {% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
 {% endfor %}
 
 ### Miscellaneous
 
-{% assign preprint = site.categories.papers | where: 'type', "misc" %}
-{% for pub in preprint %}
+{% assign misc = site.data.publications | where: 'type', "misc" %}
+{% for pub in misc %}
 {% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
 {% endfor %}
 

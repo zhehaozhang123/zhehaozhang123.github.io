@@ -1,6 +1,6 @@
-title: Fred Hohman
-tagline: Research Scientist at Apple
-url: http://fredhohman.com
+title: Zhehao Zhang
+tagline: Master Student in Computer Science at Dartmouth College
+url: https://zhehaozhang123.github.io
 baseurl: ""
 # gems: [jekyll-paginate]
 # paginate: 5
@@ -14,9 +14,9 @@ sass:
   style: compressed
 
 author:
-  name: Fred Hohman
-  url: http://fredhohman.com
-  email: fred.hohman@gmail.com
+  name: Zhehao Zhang
+  url: https://zhehaozhang123.github.io
+  email: zhehao.zhang.gr@dartmouth.edu
 
 markdown: kramdown
 highlighter: rouge

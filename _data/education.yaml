@@ -1,42 +1,17 @@
-- degree: "Ph.D. in Computational Science & Engineering"
-  institution: Georgia Institute of Technology
-  location: "Atlanta, GA"
-  advisor: Duen Horng (Polo) Chau
-  co-advisor: Alex Endert
-  years: "Aug. 2015 —"
-  years-extra: "Dec. 2020"
-  thesis: "Interactive Scalable Interfaces for Machine Learning Interpretability"
-  thesis-video: https://youtu.be/TNH8RqyNfmo
-  thesis-link: ../dissertation/
-  thesis-pdf: ../papers/fred-hohman-thesis.pdf
-  committee:
-    - Duen Horng (Polo) Chau
-    - Alex Endert
-    - Chao Zhang
-    - Nathan Hodas
-    - Scott Davidoff
-    - Steven Drucker
-  institution-url: https://www.gatech.edu/
-  awards:
-    - ACM SIGCHI Outstanding Dissertation Award
-    - Georgia Tech College of Computing Dissertation Award
-
-- degree: "M.S. in Computational Science & Engineering"
-  institution: Georgia Institute of Technology
-  location: "Atlanta, GA"
-  years: May 2018
-  institution-url: https://www.gatech.edu/
+- degree: "M.S. in Computer Science"
+  institution: Dartmouth College
+  location: "Hanover, NH"
+  years: "2023 —"
+  years-extra: "2025 (expected)"
+  institution-url: https://home.dartmouth.edu/
   description:
-    - "GPA: 4.00/4.00"
+    - "Research focus: Natural Language Processing"
 
-- degree: "B.S. in Mathematics, B.S. in Physics"
-  years: "Aug. 2011 —"
-  years-extra: "May 2015"
-  institution: University of Georgia
-  location: "Athens, GA"
-  thesis: "3D Printing the Trefoil Knot and its Pages"
-  thesis-link: ../projects/3d-printing-the-trefoil-knot-and-its-pages/
-  thesis-pdf: ../papers/fred-hohman-undergrad-thesis.pdf
-  description: 
-    - "Overall GPA: 3.84/4.00, Magna Cum Laude, Area of Emphasis in Applied Mathematics"
-  institution-url: https://www.uga.edu/
+- degree: "B.Eng. in Artificial Intelligence (Honor Class)"
+  institution: Shanghai Jiao Tong University
+  location: "Shanghai, China"
+  years: "2019 —"
+  years-extra: "2023"
+  institution-url: https://en.sjtu.edu.cn/
+  description:
+    - "Honor Class in Artificial Intelligence"
