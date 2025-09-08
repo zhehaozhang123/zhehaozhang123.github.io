@@ -9,7 +9,7 @@
 - id: twitter
   description: "@Zhehao_Zhang123"
   color: "#000000"
-  class: "fab fa-twitter"
+  class: "fab fa-x-twitter"
   url: https://x.com/Zhehao_Zhang123
   on-homepage: true
   cv-group: 2

@@ -1,3 +1,31 @@
+- id: falsereject
+  title: "Falsereject: A resource for improving contextual safety and mitigating over-refusals in llms via structured reasoning"
+  authors: 
+    - Zhehao Zhang
+    - Weijie Xu
+    - Fanyou Wu
+    - Chandan K Reddy
+  venue: "Conference on Language Modeling"
+  venue-shorthand: "COLM"
+  year: 2025
+  url: https://false-reject.github.io/
+  pdf: https://arxiv.org/abs/2505.08054
+  code: https://huggingface.co/datasets/AmazonScience/FalseReject
+  feature-title: FalseReject
+  feature-description: "A resource for improving contextual safety and mitigating over-refusals in LLMs"
+  image: /images/falsereject.png
+  feature-order: 1
+  featured: true
+  selected: true
+  type: conference
+  bibtex: |-
+    @inproceedings{zhang2025falsereject,
+      title={Falsereject: A resource for improving contextual safety and mitigating over-refusals in llms via structured reasoning},
+      author={Zhang, Zhehao and Xu, Weijie and Wu, Fanyou and Reddy, Chandan K},
+      booktitle={Conference on Language Modeling (COLM)},
+      year={2025}
+    }
+
 - id: darg
   title: "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph"
   authors: 
@@ -8,24 +36,29 @@
   venue-shorthand: "NeurIPS"
   location: "Vancouver, Canada"
   year: 2024
-  url: /papers/darg
-  pdf: https://arxiv.org/abs/2406.17271
+  url: https://salt-nlp.github.io/DARG_website/
+  pdf: https://proceedings.neurips.cc/paper_files/paper/2024/hash/f5198bc255e1d5f959edd6d1d1a86fab-Abstract-Conference.html
   code: https://github.com/SALT-NLP/DARG
-  demo: https://salt-nlp.github.io/DARG_website/
   feature-title: DARG
   feature-description: "Dynamic evaluation of large language models via adaptive reasoning graph"
   image: /images/framework.png
-  feature-order: 1
+  feature-order: 2
   featured: true
   selected: true
   type: conference
   bibtex: |-
-    @inproceedings{zhang2024darg,
-      title={DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph},
-      author={Zhang, Zhehao and Chen, Jiaao and Yang, Diyi},
-      booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-      year={2024}
+    @inproceedings{NEURIPS2024_f5198bc2,
+    author = {Zhang, Zhehao and Chen, Jiaao and Yang, Diyi},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+    pages = {135904--135942},
+    publisher = {Curran Associates, Inc.},
+    title = {DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph},
+    url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/f5198bc255e1d5f959edd6d1d1a86fab-Paper-Conference.pdf},
+    volume = {37},
+    year = {2024}
     }
+
 
 - id: vipact
   title: "VipAct: Visual-Perception Enhancement via Specialized VLM Agent Collaboration and Tool-use"
@@ -49,7 +82,7 @@
   feature-description: "Visual-perception enhancement via specialized VLM agent collaboration and tool-use"
   image: /images/vipact.png
   featured: true
-  feature-order: 2
+  feature-order: 3
   selected: true
   type: arxiv
   bibtex: |-
@@ -77,7 +110,7 @@
   feature-description: "Exploring vision-language models' capability in reproducing academic charts"
   image: /images/vlm.png
   featured: true
-  feature-order: 3
+  feature-order: 4
   selected: true
   type: conference
   bibtex: |-
@@ -112,16 +145,16 @@
     - Nedim Lipka
     - Nesreen Ahmed
     - Yu Wang
-  venue: "arXiv preprint"
-  venue-shorthand: "arXiv"
-  year: 2024
+  venue: "Transactions on Machine Learning Research"
+  venue-shorthand: "TMLR"
+  year: 2025
   url: /papers/personalization-survey
-  pdf: https://arxiv.org/abs/2411.00027
+  pdf: https://openreview.net/pdf/da2706371e2b0e1970b97f111313686e5c0ff03a.pdf
   feature-title: "Personalization Survey"
   feature-description: "A comprehensive survey of personalized large language models"
   image: /images/personalization.png
   featured: true
-  feature-order: 4
+  feature-order: 5
   selected: true
   type: arxiv
   bibtex: |-
@@ -149,7 +182,7 @@
   feature-description: "Zero-shot hierarchical table analysis using augmented LLMs"
   image: /images/e5.png
   featured: true
-  feature-order: 5
+  feature-order: 6
   selected: true
   type: conference
   bibtex: |-
@@ -178,7 +211,7 @@
   feature-description: "A dataset of complex reasoning question answering over tabular data"
   image: /images/CRT.png
   featured: true
-  feature-order: 6
+  feature-order: 7
   selected: true
   type: conference
   bibtex: |-
@@ -206,7 +239,7 @@
   feature-description: "Mitigating biases in hate speech detection from a causal perspective"
   image: /images/hate.png
   featured: true
-  feature-order: 7
+  feature-order: 8
   selected: true
   type: conference
   bibtex: |-
@@ -236,7 +269,7 @@
   feature-description: "Can large language models transform computational social science?"
   image: /images/css.png
   featured: true
-  feature-order: 8
+  feature-order: 9
   selected: true
   type: journal
   bibtex: |-
