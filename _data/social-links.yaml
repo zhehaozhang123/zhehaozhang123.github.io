@@ -1,10 +1,49 @@
 - id: email
-  description: "zhehao.zhang.gr@dartmouth.edu"
+  description: "zhang.16420@osu.edu"
   color: "#515151"
   class: "fas fa-envelope icon"
-  url: "mailto:zhehao.zhang.gr@dartmouth.edu"
+  url: "mailto:zhang.16420@osu.edu"
   on-homepage: true
   cv-group: 1
+
+- id: twitter
+  description: "@Zhehao_Zhang123"
+  color: "#000000"
+  class: "fab fa-x-twitter"
+  url: https://x.com/Zhehao_Zhang123
+  on-homepage: true
+  cv-group: 2
+
+- id: github
+  description: "@zzh-SJTU"
+  color: "#6e5494"
+  class: "fab fa-github icon"
+  url: "https://github.com/zzh-SJTU"
+  on-homepage: true
+  cv-group: 2
+
+- id: linkedin
+  description: "zhehao-zhang"
+  color: "#0077b5"
+  class: "fab fa-linkedin-in icon"
+  url: "https://www.linkedin.com/in/zhehao-zhang-044428289/"
+  on-homepage: true
+
+- id: home
+  description: "zhehaozhang123.github.io"
+  color: "#515151"
+  class: "fas fa-home icon"
+  url: "https://zhehaozhang123.github.io"
+  on-homepage: false
+  cv-group: 1
+
+- id: scholar
+  description: "Google Scholar"
+  color: "#515151"
+  class: "fa fa-graduation-cap icon"
+  url: "https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en"
+  on-homepage: true
+  cv-group: 2
 
 - id: cv
   description: CV PDF
@@ -20,56 +59,3 @@
   class: "fa fa-address-card icon"
   url: "/cv"
   on-homepage: false
-  cv-group: 1
-
-- id: scholar
-  description: "Google Scholar"
-  color: "#515151"
-  class: "fa fa-graduation-cap icon"
-  url: "https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en"
-  on-homepage: true
-  cv-group: 2
-
-- id: placeholder
-  description: "Coming Soon"
-  color: "#cccccc"
-  class: "fas fa-ellipsis-h icon"
-  url: "#"
-  on-homepage: false
-  cv-group: 3
-
-- id: twitter
-  description: "@Zhehao_Zhang123"
-  color: "#000000"
-  class: "fab fa-x-twitter"
-  url: https://x.com/Zhehao_Zhang123
-  on-homepage: true
-  cv-group: 3
-  hidden: true
-
-- id: github
-  description: "@zzh-SJTU"
-  color: "#6e5494"
-  class: "fab fa-github icon"
-  url: "https://github.com/zzh-SJTU"
-  on-homepage: true
-  cv-group: 3
-  hidden: true
-
-- id: linkedin
-  description: "zhehao-zhang"
-  color: "#0077b5"
-  class: "fab fa-linkedin-in icon"
-  url: "https://www.linkedin.com/in/zhehao-zhang-044428289/"
-  on-homepage: true
-  cv-group: 3
-  hidden: true
-
-- id: home
-  description: "zhehaozhang123.github.io"
-  color: "#515151"
-  class: "fas fa-home icon"
-  url: "https://zhehaozhang123.github.io"
-  on-homepage: false
-  cv-group: 3
-  hidden: true
