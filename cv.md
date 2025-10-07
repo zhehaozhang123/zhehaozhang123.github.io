@@ -129,91 +129,44 @@ Previously I have worked as an Applied Scientist Intern at Amazon and have colla
 {% endfor %}
 
 
-## Talks
-
-{% assign talktitles = site.data.talks | group_by:"title" %}
-{% for title in talktitles %}
-{% include cv/talk.html talk=title %}
-{% endfor %}
-
-## Press
-
-{% for press in site.data.press %}
-{% include cv/press.html press=press %}
-{% endfor %}
-
-## Teaching
-
-{% for teach in site.data.teaching %}
-{% include cv/teaching.html teach=teach %}
-{% endfor %}
-
-## Mentoring
-
-{::nomarkdown}
-{% for mentee in site.data.mentoring %}
-{% include cv/mentee.html mentee=mentee %}
-{% endfor %}
-{:/}
-
-## Grants and Funding
-
-{% for fund in site.data.funding %}
-{% include cv/fund.html fund=fund %}
-{% endfor %}
-
-## Interactive Articles
-
-{% for article in site.data.articles %}
-{% unless article.feature-only %}
-{% include cv/article.html article=article %}
-{% endunless %}
-{% endfor %}
-
-<!-- ## Technology Skills
-
-{% for skill in site.data.skills %}
-{% include cv/skill.html skill=skill %}
-{% endfor %} -->
 
 ## Service
 
-<div class="cv-service-title"><b>Organizer</b></div>
-{% for venue in site.data.organizer %}
-{% include cv/venue.html venue=venue %}
-{% endfor %}
-
-<div class="cv-service-title"><b>Program Commitee</b></div>
-{% for venue in site.data.pc %}
-{% include cv/venue.html venue=venue %}
-{% endfor %}
-
-<div class="cv-service-title"><b>Reviewer</b></div>
-{% for venue in site.data.reviewer %}
-{% include cv/venue.html venue=venue %}
-{% endfor %}
-
-<div class="cv-service-title"><b>Institutional</b></div>
-{% for institution in site.data.institutional %}
-{% include cv/institutional.html institution=institution %}
-{% endfor %}
-
-<div class="cv-service-title"><b>Member</b></div>
-{% for member in site.data.memberships %}
-{% include cv/member.html member=member %}
-{% endfor %}
-
-## Design
-
-{% for design in site.data.designs %}
-{% include cv/design.html design=design %}
-{% endfor %}
+<div class="cv-service-content">
+<table>
+<tr>
+<td style="font-weight: bold; width: 120px; vertical-align: top;">Reviewer</td>
+<td>EMNLP 2023, 2024; NeurIPS 2023, 2024, 2025; NAACL 2024; ACL 2024, 2025; COLM 2024<br/>
+CIKM 2024, 2025; ICLR 2025; COLING 2025; IJCAI 2025; IEEE TNNLS Journal</td>
+</tr>
+<tr>
+<td style="font-weight: bold; vertical-align: top;">Volunteer</td>
+<td>EMNLP 2023; NAACL 2024</td>
+</tr>
+</table>
+</div>
 
 ## References
 
-{% for reference in site.data.references %}
-{% include cv/reference.html reference=reference %}
-{% endfor %}
+**Prof. Yu Su**
+Associate Professor, Computer Science & Engineering
+The Ohio State University
+[ysu@cse.ohio-state.edu](mailto:ysu@cse.ohio-state.edu)
+
+**Prof. Huan Sun**
+Associate Professor, Computer Science & Engineering
+The Ohio State University
+[sun.397@osu.edu](mailto:sun.397@osu.edu)
+
+**Prof. Diyi Yang**
+Assistant Professor, Computer Science
+Stanford University
+[diyiy@stanford.edu](mailto:diyiy@stanford.edu)
+
+**Dr. Ryan Rossi**
+Principal Research Scientist
+Adobe Research
+[rrossi@adobe.com](mailto:rrossi@adobe.com)
 
 <!-- 
 ## Contact
