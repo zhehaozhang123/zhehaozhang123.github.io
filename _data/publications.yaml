@@ -156,7 +156,7 @@
   featured: true
   feature-order: 5
   selected: true
-  type: arxiv
+  type: journal
   bibtex: |-
     @article{zhang2024personalization,
       title={Personalization of Large Language Models: A Survey},

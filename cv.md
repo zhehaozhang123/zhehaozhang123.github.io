@@ -41,125 +41,105 @@ Previously I have worked as an Applied Scientist Intern at Amazon and have colla
 
 <div class="cv-spacer"></div>
 
-<div class="cv-image-links-wrapper">
-	<div class="cv-image-links">
-		{% for link in site.data.social-links %}
-			{% if link.cv-group == 1 %}
-				{% include cv-social-link.html link=link %}
-			{% endif %}
+<div class="cv-content-wrapper">
+	<div class="cv-content-column">
+		<h3>Experience (CV)</h3>
+
+		<!-- Links -->
+		<div class="cv-links-section">
+			{% for link in site.data.social-links %}
+				{% if link.cv-group == 1 %}
+					{% include cv-social-link.html link=link %}
+				{% endif %}
+			{% endfor %}
+		</div>
+
+		<!-- Content Sections -->
+		<h4>Education</h4>
+		{::nomarkdown}
+		{% for degree in site.data.education %}
+		{% include cv/degree.html degree=degree %}
+		{% endfor %}
+		{:/}
+
+		<h4>Industry Research Experience</h4>
+		{% for experience in site.data.experiences %}
+		{% if experience.type == 'industry' %}
+		{% include cv/experience.html experience=experience %}
+		{% endif %}
+		{% endfor %}
+
+		<h4>Academic Research Experience</h4>
+		{% for experience in site.data.experiences %}
+		{% if experience.type == 'academic' %}
+		{% include cv/experience.html experience=experience %}
+		{% endif %}
+		{% endfor %}
+
+		<h4>Honors and Awards</h4>
+		{% for award in site.data.awards %}
+		{% include cv/award.html award=award %}
 		{% endfor %}
 	</div>
-	<div class="cv-image-links">
-		{% for link in site.data.social-links %}
-			{% if link.cv-group == 2 %}
-				{% include cv-social-link.html link=link %}
-			{% endif %}
+
+	<div class="cv-content-column">
+		<h3>Publications</h3>
+
+		<!-- Links -->
+		<div class="cv-links-section">
+			{% for link in site.data.social-links %}
+				{% if link.cv-group == 2 %}
+					{% include cv-social-link.html link=link %}
+				{% endif %}
+			{% endfor %}
+		</div>
+
+		<!-- Publications Content -->
+		<p><em>For the most up-to-date list of publications, please refer to my <a href="https://scholar.google.com/">Google Scholar profile</a>.</em></p>
+
+		<h4>Selected: Latest & Greatest</h4>
+		{% assign selectedBoolForBibtex = true %}
+		{% assign selected = site.data.publications | where: 'selected', true %}
+		{% for pub in selected %}
+		{% include cv/publication.html pub=pub %}
 		{% endfor %}
+
+		<!-- ### All Publications -->
+		{% assign selectedBoolForBibtex = false %}
+
+		<h4>Conference</h4>
+		{% assign conference = site.data.publications | where: 'type', "conference" %}
+		{% for pub in conference %}
+		{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
+		{% endfor %}
+
+		<h4>Journal</h4>
+		{% assign journal = site.data.publications | where: 'type', "journal" %}
+		{% for pub in journal %}
+		{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
+		{% endfor %}
+
+		<h4>Preprint</h4>
+		{% assign preprint = site.data.publications | where: 'type', "arxiv" %}
+		{% for pub in preprint %}
+		{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
+		{% endfor %}
+	</div>
+
+	<div class="cv-content-column">
+		<h3>Everything Else</h3>
+
+		<!-- Links -->
+		<div class="cv-links-section">
+			{% for link in site.data.social-links %}
+				{% if link.cv-group == 3 and link.hidden != true %}
+					{% include cv-social-link.html link=link %}
+				{% endif %}
+			{% endfor %}
+		</div>
 	</div>
 </div>
 
-***
-
-## Education
-
-{::nomarkdown}
-{% for degree in site.data.education %}
-{% include cv/degree.html degree=degree %}
-{% endfor %}
-{:/}
-
-## Industry Research Experience
-
-{% for experience in site.data.experiences %}
-{% if experience.type == 'industry' %}
-{% include cv/experience.html experience=experience %}
-{% endif %}
-{% endfor %}
-
-## Academic Research Experience
-
-{% for experience in site.data.experiences %}
-{% if experience.type == 'academic' %}
-{% include cv/experience.html experience=experience %}
-{% endif %}
-{% endfor %}
-
-## Honors and Awards
-
-{% for award in site.data.awards %}
-{% include cv/award.html award=award %}
-{% endfor %}
-
-## Publications
-
-### Selected: Latest & Greatest
-
-{% assign selectedBoolForBibtex = true %}
-
-{% assign selected = site.data.publications | where: 'selected', true %}
-{% for pub in selected %}
-{% include cv/publication.html pub=pub %}
-{% endfor %}
-
-<!-- ### All Publications -->
-
-{% assign selectedBoolForBibtex = false %}
-
-### Tech Report
-
-{% assign tech-report = site.data.publications | where: 'type', "tech-report" %}
-{% for pub in tech-report %}
-{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
-{% endfor %}
-
-### Journal
-
-{% assign journal = site.data.publications | where: 'type', "journal" %}
-{% for pub in journal %}
-{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
-{% endfor %}
-
-### Conference
-
-{% assign conference = site.data.publications | where: 'type', "conference" %}
-{% for pub in conference %}
-{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
-{% endfor %}
-
-### Preprint
-
-{% assign preprint = site.data.publications | where: 'type', "arxiv" %}
-{% for pub in preprint %}
-{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
-{% endfor %}
-
-### Workshop
-
-{% assign workshop = site.data.publications | where: 'type', "workshop" %}
-{% for pub in workshop %}
-{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
-{% endfor %}
-
-### Poster
-
-{% assign poster = site.data.publications | where: 'type', "poster" %}
-{% for pub in poster %}
-{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
-{% endfor %}
-
-### Demo
-
-{% assign demo = site.data.publications | where: 'type', "demo" %}
-{% for pub in demo %}
-{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
-{% endfor %}
-
-### Miscellaneous
-
-{% assign misc = site.data.publications | where: 'type', "misc" %}
-{% for pub in misc %}
-{% include cv/publication.html pub=pub selectedBoolForBibtex=selectedBoolForBibtex %}
-{% endfor %}
 
 ## Talks
 
