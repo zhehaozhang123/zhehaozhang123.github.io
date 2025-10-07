@@ -34,7 +34,7 @@ title: Home
 	</div>
 	<div style="height: 1rem"></div>
 	<div>
-		Please feel free to contact me by email for collaboration opportunities!
+		Please feel free to contact me by email (zhang.16420@osu.edu) for collaboration opportunities!
 	</div>
 </div>
 
