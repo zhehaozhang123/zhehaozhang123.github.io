@@ -73,9 +73,9 @@
     - Xiang Chen
     - Zichao Wang
     - Nedim Lipka
-  venue: "arXiv preprint"
-  venue-shorthand: "arXiv"
-  year: 2024
+  venue: "The 40th Annual AAAI Conference on Artificial Intelligence"
+  venue-shorthand: "AAAI"
+  year: 2026
   url: /papers/vipact
   pdf: https://arxiv.org/abs/2410.16400
   feature-title: VipAct
