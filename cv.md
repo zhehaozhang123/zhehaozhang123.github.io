@@ -151,7 +151,7 @@ CIKM 2024, 2025; ICLR 2025; COLING 2025; IJCAI 2025; IEEE TNNLS Journal</td>
 **Prof. Yu Su**
 Associate Professor, Computer Science & Engineering
 The Ohio State University
-[ysu@cse.ohio-state.edu](mailto:ysu@cse.ohio-state.edu)
+[su.809@osu.edu](mailto:su.809@osu.edu)
 
 **Prof. Huan Sun**
 Associate Professor, Computer Science & Engineering
@@ -161,12 +161,12 @@ The Ohio State University
 **Prof. Diyi Yang**
 Assistant Professor, Computer Science
 Stanford University
-[diyiy@stanford.edu](mailto:diyiy@stanford.edu)
+[diyiy@cs.stanford.edu](mailto:diyiy@cs.stanford.edu)
 
 **Dr. Ryan Rossi**
 Principal Research Scientist
 Adobe Research
-[rrossi@adobe.com](mailto:rrossi@adobe.com)
+[ryrossi@adobe.com](mailto:ryrossi@adobe.com)
 
 <!-- 
 ## Contact
