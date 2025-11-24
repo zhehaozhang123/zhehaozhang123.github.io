@@ -49,7 +49,7 @@
   description: CV PDF
   color: "#ba2818"
   class: "far fa-file-pdf icon"
-  url: "/cv_1124.pdf"
+  url: "/images/cv_1124.pdf"
   on-homepage: false
   cv-group: 1
 
