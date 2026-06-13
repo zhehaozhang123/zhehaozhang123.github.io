@@ -14,11 +14,8 @@
 
 <div class="cv-description cv-authors">
 	{% for person in pub.authors %}
-		{% if forloop.last == false %}
-			{% include person.html person=person %}{% for p in pub.equal-contribution %}{% if person == p %}*{% endif %}{% endfor %},
-		{% else if forloop.last == true %}
-			{% include person.html person=person %}{% for p in pub.equal-contribution %}{% if person == p %}*{% endif %}{% endfor %}
-		{% endif %}
+		{% assign isbold = false %}{% for b in pub.bold %}{% if person == b %}{% assign isbold = true %}{% endif %}{% endfor %}
+		{% if isbold %}<b>{% include person.html person=person %}</b>{% else %}{% include person.html person=person %}{% endif %}{% for p in pub.equal-contribution %}{% if person == p %}*{% endif %}{% endfor %}{% unless forloop.last %}, {% endunless %}
 	{% endfor %}
 </div>
 

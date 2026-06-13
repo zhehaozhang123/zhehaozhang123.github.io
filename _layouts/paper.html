@@ -27,7 +27,8 @@ layout: default
         {% for person in page.authors %}
             <div class="author">
                 {% include person-image.html person=person %}{% for p in page.equal-contribution %}{% if person == p %}{% endif %}{% endfor %}
-                {% include person.html person=person %}{% for p in page.equal-contribution %}{% if person == p %}*{% endif %}{% endfor %}
+                {% assign isbold = false %}{% for b in page.bold %}{% if person == b %}{% assign isbold = true %}{% endif %}{% endfor %}
+                {% if isbold %}<b>{% include person.html person=person %}</b>{% else %}{% include person.html person=person %}{% endif %}{% for p in page.equal-contribution %}{% if person == p %}*{% endif %}{% endfor %}
             </div>
         {% endfor %}
     </div>

@@ -1,3 +1,187 @@
+- id: skillharm
+  title: "SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction"
+  authors:
+    - Yuting Ning
+    - Zhehao Zhang
+    - Yash Kumar Lal
+    - Boyu Gou
+    - Junyi Li
+    - Weitong Ruan
+    - Chentao Ye
+    - Rahul Gupta
+    - Diyi Yang
+    - Yu Su
+    - Huan Sun
+  equal-contribution:
+    - Yuting Ning
+    - Zhehao Zhang
+  bold:
+    - Yuting Ning
+    - Zhehao Zhang
+  venue: "arXiv preprint"
+  venue-shorthand: "arXiv"
+  year: 2026
+  url: https://osu-nlp-group.github.io/SkillHarm/
+  pdf: https://arxiv.org/abs/2606.02540
+  code: https://github.com/OSU-NLP-Group/SkillHarm
+  data: https://huggingface.co/datasets/osunlp/SkillHarm
+  feature-title: SkillHarm
+  feature-description: "Lifecycle-aware skill-based attacks via automated construction"
+  image: /images/skillharm.png
+  feature-order: 1
+  featured: true
+  selected: true
+  type: arxiv
+  bibtex: |-
+    @article{ning2026skillharm,
+      title={SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction},
+      author={Ning, Yuting and Zhang, Zhehao and Lal, Yash Kumar and Gou, Boyu and Li, Junyi and Ruan, Weitong and Ye, Chentao and Gupta, Rahul and Yang, Diyi and Su, Yu and others},
+      journal={arXiv preprint arXiv:2606.02540},
+      year={2026}
+    }
+
+- id: benign-harms
+  title: "When Benign Inputs Lead to Severe Harms: Eliciting Unsafe Unintended Behaviors of Computer-Use Agents"
+  authors:
+    - Jaylen Jones
+    - Zhehao Zhang
+    - Yuting Ning
+    - Eric Fosler-Lussier
+    - Pierre-Luc St-Charles
+    - Yoshua Bengio
+    - Dawn Song
+    - Yu Su
+    - Huan Sun
+  equal-contribution:
+    - Jaylen Jones
+    - Zhehao Zhang
+  bold:
+    - Jaylen Jones
+    - Zhehao Zhang
+  venue: "arXiv preprint"
+  venue-shorthand: "arXiv"
+  year: 2026
+  url: https://osu-nlp-group.github.io/AutoElicit/
+  pdf: https://arxiv.org/abs/2602.08235
+  code: https://github.com/OSU-NLP-Group/AutoElicit
+  data: https://huggingface.co/collections/osunlp/autoelicit
+  feature-title: "Benign Inputs, Severe Harms"
+  feature-description: "Eliciting unsafe unintended behaviors of computer-use agents"
+  image: /images/benign-harms.png
+  feature-order: 2
+  featured: true
+  selected: true
+  type: arxiv
+  bibtex: |-
+    @article{jones2026benign,
+      title={When benign inputs lead to severe harms: Eliciting unsafe unintended behaviors of computer-use agents},
+      author={Jones, Jaylen and Zhang, Zhehao and Ning, Yuting and Fosler-Lussier, Eric and St-Charles, Pierre-Luc and Bengio, Yoshua and Song, Dawn and Su, Yu and Sun, Huan},
+      journal={arXiv preprint arXiv:2602.08235},
+      year={2026}
+    }
+
+- id: quest
+  title: "QUEST: Training Frontier Deep Research Agents with Fully Synthetic Tasks"
+  authors:
+    - Jian Xie
+    - Tianhe Lin
+    - Zilu Wang
+    - Yuting Ning
+    - Yuekun Yao
+    - Tianci Xue
+    - Zhehao Zhang
+    - Zhongyang Li
+    - Kai Zhang
+    - Yufan Wu
+    - Shijie Chen
+    - Boyu Gou
+    - Mingzhe Han
+    - Yifei Wang
+    - Vint Lee
+    - Xinpeng Wei
+    - Xiangjun Wang
+    - Yu Su
+    - Huan Sun
+  venue: "arXiv preprint"
+  venue-shorthand: "arXiv"
+  year: 2026
+  url: /papers/quest
+  pdf: https://arxiv.org/abs/2605.24218
+  feature-title: QUEST
+  feature-description: "Training frontier deep research agents with fully synthetic tasks"
+  image: /images/quest.png
+  feature-order: 3
+  featured: true
+  selected: true
+  type: arxiv
+  bibtex: |-
+    @article{xie2026quest,
+      title={QUEST: Training Frontier Deep Research Agents with Fully Synthetic Tasks},
+      author={Xie, Jian and Lin, Tianhe and Wang, Zilu and Ning, Yuting and Yao, Yuekun and Xue, Tianci and Zhang, Zhehao and Li, Zhongyang and Zhang, Kai and Wu, Yufan and others},
+      journal={arXiv preprint arXiv:2605.24218},
+      year={2026}
+    }
+
+- id: misact
+  title: "When Actions Go Off-Task: Detecting and Correcting Misaligned Actions in Computer-Use Agents"
+  authors:
+    - Yuting Ning
+    - Jaylen Jones
+    - Zhehao Zhang
+    - Chentao Ye
+    - Weitong Ruan
+    - Junyi Li
+    - Rahul Gupta
+    - Huan Sun
+  venue: "The 43rd International Conference on Machine Learning"
+  venue-shorthand: "ICML"
+  year: 2026
+  url: https://osu-nlp-group.github.io/Misaligned-Action-Detection/
+  pdf: https://arxiv.org/abs/2602.08995
+  code: https://github.com/OSU-NLP-Group/Misaligned-Action-Detection
+  feature-title: "Misaligned Action Detection"
+  feature-description: "Detecting and correcting misaligned actions in computer-use agents"
+  image: /images/misact.png
+  feature-order: 4
+  featured: true
+  selected: true
+  type: conference
+  bibtex: |-
+    @inproceedings{ning2026misact,
+      title={When Actions Go Off-Task: Detecting and Correcting Misaligned Actions in Computer-Use Agents},
+      author={Ning, Yuting and Jones, Jaylen and Zhang, Zhehao and Ye, Chentao and Ruan, Weitong and Li, Junyi and Gupta, Rahul and Sun, Huan},
+      booktitle={The 43rd International Conference on Machine Learning (ICML)},
+      year={2026}
+    }
+
+- id: distractor
+  title: "Distractor Injection Attacks on Large Reasoning Models: Characterization and Defense"
+  authors:
+    - Zhehao Zhang
+    - Weijie Xu
+    - Shixian Cui
+    - Chandan K Reddy
+  venue: "arXiv preprint"
+  venue-shorthand: "arXiv"
+  year: 2025
+  url: /papers/distractor
+  pdf: https://arxiv.org/pdf/2510.16259
+  code: https://huggingface.co/collections/groupfairnessllm/tulu3-with-distraction-mitigation-data
+  feature-title: "Distractor Injection Attacks"
+  feature-description: "Characterization and defense of distractor injection attacks on large reasoning models"
+  image: /images/distractor.png
+  feature-order: 5
+  featured: true
+  selected: true
+  type: arxiv
+  bibtex: |-
+    @article{zhang2025distractor,
+      title={Distractor Injection Attacks on Large Reasoning Models: Characterization and Defense},
+      author={Zhang, Zhehao and Xu, Weijie and Cui, Shixian and Reddy, Chandan K},
+      journal={arXiv preprint arXiv:2510.16259},
+      year={2025}
+    }
+
 - id: falsereject
   title: "Falsereject: A resource for improving contextual safety and mitigating over-refusals in llms via structured reasoning"
   authors: 
@@ -14,7 +198,7 @@
   feature-title: FalseReject
   feature-description: "A resource for improving contextual safety and mitigating over-refusals in LLMs"
   image: /images/falsereject.png
-  feature-order: 1
+  feature-order: 6
   featured: true
   selected: true
   type: conference
@@ -42,7 +226,7 @@
   feature-title: DARG
   feature-description: "Dynamic evaluation of large language models via adaptive reasoning graph"
   image: /images/framework.png
-  feature-order: 2
+  feature-order: 7
   featured: true
   selected: true
   type: conference
@@ -82,7 +266,7 @@
   feature-description: "Visual-perception enhancement via specialized VLM agent collaboration and tool-use"
   image: /images/vipact.png
   featured: true
-  feature-order: 3
+  feature-order: 8
   selected: true
   type: arxiv
   bibtex: |-
@@ -110,7 +294,7 @@
   feature-description: "Exploring vision-language models' capability in reproducing academic charts"
   image: /images/vlm.png
   featured: true
-  feature-order: 4
+  feature-order: 9
   selected: true
   type: conference
   bibtex: |-
@@ -154,7 +338,7 @@
   feature-description: "A comprehensive survey of personalized large language models"
   image: /images/personalization.png
   featured: true
-  feature-order: 5
+  feature-order: 10
   selected: true
   type: journal
   bibtex: |-
@@ -182,7 +366,7 @@
   feature-description: "Zero-shot hierarchical table analysis using augmented LLMs"
   image: /images/e5.png
   featured: true
-  feature-order: 6
+  feature-order: 11
   selected: true
   type: conference
   bibtex: |-
@@ -211,7 +395,7 @@
   feature-description: "A dataset of complex reasoning question answering over tabular data"
   image: /images/CRT.png
   featured: true
-  feature-order: 7
+  feature-order: 12
   selected: true
   type: conference
   bibtex: |-
@@ -239,7 +423,7 @@
   feature-description: "Mitigating biases in hate speech detection from a causal perspective"
   image: /images/hate.png
   featured: true
-  feature-order: 8
+  feature-order: 13
   selected: true
   type: conference
   bibtex: |-
@@ -269,7 +453,7 @@
   feature-description: "Can large language models transform computational social science?"
   image: /images/css.png
   featured: true
-  feature-order: 9
+  feature-order: 14
   selected: true
   type: journal
   bibtex: |-
