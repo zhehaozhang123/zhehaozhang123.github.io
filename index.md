@@ -30,7 +30,7 @@ title: Home
 	</div>
 	<div style="height: 1rem"></div>
 	<div>
-		My research interests lie in Language Agent Safety and Robustness of Large Language Models (LLMs), Alignment, and general human-centered Natural Language Processsing (NLP). I focus on developing methods to evaluate and improve the safety and reliability of LLMs in real-world applications.
+		My research interests lie in Language Agents, Agent Safety, (Recursive) Self-Evolving Agents, and LLM Alignment. I focus on developing methods to evaluate and improve the safety, robustness, and reliability of language agents and LLMs in real-world applications. I believe that agentic AI will drive the next industrial revolution, and I am excited to build agents that are not only capable but also safe, trustworthy, and continually self-improving.
 	</div>
 	<div style="height: 1rem"></div>
 	<div>
@@ -43,7 +43,7 @@ title: Home
 <h2 class="feature-title">Featured <a href="/cv/#publications">Research Publications</a></h2>
 
 <p class="feature-text">
-	Latest research in natural language processing, large language models, and computational social science.
+	Latest research in natural language processing, large language models, language agents, and agent safety.
 </p>
 
 <div class="cover-wrapper cover-wrapper-3-col l-page">
