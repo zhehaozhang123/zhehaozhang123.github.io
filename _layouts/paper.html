@@ -89,6 +89,10 @@ layout: default
 			{% if page.data %}
 			  <a href="{{ page.data }}"><div><i class="fas fa-database" aria-hidden="true"></i> Data</div></a>
 			{% endif %}
+
+			{% if page.model %}
+			  <a href="{{ page.model }}"><div><i class="fas fa-robot" aria-hidden="true"></i> Model</div></a>
+			{% endif %}
 		
 			{% if feature.slides %}
 			  <a href="{{ feature.slides }}"><div><i class="fas fa-window-maximize" aria-hidden="true"></i> Slides</div></a>

@@ -94,6 +94,18 @@
 					</a>
 					{% endif %}
 
+					{% if feature.data %}
+					<a href="{{ feature.data }}">
+						<i class="fas fa-database" aria-hidden="true"></i> Data
+					</a>
+					{% endif %}
+
+					{% if feature.model %}
+					<a href="{{ feature.model }}">
+						<i class="fas fa-robot" aria-hidden="true"></i> Model
+					</a>
+					{% endif %}
+
 					{% if feature.slides %}
 					<a href="{{ feature.slides }}">
 						<i class="fas fa-window-maximize" aria-hidden="true"></i> Slides

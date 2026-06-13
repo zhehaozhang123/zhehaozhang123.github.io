@@ -102,6 +102,12 @@
 	  </a>
 	{% endif %}
 
+	{% if pub.model %}
+	  <a href="{{ pub.model }}">
+	    <i class="fas fa-robot" aria-hidden="true"></i> Model
+	  </a>
+	{% endif %}
+
 	{% if feature.slides %}
 	  <a href="{{ feature.slides }}">
 	    <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides

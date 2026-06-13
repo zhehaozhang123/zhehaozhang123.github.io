@@ -58,8 +58,8 @@
   bold:
     - Jaylen Jones
     - Zhehao Zhang
-  venue: "arXiv preprint"
-  venue-shorthand: "arXiv"
+  venue: "The 43rd International Conference on Machine Learning"
+  venue-shorthand: "ICML"
   year: 2026
   url: https://osu-nlp-group.github.io/AutoElicit/
   pdf: https://arxiv.org/abs/2602.08235
@@ -71,12 +71,12 @@
   feature-order: 2
   featured: true
   selected: true
-  type: arxiv
+  type: conference
   bibtex: |-
-    @article{jones2026benign,
+    @inproceedings{jones2026benign,
       title={When benign inputs lead to severe harms: Eliciting unsafe unintended behaviors of computer-use agents},
       author={Jones, Jaylen and Zhang, Zhehao and Ning, Yuting and Fosler-Lussier, Eric and St-Charles, Pierre-Luc and Bengio, Yoshua and Song, Dawn and Su, Yu and Sun, Huan},
-      journal={arXiv preprint arXiv:2602.08235},
+      booktitle={The 43rd International Conference on Machine Learning (ICML)},
       year={2026}
     }
 
@@ -105,8 +105,11 @@
   venue: "arXiv preprint"
   venue-shorthand: "arXiv"
   year: 2026
-  url: /papers/quest
+  url: https://osu-nlp-group.github.io/QUEST/
   pdf: https://arxiv.org/abs/2605.24218
+  code: https://github.com/OSU-NLP-Group/QUEST
+  demo: https://huggingface.co/spaces/osunlp/QUEST
+  model: https://huggingface.co/osunlp/QUEST-35B-RL
   feature-title: QUEST
   feature-description: "Training frontier deep research agents with fully synthetic tasks"
   image: /images/quest.png
