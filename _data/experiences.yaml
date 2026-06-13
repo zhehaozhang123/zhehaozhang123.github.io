@@ -1,3 +1,13 @@
+- institution: Netflix
+  location: "Los Gatos, CA"
+  position: Machine Learning Intern
+  group: "Netflix"
+  year: "Jun 2026 — Aug 2026"
+  description: "Work as a machine learning intern on large language models and language agents."
+  institution-url: https://www.netflix.com/
+  group-url: https://research.netflix.com/
+  type: industry
+
 - institution: Amazon
   location: "Seattle, WA"
   position: Applied Scientist Intern
