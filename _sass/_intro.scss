@@ -113,36 +113,65 @@ $cv-icon-aspect-ratio: 1.33;
 	box-sizing: border-box;
 }
 
-// News: a compact, scrollable feed. Newest entries on top; older ones are
-// reachable by scrolling within a fixed-height box so it never dominates
+// News: a compact, scrollable timeline. Newest entries on top; older ones
+// are reachable by scrolling within a fixed-height box so it never dominates
 // the page. Add new items at the top of _data/news.yaml.
 .news-scroll {
-	max-height: 12.5rem;
+	max-height: 13rem;
 	overflow-y: auto;
-	padding-right: 0.75rem;
-	border-left: 2px solid $black-10;
+	padding: 0.25rem 0.75rem 0.25rem 0;
 }
 
 .news-item {
-	display: flex;
-	gap: 0.9rem;
-	padding: 0.55rem 0 0.55rem 1rem;
+	position: relative;
+	padding: 0 0 1.1rem 1.75rem;
 	font-size: 0.95rem;
-	line-height: 1.45;
-	border-bottom: 1px solid $black-05;
+	line-height: 1.5;
+	color: $text-color;
+}
+
+// The vertical timeline rail.
+.news-item::before {
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 0.55rem;
+	bottom: -0.55rem;
+	width: 2px;
+	background: $black-10;
 }
 
 .news-item:last-child {
-	border-bottom: none;
+	padding-bottom: 0.25rem;
+}
+
+.news-item:last-child::before {
+	bottom: auto;
+	height: 0;
+}
+
+// The node dot on the rail.
+.news-item::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.45rem;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: $blue;
+	border: 2px solid $white;
+	box-shadow: 0 0 0 1px $black-10;
 }
 
 .news-date {
-	flex: 0 0 6.5rem;
+	display: block;
 	font-weight: 600;
-	font-size: 0.82rem;
+	font-size: 0.78rem;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
 	color: $blue;
-	white-space: nowrap;
-	padding-top: 0.1rem;
+	margin-bottom: 0.1rem;
 }
 
 .news-text {
@@ -151,6 +180,11 @@ $cv-icon-aspect-ratio: 1.33;
 
 .news-text a {
 	color: $blue;
+	font-weight: 500;
+}
+
+.news-text a:hover {
+	text-decoration: underline;
 }
 
 // Slim, subtle scrollbar for the news feed.
