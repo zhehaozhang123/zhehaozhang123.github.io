@@ -1,128 +1,53 @@
-<div class="cover">
+{%- comment -%} Placeholder /papers/* urls don't resolve; fall back to PDF for the primary link. {%- endcomment -%}
+{%- assign hasProject = false -%}
+{%- if feature.url and feature.url != "" -%}
+	{%- unless feature.url contains "/papers/" -%}{%- assign hasProject = true -%}{%- endunless -%}
+{%- endif -%}
+{%- if hasProject -%}{%- assign primaryLink = feature.url -%}{%- else -%}{%- assign primaryLink = feature.pdf -%}{%- endif -%}
+<div class="pub-row">
 
-	<div class="cover-image">
-		<a href="{{ feature.url }}">
-			<img src="{{ feature.image }}">
-		</a>
-	</div>
+	<a class="pub-row-image" href="{{ primaryLink }}">
+		<img src="{{ feature.image }}" alt="{{ feature.feature-title }}">
+	</a>
 
-	<div class="cover-inner">
+	<div class="pub-row-body">
 
-		<div class="cover-top">
-
-			<div class="cover-title">
-				<a href="{{ feature.url }}">{{ feature.feature-title }}</a>
-			</div>
-
-			<div class="cover-subtitle">{{ feature.feature-description }}</div>
-
-			<div class="cover-venue">
-				{% if feature.venue-shorthand %}
-				{{ feature.venue-shorthand }}
-				{% else if feature.venue %}
-				{{ feature.venue }}
-				{% else %}
-				{{ feature.month }}
-				{% endif %}
-				{{ feature.year }}
-			</div>
-
+		<div class="pub-row-title">
+			<a href="{{ primaryLink }}">{{ feature.title }}</a>
 		</div>
 
-		<div class="cover-footer-wrapper">
-			<div class="cover-links">
+		<div class="pub-row-authors">
+			{%- for author in feature.authors -%}
+				{%- assign isbold = false -%}
+				{%- if author == "Zhehao Zhang" -%}{%- assign isbold = true -%}{%- endif -%}
+				{%- for b in feature.bold -%}{%- if author == b -%}{%- assign isbold = true -%}{%- endif -%}{%- endfor -%}
+				{%- assign isequal = false -%}
+				{%- for e in feature.equal-contribution -%}{%- if author == e -%}{%- assign isequal = true -%}{%- endif -%}{%- endfor -%}
+				{%- if isbold -%}<b>{{ author }}{%- if isequal -%}<sup>*</sup>{%- endif -%}</b>{%- else -%}{{ author }}{%- if isequal -%}<sup>*</sup>{%- endif -%}{%- endif -%}{%- unless forloop.last -%}, {% endunless -%}
+			{%- endfor -%}
+			{%- if feature.equal-contribution %} <span class="pub-row-equal">(<sup>*</sup> equal contribution)</span>{% endif -%}
+		</div>
 
-				<span class="pub-misc">
+		<div class="pub-row-venue-wrapper">
+			<span class="pub-row-venue">{% if feature.venue-shorthand %}{{ feature.venue-shorthand }}{% else %}{{ feature.venue }}{% endif %} {{ feature.year }}</span>
+		</div>
 
-					{% if feature.coming-soon %}
-					<a>
-						<i class="fas fa-arrow-right" aria-hidden="true"></i> Coming soon!
-					</a>
-					{% endif %}
-
-					{% if feature.url %}
-					<a href="{{ feature.url }}">
-						<i class="fas fa-link" aria-hidden="true"></i> Project
-					</a>
-					{% endif %}
-
-					{% if feature.demo %}
-					<a href="{{ feature.demo }}">
-						<i class="fas fa-play" aria-hidden="true"></i> Demo
-					</a>
-					{% endif %}
-
-					{% if feature.pdf %}
-					<a href="{{ feature.pdf }}">
-						<i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
-					</a>
-					{% endif %}
-
-					{% if feature.blog %}
-					<a href="{{ feature.blog }}">
-						<i class="fas fa-newspaper" aria-hidden="true"></i> Blog
-					</a>
-					{% endif %}
-
-					{% if feature.video %}
-					<a href="{{ feature.video }}">
-						<i class="fas fa-film" aria-hidden="true"></i> Video
-					</a>
-					{% endif %}
-
-					{% if feature.recording %}
-					<a href="{{ feature.recording }}">
-						<i class="fas fa-video" aria-hidden="true"></i> Recording
-					</a>
-					{% endif %}
-
-					{% if feature.preview %}
-					<a href="{{ feature.preview }}">
-						<i class="fas fa-eye" aria-hidden="true"></i> Preview
-					</a>
-					{% endif %}
-
-					{% if feature.talk %}
-					  <a href="{{ feature.talk }}">
-					    <i class="fas fa-video" aria-hidden="true"></i> Talk
-					  </a>
-					{% endif %}
-
-					{% if feature.code %}
-					<a href="{{ feature.code }}">
-						<i class="fas fa-code" aria-hidden="true"></i> Code
-					</a>
-					{% endif %}
-
-					{% if feature.data %}
-					<a href="{{ feature.data }}">
-						<i class="fas fa-database" aria-hidden="true"></i> Data
-					</a>
-					{% endif %}
-
-					{% if feature.model %}
-					<a href="{{ feature.model }}">
-						<i class="fas fa-robot" aria-hidden="true"></i> Model
-					</a>
-					{% endif %}
-
-					{% if feature.slides %}
-					<a href="{{ feature.slides }}">
-						<i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
-					</a>
-					{% endif %}
-					
-				</span>
-
-			</div>
-
-        <!-- <div class="cover-year">
-        	{{ feature.venue-shorthand }}
-        	<br>
-            {{ feature.year }}
-        </div> -->
-        
-	    </div>
+		<div class="pub-row-links">
+			{% if feature.coming-soon %}<a><i class="fas fa-arrow-right" aria-hidden="true"></i> Coming soon!</a>{% endif %}
+			{% if hasProject %}<a href="{{ feature.url }}"><i class="fas fa-link" aria-hidden="true"></i> Project</a>{% endif %}
+			{% if feature.demo %}<a href="{{ feature.demo }}"><i class="fas fa-play" aria-hidden="true"></i> Demo</a>{% endif %}
+			{% if feature.pdf %}<a href="{{ feature.pdf }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>{% endif %}
+			{% if feature.blog %}<a href="{{ feature.blog }}"><i class="fas fa-newspaper" aria-hidden="true"></i> Blog</a>{% endif %}
+			{% if feature.video %}<a href="{{ feature.video }}"><i class="fas fa-film" aria-hidden="true"></i> Video</a>{% endif %}
+			{% if feature.recording %}<a href="{{ feature.recording }}"><i class="fas fa-video" aria-hidden="true"></i> Recording</a>{% endif %}
+			{% if feature.preview %}<a href="{{ feature.preview }}"><i class="fas fa-eye" aria-hidden="true"></i> Preview</a>{% endif %}
+			{% if feature.talk %}<a href="{{ feature.talk }}"><i class="fas fa-video" aria-hidden="true"></i> Talk</a>{% endif %}
+			{% if feature.code %}<a href="{{ feature.code }}"><i class="fas fa-code" aria-hidden="true"></i> Code</a>{% endif %}
+			{% if feature.data %}<a href="{{ feature.data }}"><i class="fas fa-database" aria-hidden="true"></i> Data</a>{% endif %}
+			{% if feature.model %}<a href="{{ feature.model }}"><i class="fas fa-robot" aria-hidden="true"></i> Model</a>{% endif %}
+			{% if feature.slides %}<a href="{{ feature.slides }}"><i class="fas fa-window-maximize" aria-hidden="true"></i> Slides</a>{% endif %}
+		</div>
 
 	</div>
+
 </div>

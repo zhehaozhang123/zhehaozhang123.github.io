@@ -162,3 +162,136 @@ $cover-width: 8.5px;
     margin-right: 0rem !important;
   }
 }
+
+
+// ─────────────────────────────────────────────
+// Publication list (one paper per row)
+// ─────────────────────────────────────────────
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.pub-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid $black-10;
+}
+
+.pub-row:last-child {
+  border-bottom: none;
+}
+
+.pub-row-image {
+  flex: 0 0 200px;
+  width: 200px;
+  display: block;
+}
+
+.pub-row-image > img {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid $black-05;
+  background-color: white;
+  transition: transform .2s ease-in-out;
+}
+
+.pub-row-image:hover > img {
+  transform: scale(1.03);
+}
+
+.pub-row-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pub-row-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: $title-color;
+}
+
+.pub-row-title a {
+  color: $title-color;
+}
+
+.pub-row-title a:hover {
+  color: $blue;
+  text-decoration: none;
+}
+
+.pub-row-authors {
+  font-size: 0.9rem;
+  color: $black-70;
+  line-height: 1.4;
+  margin-top: 0.35rem;
+}
+
+.pub-row-authors b {
+  color: $title-color;
+}
+
+.pub-row-authors sup {
+  color: $blue;
+}
+
+.pub-row-equal {
+  color: $silver;
+  font-size: 0.8rem;
+}
+
+.pub-row-venue-wrapper {
+  margin-top: 0.5rem;
+}
+
+.pub-row-venue {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: $blue;
+  background-color: $lightest-blue;
+  padding: 0.15rem 0.6rem;
+  border-radius: 1rem;
+}
+
+.pub-row-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.pub-row-links > a {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: $text-color;
+  background-color: $black-05;
+  padding: 0.25rem 0.65rem;
+  border-radius: 1rem;
+  transition: all .2s ease-in-out;
+}
+
+.pub-row-links > a:hover {
+  color: #ffffff;
+  background-color: $blue;
+  text-decoration: none;
+}
+
+@media (max-width: $mobile) {
+  .pub-row {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .pub-row-image {
+    flex: none;
+    width: 100%;
+  }
+}

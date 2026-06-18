@@ -9,7 +9,7 @@ title: Home
 			<img id="intro-image" src="/images/zhehao.jpg"></div>
 		<div id="intro-title-text-wrapper">
 			<h1 id="intro-title">Hi, I'm Zhehao Zhang</h1>
-			<div id="intro-subtitle">I'm a PhD Student in Computer Science at The Ohio State University, working on language agents</div>
+			<div id="intro-subtitle">I'm a PhD Student in Computer Science at The Ohio State University, working on <b>Language Agents</b>.</div>
 			<div id="intro-title-socials">
 				{% for link in site.data.social-links %}
 					{% if link.on-homepage == true %}
@@ -43,10 +43,10 @@ title: Home
 <h2 class="feature-title">Featured <a href="/cv/#publications">Research Publications</a></h2>
 
 <p class="feature-text">
-	Latest research in natural language processing, large language models, language agents, and agent safety.
+	Selected papers on language agents, agent safety, and the alignment and robustness of large language models. See my <a href="https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en">Google Scholar</a> for the full list.
 </p>
 
-<div class="cover-wrapper cover-wrapper-3-col l-middle">
+<div class="pub-list l-middle">
 	{% assign sortedPublications = site.data.publications | sort: 'feature-order' %}
 	{% for feature in sortedPublications %}
 		{% if feature.featured == true %}
