@@ -9,7 +9,7 @@ title: Home
 			<img id="intro-image" src="/images/zhehao.jpg"></div>
 		<div id="intro-title-text-wrapper">
 			<h1 id="intro-title">Hi, I'm Zhehao Zhang</h1>
-			<div id="intro-subtitle">I'm a PhD Student in Computer Science at The Ohio State University</div>
+			<div id="intro-subtitle">I'm a PhD Student in Computer Science at The Ohio State University, working on language agents</div>
 			<div id="intro-title-socials">
 				{% for link in site.data.social-links %}
 					{% if link.on-homepage == true %}
