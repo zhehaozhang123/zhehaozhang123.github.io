@@ -103,14 +103,21 @@ $cv-icon-aspect-ratio: 1.33;
 	vertical-align: middle;
 }
 
-.home-hr {
-	grid-column: middle;
-	margin: 2.5rem 0;
+// Featured publications section: break out of the fixed-width grid into a
+// wider, fluid, centered container so paper figures have room to breathe.
+.featured-section {
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	box-sizing: border-box;
+}
 
+.home-hr {
+	margin: 2.5rem 0;
 }
 
 .feature-title {
-	grid-column: middle;
 	margin-top: 0rem;
 	margin-bottom: 0rem;
 	font-size: 2rem;
@@ -123,7 +130,6 @@ $cv-icon-aspect-ratio: 1.33;
 }
 
 .feature-text {
-	grid-column: middle;
 	padding-bottom: 1rem;
 	font-size: 1.2rem;
 }

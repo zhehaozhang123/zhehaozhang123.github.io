@@ -38,6 +38,8 @@ title: Home
 	</div>
 </div>
 
+<div class="featured-section l-screen">
+
 <hr class="home-hr">
 
 <h2 class="feature-title">Featured <a href="/cv/#publications">Research Publications</a></h2>
@@ -46,13 +48,15 @@ title: Home
 	Selected papers on language agents, agent safety, and the alignment and robustness of large language models. See my <a href="https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en">Google Scholar</a> for the full list.
 </p>
 
-<div class="pub-list l-middle">
+<div class="pub-list">
 	{% assign sortedPublications = site.data.publications | sort: 'feature-order' %}
 	{% for feature in sortedPublications %}
 		{% if feature.featured == true %}
 			{% include feature.html feature=feature %}
 		{% endif %}
 	{% endfor %}
+</div>
+
 </div>
 
 

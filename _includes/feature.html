@@ -25,7 +25,7 @@
 				{%- for e in feature.equal-contribution -%}{%- if author == e -%}{%- assign isequal = true -%}{%- endif -%}{%- endfor -%}
 				{%- if isbold -%}<b>{{ author }}{%- if isequal -%}<sup>*</sup>{%- endif -%}</b>{%- else -%}{{ author }}{%- if isequal -%}<sup>*</sup>{%- endif -%}{%- endif -%}{%- unless forloop.last -%}, {% endunless -%}
 			{%- endfor -%}
-			{%- if feature.equal-contribution %} <span class="pub-row-equal">(<sup>*</sup> equal contribution)</span>{% endif -%}
+			{%- if feature.equal-contribution %} <span class="pub-row-equal"><sup>*</sup>equal contribution</span>{% endif -%}
 		</div>
 
 		<div class="pub-row-venue-wrapper">
