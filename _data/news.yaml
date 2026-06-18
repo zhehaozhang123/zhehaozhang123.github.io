@@ -1,9 +1,9 @@
 # Newest first. Each entry: date (display string) + html (supports <a> links).
 - date: "2024 Sept 25"
-  html: 'The DARG paper is accepted to <b>NeurIPS 2024</b>. See you in Vancouver!'
+  html: 'The <a href="https://salt-nlp.github.io/DARG_website/">DARG</a> paper is accepted to <b>NeurIPS 2024</b>. See you in Vancouver!'
 
 - date: "2024 Sept 20"
-  html: 'One first-author paper on vision language model for code generation is accepted to <b>EMNLP 2024</b>. See you in Miami!'
+  html: 'One first-author <a href="https://aclanthology.org/2024.findings-emnlp.485/">paper</a> on vision language models for academic chart generation is accepted to <b>EMNLP 2024</b>. See you in Miami!'
 
 - date: "2024 Sept 5"
   html: 'Honored to give a talk on Recent Advances in Synthetic Data for Foundation Models at Stanford SALT Lab. <a href="https://docs.google.com/presentation/d/1-Mt5GFZgSbAM2nuVfKAh05EdEERIwzDI-AaKsJoQQxU/edit">Slides</a>.'
@@ -12,7 +12,7 @@
   html: 'A new preprint is released! Please check <a href="https://salt-nlp.github.io/DARG_website/">DARG</a>, a dynamic evaluation framework that augments current reasoning benchmarks from the level of reasoning graphs.'
 
 - date: "2024 Mar 13"
-  html: 'One first-author paper on LLMs for hierarchical table analysis is accepted to <b>NAACL 2024</b>. See you in Mexico City!'
+  html: 'One first-author <a href="https://aclanthology.org/2024.naacl-long.68/">paper</a> on LLMs for hierarchical table analysis is accepted to <b>NAACL 2024</b>. See you in Mexico City!'
 
 - date: "2024 Mar"
   html: 'Honored to give a talk on Augmented Language Models at TRIP Lab at Dartmouth, hosted by Prof. Yaoqing Yang. <a href="https://docs.google.com/presentation/d/1-_XNiQsh07oEnU5nXV_ysgtM0HvJHk-1tyVKEzmiXkg/edit">Slides</a> and <a href="https://www.youtube.com/watch?v=FhAZWa1KvFA&feature=youtu.be">Recording</a>.'
@@ -21,10 +21,10 @@
   html: 'I will join <b>Adobe Research</b> as a Research Intern this summer. See you in San Jose and the Bay Area!'
 
 - date: "2023 Dec 14"
-  html: 'One first-author paper from my undergraduate is accepted to <b>ICASSP 2024</b>.'
+  html: 'One first-author <a href="https://ieeexplore.ieee.org/abstract/document/10448063">paper</a> from my undergraduate is accepted to <b>ICASSP 2024</b>.'
 
 - date: "2023 Oct 27"
-  html: 'The paper "Can Large Language Models Transform Computational Social Science?" is accepted to <b>Computational Linguistics</b>.'
+  html: 'The paper "<a href="https://direct.mit.edu/coli/article/50/1/237/118498/Can-Large-Language-Models-Transform-Computational">Can Large Language Models Transform Computational Social Science?</a>" is accepted to <b>Computational Linguistics</b>.'
 
 - date: "2023 Oct 7"
-  html: 'Two first-author papers from my undergraduate are accepted to <b>EMNLP 2023</b>. See you in Singapore!'
+  html: 'Two first-author papers (<a href="https://aclanthology.org/2023.emnlp-main.132/">CRT-QA</a> and <a href="https://aclanthology.org/2023.findings-emnlp.440.pdf">Hate Speech Detection</a>) from my undergraduate are accepted to <b>EMNLP 2023</b>. See you in Singapore!'
