@@ -94,17 +94,6 @@ Previously I have worked as an Applied Scientist Intern at Amazon and have colla
 
 *For the most up-to-date list of publications, please refer to my [Google Scholar profile](https://scholar.google.com/).*
 
-### Selected: Latest & Greatest
-
-{% assign selectedBoolForBibtex = true %}
-
-{% assign selected = site.data.publications | where: 'selected', true %}
-{% for pub in selected %}
-{% include cv/publication.html pub=pub %}
-{% endfor %}
-
-<!-- ### All Publications -->
-
 {% assign selectedBoolForBibtex = false %}
 
 ### Conference

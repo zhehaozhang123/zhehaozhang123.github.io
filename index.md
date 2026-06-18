@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-<div id="intro-wrapper" class="l-text">
+<div id="intro-wrapper" class="l-page">
 	<div id="intro-title-wrapper">
 		<div id="intro-image-wrapper">
 			<img id="intro-image" src="/images/zhehao.jpg"></div>
