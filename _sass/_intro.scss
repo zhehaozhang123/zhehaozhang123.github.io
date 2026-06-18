@@ -100,11 +100,13 @@ $cv-icon-aspect-ratio: 1.33;
 }
 
 .home-hr {
+	grid-column: page;
 	margin: 2.5rem 0;
-	
+
 }
 
 .feature-title {
+	grid-column: page;
 	margin-top: 0rem;
 	margin-bottom: 0rem;
 	font-size: 2rem;
@@ -117,7 +119,7 @@ $cv-icon-aspect-ratio: 1.33;
 }
 
 .feature-text {
-	grid-column: text;
+	grid-column: page;
 	padding-bottom: 1rem;
 	font-size: 1.2rem;
 }
