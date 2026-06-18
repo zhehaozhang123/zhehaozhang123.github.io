@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-<div id="intro-wrapper" class="l-page">
+<div id="intro-wrapper" class="l-middle">
 	<div id="intro-title-wrapper">
 		<div id="intro-image-wrapper">
 			<img id="intro-image" src="/images/zhehao.jpg"></div>
@@ -46,7 +46,7 @@ title: Home
 	Latest research in natural language processing, large language models, language agents, and agent safety.
 </p>
 
-<div class="cover-wrapper cover-wrapper-3-col l-page">
+<div class="cover-wrapper cover-wrapper-3-col l-middle">
 	{% assign sortedPublications = site.data.publications | sort: 'feature-order' %}
 	{% for feature in sortedPublications %}
 		{% if feature.featured == true %}
