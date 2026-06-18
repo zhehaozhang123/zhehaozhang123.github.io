@@ -1,0 +1,30 @@
+# Newest first. Each entry: date (display string) + html (supports <a> links).
+- date: "2024 Sept 25"
+  html: 'The DARG paper is accepted to <b>NeurIPS 2024</b>. See you in Vancouver!'
+
+- date: "2024 Sept 20"
+  html: 'One first-author paper on vision language model for code generation is accepted to <b>EMNLP 2024</b>. See you in Miami!'
+
+- date: "2024 Sept 5"
+  html: 'Honored to give a talk on Recent Advances in Synthetic Data for Foundation Models at Stanford SALT Lab.'
+
+- date: "2024 June 25"
+  html: 'A new preprint is released! Please check <a href="https://salt-nlp.github.io/DARG_website/">DARG</a>, a dynamic evaluation framework that augments current reasoning benchmarks from the level of reasoning graphs.'
+
+- date: "2024 Mar 13"
+  html: 'One first-author paper on LLMs for hierarchical table analysis is accepted to <b>NAACL 2024</b>. See you in Mexico City!'
+
+- date: "2024 Mar"
+  html: 'Honored to give a talk on Augmented Language Models at TRIP Lab at Dartmouth, hosted by Prof. Yaoqing Yang.'
+
+- date: "2024 Feb"
+  html: 'I will join <b>Adobe Research</b> as a Research Intern this summer. See you in San Jose and the Bay Area!'
+
+- date: "2023 Dec 14"
+  html: 'One first-author paper from my undergraduate is accepted to <b>ICASSP 2024</b>.'
+
+- date: "2023 Oct 27"
+  html: 'The paper "Can Large Language Models Transform Computational Social Science?" is accepted to <b>Computational Linguistics</b>.'
+
+- date: "2023 Oct 7"
+  html: 'Two first-author papers from my undergraduate are accepted to <b>EMNLP 2023</b>. See you in Singapore!'

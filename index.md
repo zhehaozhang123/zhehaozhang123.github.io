@@ -38,6 +38,19 @@ title: Home
 	</div>
 </div>
 
+<div class="news-section l-screen">
+	<hr class="home-hr">
+	<h2 class="feature-title">News</h2>
+	<div class="news-scroll">
+		{% for item in site.data.news %}
+		<div class="news-item">
+			<span class="news-date">{{ item.date }}</span>
+			<span class="news-text">{{ item.html }}</span>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
 <div class="featured-section l-screen">
 
 <hr class="home-hr">

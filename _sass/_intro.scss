@@ -105,12 +105,64 @@ $cv-icon-aspect-ratio: 1.33;
 
 // Featured publications section: break out of the fixed-width grid into a
 // wider, fluid, centered container so paper figures have room to breathe.
-.featured-section {
+.featured-section, .news-section {
 	width: 100%;
 	max-width: 1080px;
 	margin: 0 auto;
 	padding: 0 1.5rem;
 	box-sizing: border-box;
+}
+
+// News: a compact, scrollable feed. Newest entries on top; older ones are
+// reachable by scrolling within a fixed-height box so it never dominates
+// the page. Add new items at the top of _data/news.yaml.
+.news-scroll {
+	max-height: 12.5rem;
+	overflow-y: auto;
+	padding-right: 0.75rem;
+	border-left: 2px solid $black-10;
+}
+
+.news-item {
+	display: flex;
+	gap: 0.9rem;
+	padding: 0.55rem 0 0.55rem 1rem;
+	font-size: 0.95rem;
+	line-height: 1.45;
+	border-bottom: 1px solid $black-05;
+}
+
+.news-item:last-child {
+	border-bottom: none;
+}
+
+.news-date {
+	flex: 0 0 6.5rem;
+	font-weight: 600;
+	font-size: 0.82rem;
+	color: $blue;
+	white-space: nowrap;
+	padding-top: 0.1rem;
+}
+
+.news-text {
+	color: $text-color;
+}
+
+.news-text a {
+	color: $blue;
+}
+
+// Slim, subtle scrollbar for the news feed.
+.news-scroll::-webkit-scrollbar {
+	width: 6px;
+}
+.news-scroll::-webkit-scrollbar-thumb {
+	background: $black-20;
+	border-radius: 3px;
+}
+.news-scroll::-webkit-scrollbar-track {
+	background: transparent;
 }
 
 .home-hr {
