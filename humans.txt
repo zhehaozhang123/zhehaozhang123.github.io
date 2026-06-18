@@ -1,7 +1,7 @@
 /* TEAM */
-	Author: Fred Hohman
-	Twitter: @fredhohman
-	Location: Seattle, United States
+	Author: Zhehao Zhang
+	Twitter: @Zhehao_Zhang123
+	Location: Columbus, Ohio, United States
 
 /* SITE */
     Language: English

@@ -4,18 +4,18 @@ This is my personal academic website built using Jekyll and hosted on GitHub Pag
 
 ## About
 
-I am a second year Master student in Computer Science at Dartmouth College, with research interests in Natural Language Processing (NLP) and Large Language Models. Currently, I am a research intern at Stanford SALT Lab under the supervision of Diyi Yang.
+I am a first-year PhD student in Computer Science & Engineering at The Ohio State University, a member of the OSU NLP Lab, advised by Prof. Yu Su and closely collaborating with Prof. Huan Sun. My research focuses on language agents, agent safety, and the robustness and alignment of large language models.
 
 ## Research Interests
 
 - Language Agents
-- Synthetic Data and Dynamic Evaluation of LLMs
-- Computational Social Science (NLP for social good)
-- Multi-Modal Large Language Models
+- Agent Safety
+- (Recursive) Self-Evolving Agents
+- LLM Alignment
 
 ## Contact
 
-- Email: zhehao.zhang.gr@dartmouth.edu
+- Email: zhang.16420@osu.edu
 - Google Scholar: [QG-BAGwAAAAJ](https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en)
 - GitHub: [zzh-SJTU](https://github.com/zzh-SJTU)
 
