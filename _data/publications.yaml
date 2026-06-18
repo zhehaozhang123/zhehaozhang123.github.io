@@ -271,7 +271,7 @@
   featured: true
   feature-order: 8
   selected: true
-  type: arxiv
+  type: conference
   bibtex: |-
     @article{zhang2024vipact,
       title={VipAct: Visual-Perception Enhancement via Specialized VLM Agent Collaboration and Tool-use},
