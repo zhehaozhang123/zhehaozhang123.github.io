@@ -1,4 +1,19 @@
 # Newest first. Each entry: date (display string) + html (supports <a> links).
+- date: "2025 Sept"
+  html: 'Received the <b>COLM 2025 Travel Grant</b>.'
+
+- date: "2025 Sept"
+  html: 'Started my PhD journey at the <a href="https://x.com/osunlp?lang=en">OSU NLP Group</a>, working on language agents, supported by an OSU Fellowship.'
+
+- date: "2025 July"
+  html: '<a href="https://false-reject.github.io/">FalseReject</a>, a resource for improving contextual safety and mitigating over-refusals in LLMs via structured reasoning, is accepted to <b>COLM 2025</b>. See you in Montreal!'
+
+- date: "2025 Mar"
+  html: '<a href="https://openreview.net/pdf/da2706371e2b0e1970b97f111313686e5c0ff03a.pdf">Personalization of Large Language Models: A Survey</a> is accepted to <b>TMLR</b>.'
+
+- date: "2024 Nov"
+  html: 'Joined <b>Amazon</b> as an Applied Scientist Intern in Seattle.'
+
 - date: "2024 Sept 25"
   html: 'The <a href="https://salt-nlp.github.io/DARG_website/">DARG</a> paper is accepted to <b>NeurIPS 2024</b>. See you in Vancouver!'
 
