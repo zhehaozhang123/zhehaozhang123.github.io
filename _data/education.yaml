@@ -4,12 +4,10 @@
   years: "2025 —"
   years-extra: "Present"
   advisor: Yu Su
-  co-advisor: Huan Sun
   institution-url: https://www.osu.edu/
   group-url: https://x.com/osunlp?lang=en
   description:
     - "Research focus: Language Agent Safety and Robustness of LLMs, Alignment"
-    - "Advised by Prof. Yu Su and Prof. Huan Sun"
 
 - degree: "M.S. in Computer Science"
   institution: Dartmouth College
