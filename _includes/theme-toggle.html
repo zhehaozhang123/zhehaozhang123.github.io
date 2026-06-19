@@ -9,6 +9,8 @@
     function sync() {
       var dark = document.documentElement.getAttribute('data-theme') === 'dark';
       icon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', dark ? '#15171c' : '#ffffff');
     }
     sync();
     btn.addEventListener('click', function () {

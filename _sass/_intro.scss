@@ -103,6 +103,17 @@ $cv-icon-aspect-ratio: 1.33;
 	vertical-align: middle;
 }
 
+// In dark mode, many institution logos are dark glyphs on transparent
+// backgrounds and would vanish on the dark page. Give them a subtle light
+// plate so they stay legible (light mode is unaffected).
+[data-theme="dark"] .intro-logo,
+[data-theme="dark"] .news-logo {
+	background: #f2f4f8;
+	border-radius: 4px;
+	padding: 1px 2px;
+	box-sizing: content-box;
+}
+
 // Featured publications section: break out of the fixed-width grid into a
 // wider, fluid, centered container so paper figures have room to breathe.
 .featured-section, .news-section {

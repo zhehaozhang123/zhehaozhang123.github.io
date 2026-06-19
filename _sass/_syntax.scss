@@ -62,3 +62,14 @@
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
+
+// Dark mode: the Pygments theme above is light-only, so re-base the code
+// surface and soften the few near-black token colors for readability.
+[data-theme="dark"] {
+  .highlight { background: #1d2027; color: #c7ccd4; }
+  .highlight .gd { color: #f2f4f8; background-color: #4a2326 }
+  .highlight .gd .x { color: #f2f4f8; background-color: #5e2a2e }
+  .highlight .gi { color: #f2f4f8; background-color: #1f3a28 }
+  .highlight .gi .x { color: #f2f4f8; background-color: #285234 }
+  .highlight .err { color: #ff9b9b; background-color: #4a2326 }
+}
