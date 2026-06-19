@@ -1,6 +1,6 @@
 # Newest first. Each entry: date (display string) + html (supports <a> links).
 - date: "2026 June"
-  html: '<img class="news-logo" src="/images/netflix.png"> Joined <b>Netflix</b> as a Machine Learning Intern, working on language agents for automatic video editing.'
+  html: 'Joined <img class="news-logo" src="/images/netflix.png"><b>Netflix</b> as a Machine Learning Intern, working on language agents for automatic video editing.'
 
 - date: "2026 May"
   html: '🎉 Two papers, <a href="https://osu-nlp-group.github.io/AutoElicit/">AutoElicit</a> and <a href="https://osu-nlp-group.github.io/Misaligned-Action-Detection/">Misaligned Action Detection</a>, are accepted to <b>ICML 2026</b>!'
@@ -27,7 +27,7 @@
   html: '🎉 <a href="https://openreview.net/pdf/da2706371e2b0e1970b97f111313686e5c0ff03a.pdf">Personalization of Large Language Models: A Survey</a> is accepted to <b>TMLR</b>.'
 
 - date: "2024 Nov"
-  html: '<img class="news-logo" src="/images/amazon_logo.png"> Joined <b>Amazon</b> as an Applied Scientist Intern in Seattle.'
+  html: 'Joined <img class="news-logo" src="/images/amazon_logo.png"><b>Amazon</b> as an Applied Scientist Intern in Seattle.'
 
 - date: "2024 Sept 25"
   html: '🎉 The <a href="https://salt-nlp.github.io/DARG_website/">DARG</a> paper is accepted to <b>NeurIPS 2024</b>. See you in Vancouver!'
@@ -48,7 +48,7 @@
   html: '🎤 Honored to give a talk on Augmented Language Models at TRIP Lab at Dartmouth, hosted by Prof. Yaoqing Yang. <a href="https://docs.google.com/presentation/d/1-_XNiQsh07oEnU5nXV_ysgtM0HvJHk-1tyVKEzmiXkg/edit">Slides</a> and <a href="https://www.youtube.com/watch?v=FhAZWa1KvFA&feature=youtu.be">Recording</a>.'
 
 - date: "2024 Feb"
-  html: '<img class="news-logo" src="/images/adobe-1-logo.png"> I will join <b>Adobe Research</b> as a Research Intern this summer. See you in San Jose and the Bay Area!'
+  html: 'I will join <img class="news-logo" src="/images/adobe-1-logo.png"><b>Adobe Research</b> as a Research Intern this summer. See you in San Jose and the Bay Area!'
 
 - date: "2023 Dec 14"
   html: '🎉 One first-author <a href="https://ieeexplore.ieee.org/abstract/document/10448063">paper</a> from my undergraduate is accepted to <b>ICASSP 2024</b>.'
