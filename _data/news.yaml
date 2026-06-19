@@ -1,9 +1,24 @@
 # Newest first. Each entry: date (display string) + html (supports <a> links).
+- date: "2026 June"
+  html: 'Joined <b>Netflix</b> as a Machine Learning Intern, working on language agents for automatic video editing.'
+
+- date: "2026 May"
+  html: 'Two papers, <a href="https://osu-nlp-group.github.io/AutoElicit/">AutoElicit</a> and <a href="https://osu-nlp-group.github.io/Misaligned-Action-Detection/">Misaligned Action Detection</a>, are accepted to <b>ICML 2026</b>!'
+
+- date: "2026 May"
+  html: 'Recognized as a <b>Gold Reviewer</b> for <b>ICML 2026</b>.'
+
+- date: "2025 Nov"
+  html: '<a href="https://ojs.aaai.org/index.php/AAAI/article/view/40976">VipAct</a>, on visual-perception enhancement via specialized VLM agent collaboration and tool-use, is accepted to <b>AAAI 2026</b>!'
+
 - date: "2025 Sept"
   html: 'Received the <b>COLM 2025 Travel Grant</b>.'
 
 - date: "2025 Sept"
   html: 'Started my PhD journey at the <a href="https://x.com/osunlp?lang=en">OSU NLP Group</a>, working on language agents, supported by an OSU Fellowship.'
+
+- date: "2025 July"
+  html: 'Our <a href="https://false-reject.github.io/">FalseReject</a> work is featured on the <a href="https://www.amazon.science/blog/falsereject-reducing-overcautiousness-in-llms-through-reasoning-aware-safety-evaluation">Amazon Science Blog</a> and <a href="https://mp.weixin.qq.com/s/jQrZdGXlP0xYlGfO95hoIA">AI Era</a>.'
 
 - date: "2025 July"
   html: '<a href="https://false-reject.github.io/">FalseReject</a>, a resource for improving contextual safety and mitigating over-refusals in LLMs via structured reasoning, is accepted to <b>COLM 2025</b>. See you in Montreal!'
