@@ -198,7 +198,7 @@ $cover-width: 8.5px;
   padding: 0.3rem;
   border-radius: 0.75rem;
   border: 1px solid $black-05;
-  background-color: white;
+  background-color: var(--figure-bg);
   overflow: hidden;
   transition: all .2s ease-in-out;
 }

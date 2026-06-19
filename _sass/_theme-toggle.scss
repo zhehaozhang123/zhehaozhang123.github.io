@@ -1,0 +1,41 @@
+// Floating dark/light mode toggle button (fixed top-right on every page).
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid $border-color;
+  background-color: $bg-color;
+  color: $text-color;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px $black-10;
+  transition: transform .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.08);
+  color: $blue;
+  border-color: $blue;
+}
+
+@media screen and (max-width: $mobile) {
+  #theme-toggle {
+    top: 0.6rem;
+    right: 0.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+// Smooth theme transition across the page.
+body {
+  transition: background-color .25s ease, color .25s ease;
+}
