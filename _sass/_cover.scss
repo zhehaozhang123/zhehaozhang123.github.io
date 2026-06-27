@@ -168,6 +168,45 @@ $cover-width: 8.5px;
 // Publication list (one paper per row)
 // ─────────────────────────────────────────────
 
+// Topic filter bar above the publication list.
+.pub-topics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-topic-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $black-60;
+  margin-right: 0.15rem;
+}
+
+.pub-topic {
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: $text-color;
+  background-color: $black-05;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.pub-topic:hover {
+  background-color: $black-10;
+}
+
+.pub-topic.is-active {
+  color: #ffffff;
+  background-color: $blue;
+  border-color: $blue;
+}
+
 .pub-list {
   display: flex;
   flex-direction: column;

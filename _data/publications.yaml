@@ -29,6 +29,7 @@
   feature-description: "Lifecycle-aware skill-based attacks via automated construction"
   image: /images/skillharm.png
   feature-order: 1
+  topics: [selected, agents, safety]
   featured: true
   selected: true
   type: arxiv
@@ -69,6 +70,7 @@
   feature-description: "Eliciting unsafe unintended behaviors of computer-use agents"
   image: /images/benign-harms.png
   feature-order: 2
+  topics: [selected, agents, safety, data-eval]
   featured: true
   selected: true
   type: conference
@@ -114,6 +116,7 @@
   feature-description: "Training frontier deep research agents with fully synthetic tasks"
   image: /images/quest.png
   feature-order: 3
+  topics: [selected, agents, data-eval]
   featured: true
   selected: true
   type: arxiv
@@ -146,6 +149,7 @@
   feature-description: "Detecting and correcting misaligned actions in computer-use agents"
   image: /images/misact.png
   feature-order: 4
+  topics: [selected, agents, safety]
   featured: true
   selected: true
   type: conference
@@ -174,6 +178,7 @@
   feature-description: "Characterization and defense of distractor injection attacks on large reasoning models"
   image: /images/distractor.png
   feature-order: 5
+  topics: [selected, safety]
   featured: true
   selected: true
   type: arxiv
@@ -202,6 +207,7 @@
   feature-description: "A resource for improving contextual safety and mitigating over-refusals in LLMs"
   image: /images/falsereject.png
   feature-order: 6
+  topics: [selected, safety, data-eval]
   featured: true
   selected: true
   type: conference
@@ -230,6 +236,7 @@
   feature-description: "Dynamic evaluation of large language models via adaptive reasoning graph"
   image: /images/framework.png
   feature-order: 7
+  topics: [selected, data-eval]
   featured: true
   selected: true
   type: conference
@@ -270,6 +277,7 @@
   image: /images/vipact.png
   featured: true
   feature-order: 8
+  topics: [selected, agents]
   selected: true
   type: conference
   bibtex: |-
@@ -298,6 +306,7 @@
   image: /images/vlm.png
   featured: true
   feature-order: 9
+  topics: [agents, data-eval]
   selected: true
   type: conference
   bibtex: |-
@@ -342,6 +351,7 @@
   image: /images/personalization.png
   featured: true
   feature-order: 10
+  topics: [selected, safety]
   selected: true
   type: journal
   bibtex: |-
@@ -370,6 +380,7 @@
   image: /images/e5.png
   featured: true
   feature-order: 11
+  topics: [selected, agents, data-eval]
   selected: true
   type: conference
   bibtex: |-
@@ -399,6 +410,7 @@
   image: /images/CRT.png
   featured: true
   feature-order: 12
+  topics: [agents, data-eval]
   selected: true
   type: conference
   bibtex: |-
@@ -427,6 +439,7 @@
   image: /images/hate.png
   featured: true
   feature-order: 13
+  topics: [safety]
   selected: true
   type: conference
   bibtex: |-
@@ -457,6 +470,7 @@
   image: /images/css.png
   featured: true
   feature-order: 14
+  topics: [safety]
   selected: true
   type: journal
   bibtex: |-

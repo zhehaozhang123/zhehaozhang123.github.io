@@ -8,3 +8,9 @@ images/pc
 .jekyll-cache/
 _drafts/
 .preview/
+linkedin/
+
+# Local LaTeX CV templates (not part of the site)
+cv-latex/
+cv-kpfonts-template/
+cv-kpfonts-template.zip

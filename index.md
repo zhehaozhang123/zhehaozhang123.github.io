@@ -55,20 +55,49 @@ title: Home
 
 <hr class="home-hr">
 
-<h2 class="feature-title">Featured <a href="/cv/#publications">Research Publications</a></h2>
+<h2 class="feature-title"><a href="/cv/#publications">Research Publications</a></h2>
 
 <p class="feature-text">
-	Selected papers on language agents, agent safety, and the alignment and robustness of large language models. See my <a href="https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en">Google Scholar</a> for the full list.
+	Browse by topic. See my <a href="https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en">Google Scholar</a> for the full list.
 </p>
 
-<div class="pub-list">
+<div class="pub-topics" id="pub-topics">
+	<span class="pub-topic-label">Topic:</span>
+	<button class="pub-topic is-active" data-topic="selected">Selected</button>
+	<button class="pub-topic" data-topic="agents">Language Agents</button>
+	<button class="pub-topic" data-topic="safety">AI Safety &amp; Robustness</button>
+	<button class="pub-topic" data-topic="data-eval">Data Generation &amp; Evaluation</button>
+</div>
+
+<div class="pub-list" id="pub-list">
 	{% assign sortedPublications = site.data.publications | sort: 'feature-order' %}
 	{% for feature in sortedPublications %}
-		{% if feature.featured == true %}
-			{% include feature.html feature=feature %}
-		{% endif %}
+		{% include feature.html feature=feature %}
 	{% endfor %}
 </div>
+
+<script>
+  (function () {
+    var bar = document.getElementById('pub-topics');
+    var list = document.getElementById('pub-list');
+    if (!bar || !list) return;
+    var rows = list.querySelectorAll('.pub-row');
+    function apply(topic) {
+      rows.forEach(function (r) {
+        var topics = (r.getAttribute('data-topics') || '').split(' ');
+        r.style.display = topics.indexOf(topic) !== -1 ? '' : 'none';
+      });
+    }
+    bar.querySelectorAll('.pub-topic').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        bar.querySelectorAll('.pub-topic').forEach(function (b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        apply(btn.getAttribute('data-topic'));
+      });
+    });
+    apply('selected');
+  })();
+</script>
 
 </div>
 
