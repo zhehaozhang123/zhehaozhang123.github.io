@@ -4,7 +4,7 @@
 	{%- unless feature.url contains "/papers/" -%}{%- assign hasProject = true -%}{%- endunless -%}
 {%- endif -%}
 {%- if hasProject -%}{%- assign primaryLink = feature.url -%}{%- else -%}{%- assign primaryLink = feature.pdf -%}{%- endif -%}
-<div class="pub-row" data-topics="{{ feature.topics | join: ' ' }}">
+<div class="pub-row" data-topics="{{ feature.topics | join: ' ' }}" data-year="{{ feature.year }}" data-order="{{ feature.feature-order }}">
 
 	<a class="pub-row-image" href="{{ primaryLink }}">
 		<img src="{{ feature.image }}" alt="{{ feature.feature-title }}">

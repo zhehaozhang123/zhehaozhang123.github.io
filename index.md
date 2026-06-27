@@ -81,12 +81,21 @@ title: Home
     var bar = document.getElementById('pub-topics');
     var list = document.getElementById('pub-list');
     if (!bar || !list) return;
-    var rows = list.querySelectorAll('.pub-row');
+    var rows = Array.prototype.slice.call(list.querySelectorAll('.pub-row'));
     function apply(topic) {
-      rows.forEach(function (r) {
-        var topics = (r.getAttribute('data-topics') || '').split(' ');
-        r.style.display = topics.indexOf(topic) !== -1 ? '' : 'none';
+      var shown = rows.filter(function (r) {
+        return (r.getAttribute('data-topics') || '').split(' ').indexOf(topic) !== -1;
       });
+      // Selected keeps the curated order (feature-order asc); other topics
+      // sort by year descending, then feature-order ascending as a tiebreak.
+      shown.sort(function (a, b) {
+        var oa = +a.getAttribute('data-order'), ob = +b.getAttribute('data-order');
+        if (topic === 'selected') return oa - ob;
+        var ya = +a.getAttribute('data-year'), yb = +b.getAttribute('data-year');
+        return yb - ya || oa - ob;
+      });
+      rows.forEach(function (r) { r.style.display = 'none'; });
+      shown.forEach(function (r) { r.style.display = ''; list.appendChild(r); });
     }
     bar.querySelectorAll('.pub-topic').forEach(function (btn) {
       btn.addEventListener('click', function () {
