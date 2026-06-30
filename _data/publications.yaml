@@ -277,8 +277,8 @@
   venue: "The 40th Annual AAAI Conference on Artificial Intelligence"
   venue-shorthand: "AAAI"
   year: 2026
-  url: /papers/vipact
-  pdf: https://arxiv.org/abs/2410.16400
+  url: https://ojs.aaai.org/index.php/AAAI/article/view/40976
+  pdf: https://ojs.aaai.org/index.php/AAAI/article/view/40976
   feature-title: VipAct
   feature-description: "Visual-perception enhancement via specialized VLM agent collaboration and tool-use"
   image: /images/vipact.png
