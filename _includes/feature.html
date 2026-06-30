@@ -32,6 +32,12 @@
 			<span class="pub-row-venue">{% if feature.venue-shorthand %}{{ feature.venue-shorthand }}{% else %}{{ feature.venue }}{% endif %} {{ feature.year }}</span>
 		</div>
 
+		{% if feature.keywords %}
+		<div class="pub-row-keywords">
+			{% for kw in feature.keywords %}<span class="pub-row-kw">{{ kw }}</span>{% endfor %}
+		</div>
+		{% endif %}
+
 		<div class="pub-row-links">
 			{% if feature.coming-soon %}<a><i class="fas fa-arrow-right" aria-hidden="true"></i> Coming soon!</a>{% endif %}
 			{% if hasProject %}<a href="{{ feature.url }}"><i class="fas fa-link" aria-hidden="true"></i> Project</a>{% endif %}

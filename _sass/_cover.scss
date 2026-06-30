@@ -314,6 +314,32 @@ $cover-width: 8.5px;
   border-radius: 1rem;
 }
 
+// Lightweight outlined keyword tags — signal research themes without
+// competing with the solid link pills below.
+.pub-row-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.55rem;
+}
+
+.pub-row-kw {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: $blue;
+  background: transparent;
+  border: 1px solid $light-blue;
+  padding: 0.14rem 0.55rem;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  transition: background-color .15s ease-in-out;
+}
+
+.pub-row-kw:hover {
+  background-color: $lightest-blue;
+}
+
 .pub-row-links {
   display: flex;
   flex-wrap: wrap;

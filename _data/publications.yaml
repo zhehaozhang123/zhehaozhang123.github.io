@@ -30,6 +30,7 @@
   image: /images/skillharm.png
   feature-order: 1
   topics: [selected, agents, safety]
+  keywords: ["Agent Safety", "Red-Teaming", "Agent (Evolving) Skills"]
   featured: true
   selected: true
   type: arxiv
@@ -71,6 +72,7 @@
   image: /images/benign-harms.png
   feature-order: 2
   topics: [selected, agents, safety, data-eval]
+  keywords: ["Computer-Use Agents", "Agent Safety", "Unintended Agent Behaviour"]
   featured: true
   selected: true
   type: conference
@@ -117,6 +119,7 @@
   image: /images/quest.png
   feature-order: 3
   topics: [selected, agents, data-eval]
+  keywords: ["Deep Research Agents", "Synthetic Data", "Agentic Post-Training", "Agentic RL", "Agentic Mid-Training"]
   featured: true
   selected: true
   type: arxiv
@@ -150,6 +153,7 @@
   image: /images/misact.png
   feature-order: 4
   topics: [selected, agents, safety]
+  keywords: ["Computer-Use Agents", "Agent Guardrails", "Agent Safety", "Misalignment Detection"]
   featured: true
   selected: true
   type: conference
@@ -179,6 +183,7 @@
   image: /images/distractor.png
   feature-order: 5
   topics: [selected, safety]
+  keywords: ["Adversarial Robustness", "LLM Safety", "Reasoning Distraction", "CoT Control/Monitoring"]
   featured: true
   selected: true
   type: arxiv
@@ -208,6 +213,7 @@
   image: /images/falsereject.png
   feature-order: 6
   topics: [selected, safety, data-eval]
+  keywords: ["Over-Refusal", "LLM Safety", "Structured Reasoning", "LLM Alignment", "LLM Post-Training (SFT&RL)"]
   featured: true
   selected: true
   type: conference
@@ -237,6 +243,7 @@
   image: /images/framework.png
   feature-order: 7
   topics: [selected, data-eval]
+  keywords: ["LLM Evaluation", "Dynamic Benchmark", "Reasoning", "Data Contamination", "Synthetic Data", "LLM Post-Training"]
   featured: true
   selected: true
   type: conference
@@ -278,6 +285,7 @@
   featured: true
   feature-order: 8
   topics: [selected, agents]
+  keywords: ["Multi-Agent", "Tool-Use", "Visual Perception", "Expert Orchestration"]
   selected: true
   type: conference
   bibtex: |-
@@ -307,6 +315,7 @@
   featured: true
   feature-order: 9
   topics: [agents, data-eval]
+  keywords: ["Vision-Language Models", "Code Generation", "Chart Understanding", "Multimodal Evaluation", "Visual Grounding"]
   selected: true
   type: conference
   bibtex: |-
@@ -352,6 +361,7 @@
   featured: true
   feature-order: 10
   topics: [selected, safety]
+  keywords: ["LLM Personalization", "User Modeling", "Taxonomy"]
   selected: true
   type: journal
   bibtex: |-
@@ -381,6 +391,7 @@
   featured: true
   feature-order: 11
   topics: [selected, agents, data-eval]
+  keywords: ["Tabular Reasoning", "Multi-Agent", "Tool-Augmented LLM", "Agent Harness"]
   selected: true
   type: conference
   bibtex: |-
@@ -411,6 +422,7 @@
   featured: true
   feature-order: 12
   topics: [agents, data-eval]
+  keywords: ["Tool-Use", "Dataset & Benchmark", "Table Reasoning"]
   selected: true
   type: conference
   bibtex: |-
@@ -440,6 +452,7 @@
   featured: true
   feature-order: 13
   topics: [safety]
+  keywords: ["Causal Inference", "Responsible AI", "Bias Mitigation", "Content Moderation"]
   selected: true
   type: conference
   bibtex: |-
@@ -471,6 +484,7 @@
   featured: true
   feature-order: 14
   topics: [safety]
+  keywords: ["Computational Social Science", "LLM Evaluation", "NLP for Social Good"]
   selected: true
   type: journal
   bibtex: |-

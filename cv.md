@@ -125,8 +125,11 @@ Previously I have worked as an Applied Scientist Intern at Amazon and have colla
 <table>
 <tr>
 <td style="font-weight: bold; width: 120px; vertical-align: top;">Reviewer</td>
-<td>EMNLP 2023, 2024; NeurIPS 2023, 2024, 2025; NAACL 2024; ACL 2024, 2025; COLM 2024<br/>
-CIKM 2024, 2025; ICLR 2025; COLING 2025; IJCAI 2025; IEEE TNNLS Journal</td>
+<td>ICML 2026; NeurIPS 2023, 2024, 2025; ICLR 2025, 2026; AAAI 2027; ACL 2024, 2025; EMNLP 2023, 2024, 2025, 2026; NAACL 2024; COLM 2024, 2025, 2026; COLING 2025; CIKM 2024, 2025; IJCAI 2025</td>
+</tr>
+<tr>
+<td style="font-weight: bold; vertical-align: top;">Journal Reviewer</td>
+<td>Transactions on Machine Learning Research (TMLR); IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</td>
 </tr>
 <tr>
 <td style="font-weight: bold; vertical-align: top;">Volunteer</td>
@@ -153,6 +156,6 @@ Stanford University
 [diyiy@cs.stanford.edu](mailto:diyiy@cs.stanford.edu)
 
 **Dr. Ryan Rossi**
-Principal Research Scientist
+Senior Research Scientist
 Adobe Research
 [ryrossi@adobe.com](mailto:ryrossi@adobe.com)
