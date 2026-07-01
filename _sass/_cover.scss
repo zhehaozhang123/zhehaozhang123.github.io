@@ -309,10 +309,9 @@ $cover-width: 8.5px;
 .pub-row-venue {
   display: inline-flex;
   align-items: baseline;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
   color: $black-60;
 }
 
@@ -337,13 +336,12 @@ $cover-width: 8.5px;
 }
 
 .pub-row-kw {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: $black-50;
   background: $black-05;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.55rem;
   border-radius: 0.3rem;
   white-space: nowrap;
   transition: color .15s ease-in-out, background-color .15s ease-in-out;
