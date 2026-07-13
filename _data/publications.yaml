@@ -172,9 +172,9 @@
     - Weijie Xu
     - Shixian Cui
     - Chandan K Reddy
-  venue: "arXiv preprint"
-  venue-shorthand: "arXiv"
-  year: 2025
+  venue: "Conference on Language Modeling"
+  venue-shorthand: "COLM"
+  year: 2026
   url: /papers/distractor
   pdf: https://arxiv.org/pdf/2510.16259
   code: https://huggingface.co/collections/groupfairnessllm/tulu3-with-distraction-mitigation-data
@@ -186,13 +186,13 @@
   keywords: ["Adversarial Robustness", "LLM Safety", "Reasoning Distraction", "CoT Control/Monitoring"]
   featured: true
   selected: true
-  type: arxiv
+  type: conference
   bibtex: |-
-    @article{zhang2025distractor,
+    @inproceedings{zhang2026distractor,
       title={Distractor Injection Attacks on Large Reasoning Models: Characterization and Defense},
       author={Zhang, Zhehao and Xu, Weijie and Cui, Shixian and Reddy, Chandan K},
-      journal={arXiv preprint arXiv:2510.16259},
-      year={2025}
+      booktitle={Conference on Language Modeling (COLM)},
+      year={2026}
     }
 
 - id: falsereject
