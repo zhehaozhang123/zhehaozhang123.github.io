@@ -1,4 +1,7 @@
 # Newest first. Each entry: date (display string) + html (supports <a> links).
+- date: "2026 July"
+  html: '🎉 <a href="https://arxiv.org/pdf/2510.16259">Distractor Injection Attacks on Large Reasoning Models</a> is accepted to <b>COLM 2026</b>!'
+
 - date: "2026 June"
   html: 'Joined <img class="news-logo" src="/images/netflix.png"><b>Netflix</b> as a Machine Learning Intern, working on language agents for automatic video editing.'
 
