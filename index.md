@@ -21,7 +21,8 @@ title: Home
 	</div>
 	<!-- <hr class="l-middle home-hr"> -->
 	<div id="everything-else" class="l-middle">
-		<a href="{{ site.url }}/cv"><div><i class="fa fa-portrait icon icon-right-space"></i>Experience (CV)</div></a>
+		<a href="{{ site.url }}/images/Zhehao_Zhang_CV.pdf"><div><i class="far fa-file-pdf icon icon-right-space"></i>CV (Full)</div></a>
+		<a href="{{ site.url }}/images/Zhehao_Zhang_CV_Short.pdf"><div><i class="far fa-file-pdf icon icon-right-space"></i>CV (Short)</div></a>
 		<a href="https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en"><div><i class="fa fa-graduation-cap icon icon-right-space"></i>Publications</div></a>
 		<a href="{{ site.url }}/blog"><div><i class="fa fa-pen-nib icon icon-right-space"></i>Blog</div></a>
 	</div>
