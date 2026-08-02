@@ -45,22 +45,6 @@
   on-homepage: true
   cv-group: 2
 
-- id: cv-full
-  description: "CV (Full)"
-  color: "#ba2818"
-  class: "fas fa-file-lines icon"
-  url: "/images/Zhehao_Zhang_CV.pdf"
-  on-homepage: true
-  cv-group: 1
-
-- id: cv-short
-  description: "CV (Short)"
-  color: "#ba2818"
-  class: "far fa-file icon"
-  url: "/images/Zhehao_Zhang_CV_Short.pdf"
-  on-homepage: true
-  cv-group: 1
-
 - id: cv
   description: CV PDF
   color: "#ba2818"

@@ -53,7 +53,34 @@ $cv-icon-aspect-ratio: 1.33;
 #intro-title-socials {
 	margin-top: 0.25rem;
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	grid-gap: 0.5rem;
+}
+
+// CV download chips: icon + label, same height as the round social icons.
+.cv-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	height: 2.5rem;
+	padding: 0 0.9rem;
+	border-radius: 2.5rem;
+	background-color: $black-025;
+	color: $text-color;
+	font-size: 0.9rem;
+	font-weight: 500;
+	transition: all .2s ease-in-out;
+}
+
+.cv-chip > i {
+	color: #ba2818;
+}
+
+.cv-chip:hover {
+	text-decoration: none;
+	background-color: $black-05;
+	transform: scale(1.03);
 }
 
 .social-link {

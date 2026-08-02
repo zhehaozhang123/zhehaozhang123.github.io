@@ -16,6 +16,8 @@ title: Home
 						{% include social-link.html link=link %}
 					{% endif %}
 				{% endfor %}
+				<a class="cv-chip" href="{{ site.url }}/images/Zhehao_Zhang_CV.pdf"><i class="far fa-file-pdf"></i> CV (Full)</a>
+				<a class="cv-chip" href="{{ site.url }}/images/Zhehao_Zhang_CV_Short.pdf"><i class="far fa-file-pdf"></i> CV (Short)</a>
 			</div>
 		</div>
 	</div>
