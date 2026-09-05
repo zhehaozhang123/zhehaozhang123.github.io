@@ -30,7 +30,7 @@ jsarr:
 </div> -->
 
 <div>
-I am a first year PhD student in <b><span class="cv-vis">Computer Science & Engineering</span></b> at The Ohio State University, with research interests in <b><span class="cv-ai">Language Agent Safety and Robustness of Large Language Models</span></b> and Alignment. My work focuses on evaluating and mitigating the refusal behavior of LLMs, developing methods to improve the safety and reliability of language models in real-world applications.
+I am a second year PhD student in <b><span class="cv-vis">Computer Science & Engineering</span></b> at The Ohio State University, with research interests in <b><span class="cv-ai">Language Agent Safety and Robustness of Large Language Models</span></b> and Alignment. My work focuses on evaluating and mitigating the refusal behavior of LLMs, developing methods to improve the safety and reliability of language models in real-world applications.
 </div>
 
 <div class="cv-spacer"></div>

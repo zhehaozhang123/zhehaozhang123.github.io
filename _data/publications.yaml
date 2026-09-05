@@ -18,8 +18,8 @@
   bold:
     - Yuting Ning
     - Zhehao Zhang
-  venue: "arXiv preprint"
-  venue-shorthand: "arXiv"
+  venue: "The 2026 Conference on Empirical Methods in Natural Language Processing (Main)"
+  venue-shorthand: "EMNLP Main"
   year: 2026
   url: https://osu-nlp-group.github.io/SkillHarm/
   pdf: https://arxiv.org/abs/2606.02540
@@ -33,12 +33,12 @@
   keywords: ["Agent Safety", "Red-Teaming", "Agent (Evolving) Skills"]
   featured: true
   selected: true
-  type: arxiv
+  type: conference
   bibtex: |-
-    @article{ning2026skillharm,
+    @inproceedings{ning2026skillharm,
       title={SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction},
       author={Ning, Yuting and Zhang, Zhehao and Lal, Yash Kumar and Gou, Boyu and Li, Junyi and Ruan, Weitong and Ye, Chentao and Gupta, Rahul and Yang, Diyi and Su, Yu and others},
-      journal={arXiv preprint arXiv:2606.02540},
+      booktitle={Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
       year={2026}
     }
 

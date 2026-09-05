@@ -4,7 +4,7 @@ This is my personal academic website built using Jekyll and hosted on GitHub Pag
 
 ## About
 
-I am a first-year PhD student in Computer Science & Engineering at The Ohio State University, a member of the OSU NLP Lab, advised by Prof. Yu Su and closely collaborating with Prof. Huan Sun. My research focuses on language agents, agent safety, and the robustness and alignment of large language models.
+I am a second-year PhD student in Computer Science & Engineering at The Ohio State University, a member of the OSU NLP Lab, advised by Prof. Yu Su and closely collaborating with Prof. Huan Sun. My research focuses on language agents, agent safety, and the robustness and alignment of large language models.
 
 ## Research Interests
 
