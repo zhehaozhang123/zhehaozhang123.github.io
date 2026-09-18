@@ -19,7 +19,7 @@
           <p class="vcb-eyebrow">Research notes <span aria-hidden="true">/</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time></p>
           <h1>{{ page.title | replace: 'Video-Cut-Bench', '<span class="vcb-nowrap">Video-Cut-Bench</span>' }}</h1>
           <p class="vcb-byline">{% for author in page.authors %}{% if author == 'Zhehao Zhang' %}<a href="{{ '/' | relative_url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}<span aria-hidden="true">, </span>{% endunless %}{% endfor %}</p>
-          <p class="vcb-affiliation">Work conducted at Netflix</p>
+          {% if page.project_label %}<p class="vcb-affiliation">{{ page.project_label | escape }}</p>{% endif %}
         </header>
         {{ content }}
       </article>

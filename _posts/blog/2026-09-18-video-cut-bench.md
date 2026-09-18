@@ -1,17 +1,15 @@
 ---
 layout: research-post
-title: "Video Cutting with Agents: Early Lessons from Video-Cut-Bench at Netflix"
+title: "Video Cutting with Agents: Early Lessons from Video-Cut-Bench"
 date: 2026-09-18
 categories: blog
 permalink: /blog/video-cut-bench/
-author: "Zhehao Zhang, Will Harvey, Ta-Ying Cheng, and Yumo Xu"
+author: "Zhehao Zhang"
 authors:
   - Zhehao Zhang
-  - Will Harvey
-  - Ta-Ying Cheng
-  - Yumo Xu
+project_label: "Personal project"
 summary: "What does it take for a coding agent to turn an editing request into a finished video? Early lessons on model capability, reusable skills, and reviewing the cut."
-description: "Video-Cut-Bench evaluates 22 models across four video-editing settings. We study how model capability, reusable skills, and multi-agent review affect the finished edit."
+description: "A personal exploration of video cutting with coding agents: 22 models, four editing settings, reusable skills, and multi-agent review."
 image: /assets/blog/video-cut-bench/media/social-card.png
 excerpt_separator: "<!--more-->"
 ---
@@ -19,9 +17,9 @@ excerpt_separator: "<!--more-->"
 ## Introduction
 {: #introduction}
 
-At Netflix, we want to connect every story with its perfect audience. By showcasing film and series highlights as mobile and social media clips or homepage previews, we give viewers a feel for the world they are about to enter, drawing them in and encouraging deeper engagement.
+Short clips can give viewers a feel for a longer story, whether as a mobile video, a social media highlight, or a preview. Creating a good clip means preserving the right moments while making the shorter version feel complete.
 
-Making these videos usually requires a skilled editor to work through the source material, decide what to keep, choose precise cut points, and review every transition. The shorter version needs to preserve the right material without feeling abrupt or unfinished. We are exploring whether an LLM agent can take on part of that execution: an editor describes the intended edit, and a coding agent carries it out.
+Making these videos usually requires a skilled editor to work through the source material, decide what to keep, choose precise cut points, and review every transition. The shorter version needs to preserve the right material without feeling abrupt or unfinished. This project explores whether an LLM agent can take on part of that execution: an editor describes the intended edit, and a coding agent carries it out.
 
 <!--more-->
 
@@ -29,7 +27,7 @@ One such instruction might be:
 
 > Keep only these dialogue lines and make a tighter version of the scene. Make the transitions feel natural.
 
-To study how well current agents can automate this workflow, we introduce **Video-Cut-Bench**, a benchmark for evaluating frontier LLMs across different agent configurations. Every task gives the agent a source video and an editing instruction. The agent must decide what to keep, select precise cut points, render the edit, and return a valid MP4 whose cuts feel seamless to the viewer.
+**Video-Cut-Bench** evaluates how well frontier LLMs can automate this workflow across different agent configurations. Every task gives the agent a source video and an editing instruction. The agent must decide what to keep, select precise cut points, render the edit, and return a valid MP4 whose cuts feel seamless to the viewer.
 
 The benchmark covers four ways an editor might define the target:
 
@@ -56,7 +54,7 @@ In this example, a human editor has already made the subjective decision about w
 ## Evaluating the edit
 {: #evaluation}
 
-Once the editing target is clear, a second problem remains: how should we evaluate the finished video? In specified dialogue isolation, a render containing every requested line can still feel unpolished. A sound cut off partway through can be jarring. A cut just after a shot change might leave a brief fragment of the previous shot on screen. Other defects, such as a repeated or frozen frame, can be difficult to notice at normal playback speed.
+Once the editing target is clear, a second problem remains: how should the finished video be evaluated? In specified dialogue isolation, a render containing every requested line can still feel unpolished. A sound cut off partway through can be jarring. A cut just after a shot change might leave a brief fragment of the previous shot on screen. Other defects, such as a repeated or frozen frame, can be difficult to notice at normal playback speed.
 
 <figure class="vcb-figure" id="figure-seam">
 <div data-vcb-figure="seam"></div>
@@ -64,7 +62,7 @@ Once the editing target is clear, a second problem remains: how should we evalua
 <figcaption><strong>Figure 2.</strong> Both renders keep exactly the requested lines and reach this join at the same moment. One enters its next segment three frames early, so 0.12 seconds of the previous shot plays before the picture jumps a second time; the other lands on the shot change. Playback is slowed for legibility.</figcaption>
 </figure>
 
-Our evaluation therefore asks two distinct questions:
+The evaluation therefore asks two distinct questions:
 
 <div class="vcb-table-wrap" role="region" aria-label="Two questions for evaluating an edit" tabindex="0">
 <table>
@@ -78,7 +76,7 @@ Our evaluation therefore asks two distinct questions:
 
 These questions are shared by all four settings, although request adherence changes with the editing request.
 
-We answer both primarily with **setting-specific LLM judges**, using frozen Gemini 3.7 Flash evaluation procedures for the reported results. A judge can weigh qualities a fixed rule set misses, such as whether a cut interrupts an action or leaves the assembled scene feeling incoherent. It considers request adherence and cut craft together before returning a single `acceptable` or `fail` verdict. Alongside it, we compute a lightweight, deterministic **Craft score** for measurable defects such as clipped speech, audio discontinuities, stray or repeated frames, and broken output files. This score is fast and reproducible, but it misses context-dependent qualities, so we use it as a secondary diagnostic.
+Both questions are assessed primarily by **setting-specific LLM judges**, using frozen Gemini 3.7 Flash evaluation procedures for the reported results. A judge can weigh qualities a fixed rule set misses, such as whether a cut interrupts an action or leaves the assembled scene feeling incoherent. It considers request adherence and cut craft together before returning a single `acceptable` or `fail` verdict. A lightweight, deterministic **Craft score** provides an additional measure of defects such as clipped speech, audio discontinuities, stray or repeated frames, and broken output files. This score is fast and reproducible, but it misses context-dependent qualities, so it serves as a secondary diagnostic.
 
 For specified dialogue isolation, the LLM judge uses a human-approved edit as a quality reference and makes three checks:
 
@@ -93,7 +91,7 @@ Throughout the results, **Pass Rate (avg@3)** is the share of acceptable outcome
 ## Experiments
 {: #experiments}
 
-An editing result depends on the model, the agent harness, the tools available to it, and how it perceives video. We designed our experiments to separate these factors step by step. Across the four settings, we studied **22 models, 94 tasks, and 40 configurations**, with three independent trials per task and configuration.
+An editing result depends on the model, the agent harness, the tools available to it, and how it perceives video. The experiments separate these factors step by step. Across the four settings, they cover **22 models, 94 tasks, and 40 configurations**, with three independent trials per task and configuration.
 
 <details class="fold" markdown="1">
 <summary>Experiment setup and how to read the comparisons</summary>
@@ -102,7 +100,7 @@ The results shown here use the report snapshot generated on August 21, 2026.
 
 The 94 tasks comprise 47 specified dialogue isolation tasks, 9 silence removal tasks, 21 character isolation tasks, and 17 targeted removal tasks. Each configuration has 282 expected trial slots. Across 40 configurations, that gives 11,280 expected slots. The aggregate weights every task equally; the four settings contain different numbers of tasks.
 
-We begin with all 22 models in the same minimal harness. We then compare seven models with and without Video-Cutting Skills inside their respective vendor CLIs. Finally, we compare single-agent and multi-agent configurations for two Gemini models while holding the model, CLI, and skills constant. These are different comparison groups: the 40 configurations include both the controlled baseline and the additional harness, skill, and review variants.
+The first comparison places all 22 models in the same minimal harness. The next compares seven models with and without Video-Cutting Skills inside their respective vendor CLIs. The final comparison contrasts single-agent and multi-agent configurations for two Gemini models while holding the model, CLI, and skills constant. These are different comparison groups: the 40 configurations include both the controlled baseline and the additional harness, skill, and review variants.
 
 Only the three main-roster trials per task enter these results. Extra trials and runs outside the main roster are excluded. Pass Rate (avg@3) measures the average success of those expected trials; it does not select the best of three attempts. Craft averages use the outputs for which that diagnostic can be computed, and the Craft figure reports that coverage alongside the score.
 
@@ -111,7 +109,7 @@ Only the three main-roster trials per task enter these results. Extra trials and
 ### Comparing models with a minimal harness
 {: #model-capability}
 
-We began by asking how much editing performance depends on the model itself, with the agent harness held constant. Following the approach in [ProgramBench](#reference-programbench), we evaluated 22 models in **mini-swe-agent**, a minimal harness exposing a single shell tool, with no external skills or reviewer subagents. Every model receives the same task format and must complete the full workflow: interpret the request, inspect the source video, select cut boundaries, render the output, and verify the finished file.
+The first experiment asks how much editing performance depends on the model itself, with the agent harness held constant. Following the approach in [ProgramBench](#reference-programbench), it evaluates 22 models in **mini-swe-agent**, a minimal harness exposing a single shell tool, with no external skills or reviewer subagents. Every model receives the same task format and must complete the full workflow: interpret the request, inspect the source video, select cut boundaries, render the output, and verify the finished file.
 
 Holding the harness constant removes a major confounder when comparing model families. It does not equalize perception: each model retains its native abilities, including direct video input where available.
 
@@ -130,9 +128,9 @@ Scale alone does not determine the outcome. Models with similar reported sizes c
 
 Model capability is only part of the system. Across the baseline runs, agents kept reconstructing the same low-level media workflow: probe the source, translate timestamps into frame boundaries, render the selected segments, inspect the new seams, and validate the output. Successful trajectories performed these steps more consistently, suggesting that the pattern itself could be captured as reusable experience.
 
-We distilled that pattern into **Video-Cutting Skills**: procedures for frame-accurate rendering, seam analysis, locating nearby pauses and shot changes, and verifying the finished file. The model still makes the decisions about where to cut; the skills help inform and reliably execute those decisions.
+**Video-Cutting Skills** capture that pattern as reusable procedures for frame-accurate rendering, seam analysis, locating nearby pauses and shot changes, and verifying the finished file. The model still makes the decisions about where to cut; the skills help inform and reliably execute those decisions.
 
-To measure their effect, we ran matched comparisons inside each vendor's CLI: Claude models in Claude Code, GPT models in Codex, and Gemini models in Gemini CLI. Each single-agent baseline is paired with the same model and harness augmented with Video-Cutting Skills. Because the harness differs across vendors, these are within-model comparisons.
+Their effect is measured through matched comparisons inside each vendor's CLI: Claude models in Claude Code, GPT models in Codex, and Gemini models in Gemini CLI. Each single-agent baseline is paired with the same model and harness augmented with Video-Cutting Skills. Because the harness differs across vendors, these are within-model comparisons.
 
 <figure class="vcb-figure" id="figure-skills">
 <div data-vcb-figure="skills"></div>
@@ -147,9 +145,9 @@ Video-Cutting Skills raise aggregate pass rate for five of the seven models. The
 
 Video-Cutting Skills make execution more reliable, but they do not ensure an agent reviews the video it produces. Models can inspect video through extracted frames; omni models such as Gemini can also take a complete video and reason over its audio and visuals together. After rendering, the model can use that capability to review the edit it just made.
 
-To encourage this behavior, we use a multi-agent setup that explicitly requires reflection. A **video-free conductor** plans and renders the edit. Each **seam reviewer** inspects one join and proposes grounded boundary corrections; a **final reviewer** watches the complete edit and recommends delivery or revision. The conductor decides how to act on that feedback and produces the final render.
+To encourage this behavior, the multi-agent setup explicitly requires reflection. A **video-free conductor** plans and renders the edit. Each **seam reviewer** inspects one join and proposes grounded boundary corrections; a **final reviewer** watches the complete edit and recommends delivery or revision. The conductor decides how to act on that feedback and produces the final render.
 
-We compared single-agent and multi-agent configurations for two Gemini models in Gemini CLI. Both used the same Video-Cutting Skills and the same 94 tasks. The intervention adds review structure and test-time computation together.
+The comparison covers single-agent and multi-agent configurations for two Gemini models in Gemini CLI. Both used the same Video-Cutting Skills and the same 94 tasks. The intervention adds review structure and test-time computation together.
 
 <figure class="vcb-figure" id="figure-review">
 <div data-vcb-figure="review"></div>
@@ -159,7 +157,7 @@ We compared single-agent and multi-agent configurations for two Gemini models in
 
 Multi-agent orchestration raises overall pass rate by **8.51 percentage points for Gemini 3.7 Flash** and **1.77 for Gemini 3.1 Pro**, although improvements do not extend to every setting. This suggests that structured review can help these models use native video by explicitly spending time and context inspecting and revising their outputs. This comparison does not isolate the contribution of native video perception itself.
 
-We next looked at cut execution through the deterministic Craft score. It captures concrete defects such as clipped speech, audio discontinuities, and stray or repeated frames, while missing context-dependent aspects of quality.
+The deterministic Craft score provides a closer look at cut execution. It captures concrete defects such as clipped speech, audio discontinuities, and stray or repeated frames, while missing context-dependent aspects of quality.
 
 <figure class="vcb-figure" id="figure-craft">
 <div data-vcb-figure="craft"></div>
@@ -169,7 +167,7 @@ We next looked at cut execution through the deterministic Craft score. It captur
 
 Among these three family representatives, Gemini 3.7 Flash has the highest Craft score (0.8234), while Claude Opus 5 has the highest pass rate (77.66%, compared with Flash's 67.73%). Cleaner measured cuts and reliable completion of the full request are distinct outcomes. This comparison is consistent with the value of audiovisual review, but it spans different models and configurations, and Craft coverage also differs.
 
-To help interpret the results, we examine two trajectories on the same silence removal task. Both agents inspected the source, but only one reviewed what it rendered. **GPT-5.6 Terra** examined extracted frames, rendered three times, and stopped without watching any of the renders, leaving three target gaps uncut. **Gemini 3.7 Flash** rendered a first edit, delegated seven seam reviews to subagents, revised several boundaries, and had a final reviewer watch the complete result before delivering. Post-render review generated evidence that informed the next edit.
+Two trajectories on the same silence removal task help illustrate these results. Both agents inspected the source, but only one reviewed what it rendered. **GPT-5.6 Terra** examined extracted frames, rendered three times, and stopped without watching any of the renders, leaving three target gaps uncut. **Gemini 3.7 Flash** rendered a first edit, delegated seven seam reviews to subagents, revised several boundaries, and had a final reviewer watch the complete result before delivering. Post-render review generated evidence that informed the next edit.
 
 <figure class="vcb-figure" id="figure-trajectory">
 <div data-vcb-figure="trajectory"></div>
@@ -182,18 +180,18 @@ Together, these findings suggest that audiovisual perception and structured refl
 ## Conclusion and future work
 {: #future-work}
 
-We introduced Video-Cut-Bench to study whether an LLM agent can turn an editing request into a finished, frame-accurate video. Its four settings cover requests defined by dialogue, silence, identity, and specified content, evaluating the workflow from understanding the request through executing and reviewing the edit.
+Video-Cut-Bench studies whether an LLM agent can turn an editing request into a finished, frame-accurate video. Its four settings cover requests defined by dialogue, silence, identity, and specified content, evaluating the workflow from understanding the request through executing and reviewing the edit.
 
-Our early results point to several sources of progress. Stronger models provide a better foundation. Task-specific skills make successful practices reusable. Multi-agent review encourages reflection before delivery, and native video perception lets reviewers consider sound and picture together. The remaining work includes maintaining the editing goal, using tools correctly, revising when needed, and reliably delivering the finished video.
+These early results point to several sources of progress. Stronger models provide a better foundation. Task-specific skills make successful practices reusable. Multi-agent review encourages reflection before delivery, and native video perception lets reviewers consider sound and picture together. The remaining work includes maintaining the editing goal, using tools correctly, revising when needed, and reliably delivering the finished video.
 
-Evaluation remains one of the largest open problems. Our handcrafted Craft score catches concrete defects but misses context-dependent issues; LLM judges assess request adherence and cut craft more broadly but are expensive and slow. A better evaluator could also become a training signal. Future work could use **agentic reinforcement learning** to teach an agent from the videos it actually produces, with deterministic checks supplying cheap feedback on validity and measurable defects, and learned or human feedback covering coherence, pacing, and editorial intent. The challenge is to improve the finished edit without optimizing a narrow proxy for quality.
+Evaluation remains one of the largest open problems. The handcrafted Craft score catches concrete defects but misses context-dependent issues; LLM judges assess request adherence and cut craft more broadly but are expensive and slow. A better evaluator could also become a training signal. Future work could use **agentic reinforcement learning** to teach an agent from the videos it actually produces, with deterministic checks supplying cheap feedback on validity and measurable defects, and learned or human feedback covering coherence, pacing, and editorial intent. The challenge is to improve the finished edit without optimizing a narrow proxy for quality.
 
-We are **preparing Video-Cut-Bench for public release** as a shared foundation for this work. Future versions can add more diverse source material, more scalable task generation, and more open-ended requests in which agents make more editorial decisions. The longer-term goal is to make precise execution easier, so editors can spend more time exploring and comparing ideas.
+**Video-Cut-Bench is being prepared for public release** as a shared foundation for this work. Future versions can add more diverse source material, more scalable task generation, and more open-ended requests in which agents make more editorial decisions. The longer-term goal is to make precise execution easier, so editors can spend more time exploring and comparing ideas.
 
-## Acknowledgments
-{: #acknowledgments}
+## Presentation
+{: #presentation}
 
-This work was carried out at Netflix by Zhehao Zhang, Will Harvey, Ta-Ying Cheng, and Yumo Xu, with manager Sina Ghiassian. The presentation and interactive figures of this article are inspired by [HarnessTax](https://harnesstax.github.io/).
+The presentation and interactive figures of this article are inspired by [HarnessTax](https://harnesstax.github.io/).
 
 ## Reference
 {: #references}
