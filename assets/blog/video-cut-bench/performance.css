@@ -34,16 +34,13 @@
 }
 .vcb-performance .vcbp-replay { border-color: var(--vcbp-border); white-space: nowrap; font-size: 11px; }
 .vcb-performance .vcbp-stop { font-size: 10px; white-space: nowrap; }
-.vcb-performance .vcbp-tasks { display: flex; width: fit-content; max-width: 100%; gap: 3px; padding: 3px; margin-bottom: 20px; border: 1px solid var(--vcbp-border); border-radius: 8px; }
-.vcb-performance .vcbp-task { font-size: 11px; padding: 6px 12px; min-height: 29px; white-space: nowrap; }
-.vcb-performance .vcbp-task[aria-pressed="true"] { background: var(--vcb-ink, #171715); color: var(--vcb-surface, #fcfcfa); }
 .vcb-performance .vcbp-axis-label { font-size: 9px; font-weight: 650; letter-spacing: .09em; color: var(--vcb-muted, #73736b); margin: 0 0 8px 8px; }
-.vcb-performance .vcbp-charts { display: grid; grid-template-columns: minmax(0, 1.64fr) minmax(0, 1fr); gap: 16px; }
+.vcb-performance .vcbp-charts { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 16px; }
 .vcb-performance .vcbp-panel { min-width: 0; margin: 0; padding: 0; }
 .vcb-performance .vcbp-panel-unknown { border-left: 1px dashed var(--vcbp-border); padding-left: 15px; }
 .vcb-performance .vcbp-panel-label { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 0 15px 0 43px; font-size: 10px; font-weight: 550; color: var(--vcb-ink, #171715); }
 .vcb-performance .vcbp-panel-count { font-size: 9px; font-weight: 400; color: var(--vcb-muted, #73736b); white-space: nowrap; }
-.vcb-performance .vcbp-host { position: relative; min-width: 0; height: 364px; margin-top: 5px; }
+.vcb-performance .vcbp-host { position: relative; min-width: 0; height: 380px; margin-top: 5px; }
 .vcb-performance .vcbp-story, .vcb-performance .vcbp-plot { position: absolute; inset: 0; width: 100%; height: 100%; }
 .vcb-performance .vcbp-story { pointer-events: none; }
 .vcb-performance .vcbp-story svg { display: block; width: 100%; height: 100%; overflow: visible; }
@@ -53,8 +50,8 @@
 .vcb-performance .vcbp-axis-title { fill: var(--vcb-muted, #73736b); font-size: 10px; }
 .vcb-performance .vcbp-frontier { stroke: var(--vcb-accent, #49788a); stroke-width: 1.6; stroke-linecap: round; opacity: .72; }
 .vcb-performance .vcbp-leader { stroke: var(--vcb-muted, #73736b); stroke-width: .7; opacity: .5; }
-.vcb-performance .vcbp-label-paper { fill: var(--vcb-surface, #fcfcfa); opacity: .97; }
-.vcb-performance .vcbp-model-label { fill: var(--vcb-ink, #171715); font-size: 11px; font-weight: 600; }
+.vcb-performance .vcbp-label-paper { fill: var(--vcb-surface, #fcfcfa); }
+.vcb-performance .vcbp-model-label { fill: var(--vcb-ink, #171715); font-size: 11px; font-weight: 700; }
 .vcb-performance .vcbp-detail-label { fill: var(--vcb-muted, #73736b); font-size: 10px; }
 .vcb-performance .vcbp-controls { margin: 10px 0 0; padding-top: 15px; border-top: 1px solid var(--vcbp-border); }
 .vcb-performance .vcbp-family-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
@@ -79,7 +76,7 @@
 .vcb-performance td:nth-last-child(-n+2) { font-variant-numeric: tabular-nums; }
 .vcb-performance .vcbp-source { display: inline-block; margin-left: 5px; color: var(--vcb-muted, #73736b); font-size: 9px; text-underline-offset: 2px; text-decoration: underline; }
 
-@media (max-width: 760px) {
+@media (max-width: 980px) {
   .vcb-performance { padding: 20px 17px 0; }
   .vcb-performance .vcbp-charts { grid-template-columns: minmax(0, 1fr); gap: 22px; }
   .vcb-performance .vcbp-panel-unknown { border-left: 0; border-top: 1px dashed var(--vcbp-border); padding: 17px 0 0; }
@@ -93,11 +90,10 @@
 }
 @media (max-width: 420px) {
   .vcb-performance { padding: 18px 10px 0; border-radius: 10px; }
-  .vcb-performance .vcbp-header { gap: 8px; }
+  .vcb-performance .vcbp-header { flex-direction: column; gap: 10px; }
+  .vcb-performance .vcbp-actions { flex-direction: row; align-self: flex-start; align-items: center; }
   .vcb-performance .vcbp-title { font-size: 16px; letter-spacing: -.03em; }
   .vcb-performance .vcbp-sample { font-size: 10px; }
-  .vcb-performance .vcbp-task { padding: 6px 7px; font-size: 10px; }
-  .vcb-performance .vcbp-tasks { gap: 1px; padding: 2px; width: 100%; justify-content: space-between; }
   .vcb-performance .vcbp-replay { padding-inline: 7px; }
   .vcb-performance .vcbp-family { min-height: 32px; }
   .vcb-performance .vcbp-status { min-width: 100%; }

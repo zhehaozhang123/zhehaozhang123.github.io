@@ -1,4 +1,5 @@
 const ASSET = new URL('./', import.meta.url);
+const ASSET_VERSION = encodeURIComponent(new URL(import.meta.url).searchParams.get('v') || '1');
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
 // Use the same stored preference as the personal homepage.
@@ -143,7 +144,7 @@ function mountSeam(container) {
 
 function fallback(container, kind) {
   container.replaceChildren();
-  const img = new Image(); img.src = new URL(`media/${kind}-static.webp`, ASSET).href;
+  const img = new Image(); img.src = new URL(`media/${kind}-static.webp?v=${ASSET_VERSION}`, ASSET).href;
   img.alt = container.closest('figure')?.querySelector('figcaption')?.textContent || `${kind} research figure`;
   img.className = 'vcb-fallback'; container.append(img); container.dataset.vcbState = 'fallback';
 }
@@ -158,7 +159,10 @@ async function main() {
     const response = await fetch(new URL('data/results.json', ASSET));
     if (!response.ok) throw new Error('Research data unavailable');
     const data = await response.json();
-    const [{ mountPerformance }, { mountEvidence }] = await Promise.all([import('./performance.js'), import('./evidence.js')]);
+    const [{ mountPerformance }, { mountEvidence }] = await Promise.all([
+      import(new URL(`performance.js?v=${ASSET_VERSION}`, ASSET).href),
+      import(new URL(`evidence.js?v=${ASSET_VERSION}`, ASSET).href),
+    ]);
     await Promise.all(figures.filter(el => !['task', 'seam'].includes(el.dataset.vcbFigure)).map(async (container) => {
       const kind = container.dataset.vcbFigure;
       try {

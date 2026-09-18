@@ -28,6 +28,6 @@
       <a href="{{ '/blog/' | relative_url }}">← More writing</a>
       <span>© {{ site.time | date: '%Y' }} <a href="{{ '/' | relative_url }}">Zhehao Zhang</a></span>
     </footer>
-    <script type="module" src="{{ '/assets/blog/video-cut-bench/article.js' | relative_url }}"></script>
+    <script type="module" src="{{ '/assets/blog/video-cut-bench/article.js' | relative_url }}?v={{ page.asset_version | default: '1' }}"></script>
   </body>
 </html>

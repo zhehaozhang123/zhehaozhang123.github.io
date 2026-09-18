@@ -75,6 +75,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex="0"]:foc
 .vcb-article details.fold { padding: 18px 0; border-top: 1px solid var(--vcb-grid); border-bottom: 1px solid var(--vcb-grid); margin: 26px 0 38px; }
 .vcb-article details.fold summary { cursor: pointer; font: 550 15px/1.5 var(--vcb-sans); color: var(--vcb-muted); }
 .vcb-article details.fold[open] summary { margin-bottom: 18px; color: var(--vcb-ink); }
+.vcb-article details:not([open]) > :not(summary) { display: none; }
 .vcb-article details.fold p:last-child { margin-bottom: 0; }
 .vcb-figure { margin: 36px 0 43px; padding: 0; }
 .vcb-figure > div[data-vcb-figure] { border: 1px solid var(--vcb-grid); background: var(--vcb-surface); border-radius: 11px; min-height: 120px; font-family: var(--vcb-sans); font-feature-settings: normal; }

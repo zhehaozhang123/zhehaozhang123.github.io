@@ -7,11 +7,11 @@ permalink: /blog/video-cut-bench/
 author: "Zhehao Zhang"
 authors:
   - Zhehao Zhang
-project_label: "Personal project"
 summary: "What does it take for a coding agent to turn an editing request into a finished video? Early lessons on model capability, reusable skills, and reviewing the cut."
 description: "A personal exploration of video cutting with coding agents: 22 models, four editing settings, reusable skills, and multi-agent review."
 image: /assets/blog/video-cut-bench/media/social-card.png
 excerpt_separator: "<!--more-->"
+asset_version: "20260918-figure3-v5"
 ---
 
 ## Introduction
@@ -115,7 +115,7 @@ Holding the harness constant removes a major confounder when comparing model fam
 
 <figure class="vcb-figure" id="figure-performance">
 <div data-vcb-figure="performance"></div>
-<noscript><img src="{{ '/assets/blog/video-cut-bench/media/performance-static.webp' | relative_url }}" alt="Model parameter count versus Pass Rate (avg@3), with undisclosed model sizes in a separate category." loading="lazy"></noscript>
+<noscript><img src="{{ '/assets/blog/video-cut-bench/media/performance-static.webp' | relative_url }}?v={{ page.asset_version }}" alt="Model parameter count versus Pass Rate (avg@3), with undisclosed model sizes in a separate category." loading="lazy"></noscript>
 <figcaption><strong>Figure 3.</strong> Each point is one model evaluated with mini-swe-agent, a single agent, and no Video-Cutting Skills. Reported total parameter counts use a logarithmic scale. Models with undisclosed sizes appear in a separate categorical region; their positions imply no parameter estimate. The frontier is computed only over models with reported sizes. Pass Rate (avg@3) includes all expected trial slots.</figcaption>
 </figure>
 
