@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-article="video-cut-bench">
+  {% include research-head.html %}
+  <body class="vcb-page">
+    <a class="vcb-skip" href="#article">Skip to article</a>
+    <nav class="vcb-nav" aria-label="Site navigation">
+      <a class="vcb-home" href="{{ '/' | relative_url }}">Zhehao Zhang</a>
+      <div class="vcb-nav-right">
+        <a href="{{ '/blog/' | relative_url }}">All writing <span aria-hidden="true">↗</span></a>
+        <button class="vcb-theme" id="vcb-theme" type="button" aria-label="Switch to dark theme" title="Change color theme">
+          <svg class="vcb-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20.8 13.3A8.8 8.8 0 0 1 10.7 3.2 8.8 8.8 0 1 0 20.8 13.3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg class="vcb-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </nav>
+    <main id="article" class="vcb-main">
+      <article class="vcb-article">
+        <header class="vcb-hero">
+          <p class="vcb-eyebrow">Research notes <span aria-hidden="true">/</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time></p>
+          <h1>{{ page.title | replace: 'Video-Cut-Bench', '<span class="vcb-nowrap">Video-Cut-Bench</span>' }}</h1>
+          <p class="vcb-byline">{% for author in page.authors %}{% if author == 'Zhehao Zhang' %}<a href="{{ '/' | relative_url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}<span aria-hidden="true">, </span>{% endunless %}{% endfor %}</p>
+          <p class="vcb-affiliation">Work conducted at Netflix</p>
+        </header>
+        {{ content }}
+      </article>
+    </main>
+    <footer class="vcb-footer">
+      <a href="{{ '/blog/' | relative_url }}">← More writing</a>
+      <span>© {{ site.time | date: '%Y' }} <a href="{{ '/' | relative_url }}">Zhehao Zhang</a></span>
+    </footer>
+    <script type="module" src="{{ '/assets/blog/video-cut-bench/article.js' | relative_url }}"></script>
+  </body>
+</html>

@@ -11,7 +11,7 @@ permalink: blog/
 	<li>
 		<span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
 		<h3><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3>
-		{% if post.excerpt %}<div class="post-excerpt">{{ post.excerpt }}</div>{% endif %}
+		{% if post.summary %}<div class="post-excerpt">{{ post.summary | markdownify }}</div>{% elsif post.excerpt %}<div class="post-excerpt">{{ post.excerpt }}</div>{% endif %}
 	</li>
 	{% endfor %}
 </ul>
