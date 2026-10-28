@@ -49,7 +49,7 @@
   description: CV PDF
   color: "#ba2818"
   class: "far fa-file-pdf icon"
-  url: "/images/Zhehao_Zhang_CV.pdf"
+  url: "/images/Zhehao_Zhang_CV.pdf?v=20261028"
   on-homepage: false
   cv-group: 1
 

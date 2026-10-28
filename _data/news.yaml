@@ -1,4 +1,13 @@
 # Newest first. Each entry: date (display string) + html (supports <a> links).
+- date: "2026 Oct"
+  html: '🏆 <a href="https://osu-nlp-group.github.io/SkillHarm/">SkillHarm</a> received an <b>Outstanding Paper Award at EMNLP 2026</b>!'
+
+- date: "2026 Oct"
+  html: '📄 Introducing <a href="https://realtimeagents.org/">Realtime-Bench</a>, our new benchmark for real-time interactive agents. <a href="https://arxiv.org/abs/2610.22155">Paper</a> and <a href="https://github.com/RealtimeAgents/Realtime-Bench">code</a> are available.'
+
+- date: "2026 Oct"
+  html: '🎉 <a href="https://osu-nlp-group.github.io/QUEST/">QUEST</a>, on training frontier deep research agents with fully synthetic tasks, is accepted to <b>NeurIPS 2026</b>!'
+
 - date: "2026 Sept"
   html: '🎉 <a href="https://osu-nlp-group.github.io/SkillHarm/">SkillHarm</a>, on lifecycle-aware skill-based attacks via automated construction, is accepted to <b>EMNLP 2026 Main</b>!'
 

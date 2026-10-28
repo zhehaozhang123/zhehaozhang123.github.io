@@ -1,3 +1,50 @@
+- id: realtime-bench
+  title: "Realtime-Bench: Can Frontier Models Solve Real-time Interactive Problems?"
+  authors:
+    - Jingyu Tang
+    - Xu Yang
+    - Zhehao Zhang
+    - Zheng Wang
+    - Qi Cheng
+    - Haozhe Zhao
+    - Manling Li
+    - Wenxuan Li
+    - Xide Xia
+    - Jiaxin Pei
+  equal-contribution:
+    - Jingyu Tang
+    - Xu Yang
+    - Zhehao Zhang
+  bold:
+    - Jingyu Tang
+    - Xu Yang
+    - Zhehao Zhang
+  venue: "arXiv preprint"
+  venue-shorthand: "arXiv"
+  year: 2026
+  url: https://realtimeagents.org/
+  pdf: https://arxiv.org/abs/2610.22155
+  code: https://github.com/RealtimeAgents/Realtime-Bench
+  feature-title: Realtime-Bench
+  feature-description: "Evaluating real-time interactive agents in dynamic web and game environments"
+  image: /images/realtime-bench.png
+  feature-order: 0
+  topics: [selected, agents, data-eval]
+  keywords: ["Real-Time Agents", "Agent Evaluation", "Temporal Awareness", "Multimodal Agents"]
+  featured: true
+  selected: true
+  type: arxiv
+  bibtex: |-
+    @misc{tang2026realtimebenchfrontiermodelssolve,
+      title={Realtime-Bench: Can Frontier Models Solve Real-time Interactive Problems?},
+      author={Jingyu Tang and Xu Yang and Zhehao Zhang and Zheng Wang and Qi Cheng and Haozhe Zhao and Manling Li and Wenxuan Li and Xide Xia and Jiaxin Pei},
+      year={2026},
+      eprint={2610.22155},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.22155}
+    }
+
 - id: skillharm
   title: "SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction"
   authors:
@@ -20,6 +67,7 @@
     - Zhehao Zhang
   venue: "The 2026 Conference on Empirical Methods in Natural Language Processing (Main)"
   venue-shorthand: "EMNLP Main"
+  award: "Outstanding Paper Award"
   year: 2026
   url: https://osu-nlp-group.github.io/SkillHarm/
   pdf: https://arxiv.org/abs/2606.02540
@@ -106,8 +154,8 @@
     - Xiangjun Wang
     - Yu Su
     - Huan Sun
-  venue: "arXiv preprint"
-  venue-shorthand: "arXiv"
+  venue: "Advances in Neural Information Processing Systems"
+  venue-shorthand: "NeurIPS"
   year: 2026
   url: https://osu-nlp-group.github.io/QUEST/
   pdf: https://arxiv.org/abs/2605.24218
@@ -122,12 +170,12 @@
   keywords: ["Deep Research Agents", "Synthetic Data", "Agentic Post-Training", "Agentic RL", "Agentic Mid-Training"]
   featured: true
   selected: true
-  type: arxiv
+  type: conference
   bibtex: |-
-    @article{xie2026quest,
+    @inproceedings{xie2026quest,
       title={QUEST: Training Frontier Deep Research Agents with Fully Synthetic Tasks},
       author={Xie, Jian and Lin, Tianhe and Wang, Zilu and Ning, Yuting and Yao, Yuekun and Xue, Tianci and Zhang, Zhehao and Li, Zhongyang and Zhang, Kai and Wu, Yufan and others},
-      journal={arXiv preprint arXiv:2605.24218},
+      booktitle={Advances in Neural Information Processing Systems},
       year={2026}
     }
 

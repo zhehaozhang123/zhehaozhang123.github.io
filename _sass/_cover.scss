@@ -302,6 +302,29 @@ $cover-width: 8.5px;
 
 .pub-row-venue-wrapper {
   margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.8rem;
+}
+
+.pub-row-award {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid #e5c165;
+  border-radius: 0.35rem;
+  background: #fff7df;
+  color: #704900;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .pub-row-award {
+  background: #302714;
+  border-color: #8e6927;
+  color: #f6d580;
 }
 
 // Venue: quiet journal-style label — a small accent dot + uppercase text,

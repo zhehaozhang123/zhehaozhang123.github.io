@@ -30,6 +30,7 @@
 
 		<div class="pub-row-venue-wrapper">
 			<span class="pub-row-venue">{% if feature.venue-shorthand %}{{ feature.venue-shorthand }}{% else %}{{ feature.venue }}{% endif %} {{ feature.year }}</span>
+			{% if feature.award %}<span class="pub-row-award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ feature.award }}</span>{% endif %}
 		</div>
 
 		{% if feature.keywords %}

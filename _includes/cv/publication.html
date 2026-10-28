@@ -1,6 +1,6 @@
 {% if selectedBoolForBibtex != true %}
 <div class="cv-left-date">
-	{% case pub.type %}{% when "journal" %}J{% when "conference" %}C{% when "preprint" %}P{% when "workshop" %}W{% when "poster" %}P{% when "demo" %}D{% when "misc" %}M{% when "tech-report" %}TR{% endcase %}{{ forloop.rindex }}
+	{% case pub.type %}{% when "journal" %}J{% when "conference" %}C{% when "arxiv" %}P{% when "preprint" %}P{% when "workshop" %}W{% when "poster" %}P{% when "demo" %}D{% when "misc" %}M{% when "tech-report" %}TR{% endcase %}{{ forloop.rindex }}
 </div>
 {% endif %}
 
@@ -152,18 +152,14 @@
 {% if selectedBoolForBibtex == true %}
 <div class="highlighter-rouge bibtex bibtex-wrapper" style="display: none;" id="_{{ pub.id }}_selected">
 	<div class="highlight">
-		<pre>
-			{{ pub.bibtex }}
-		</pre>
+		<pre>{{ pub.bibtex | escape }}</pre>
 	</div>
 </div>
 {% endif %}
 {% if selectedBoolForBibtex == false %}
 <div class="highlighter-rouge bibtex bibtex-wrapper" style="display: none;" id="_{{ pub.id }}">
 	<div class="highlight">
-		<pre>
-			{{ pub.bibtex }}
-		</pre>
+		<pre>{{ pub.bibtex | escape }}</pre>
 	</div>
 </div>
 {% endif %}
