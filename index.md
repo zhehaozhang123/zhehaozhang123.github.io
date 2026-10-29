@@ -27,14 +27,13 @@ title: Home
 		<a href="https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en"><div><i class="fa fa-graduation-cap icon icon-right-space"></i>Publications</div></a>
 		<a href="{{ site.url }}/blog"><div><i class="fa fa-pen-nib icon icon-right-space"></i>Blog</div></a>
 	</div>
-	<a class="home-award" href="https://osu-nlp-group.github.io/SkillHarm/">
-		<span class="home-award-icon" aria-hidden="true"><i class="fas fa-trophy"></i></span>
-		<span class="home-award-copy">
-			<strong><span class="home-award-venue">EMNLP 2026</span> <span class="home-award-title">Outstanding Paper Award</span></strong>
-			<span>SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction</span>
-		</span>
-		<span class="home-award-arrow" aria-hidden="true">↗</span>
-	</a>
+	<aside class="home-honor" aria-label="Research award">
+		<span class="home-honor-venue">EMNLP 2026</span>
+		<div class="home-honor-body">
+			<strong class="home-honor-title">Outstanding Paper Award</strong>
+			<span class="home-honor-paper">for <a href="https://osu-nlp-group.github.io/SkillHarm/">SkillHarm</a></span>
+		</div>
+	</aside>
 	<div>
 		I am a second year PhD student in <a href="https://cse.osu.edu/">Computer Science & Engineering</a> at <img class="intro-logo" style="width: 24px; padding-bottom: 3px;" src="/images/Ohio_State_Buckeyes_logo.svg.png"> <a href="https://www.osu.edu/">The Ohio State University</a> and a member of the <a href="https://x.com/osunlp?lang=en">OSU NLP Lab</a>, advised by <a href="https://ysu1989.github.io/">Prof. Yu Su</a> and closely collaborating with <a href="https://u.osu.edu/ihudas/people/">Prof. Huan Sun</a>. Previously, I worked as a Research Intern at <img class="intro-logo" style="width: 24px; padding-bottom: 3px;" src="/images/Stanford-University-Logo.png"> <a href="https://saltlab.stanford.edu/">Stanford SALT Lab</a>, <img class="intro-logo" style="width: 24px; padding-bottom: 3px;" src="/images/netflix.png"> <a href="https://research.netflix.com/">Netflix</a>, <img class="intro-logo" style="width: 24px; padding-bottom: 3px;" src="/images/amazon_logo.png"> <a href="https://www.amazon.com/">Amazon</a>, <img class="intro-logo" style="width: 20px; padding-bottom: 3px;" src="/images/adobe-1-logo.png"> <a href="https://research.adobe.com/">Adobe Research</a>, and <img class="intro-logo" style="width: 20px; padding-bottom: 3px;" src="/images/microsoft.svg"> <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Lab – Asia</a>. I received my Master's degree from <img class="intro-logo" style="width: 24px; padding-bottom: 3px;" src="/images/dartmouth.png"> <a href="https://home.dartmouth.edu/">Dartmouth College</a> and Bachelor's degree in <a href="https://zsb.sjtu.edu.cn/web/jdzsb/3810055-3810000002464.htm">Artificial Intelligence Honor Class</a> at <img class="intro-logo" style="width: 24px; padding-bottom: 3px;" src="/images/sjtu.png"> <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.
 	</div>

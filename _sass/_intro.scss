@@ -146,91 +146,62 @@ $cv-icon-aspect-ratio: 1.33;
 	box-sizing: content-box;
 }
 
-// Keep the paper award visible above the biography, including on mobile.
-.home-award {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	margin: 0 0 1.5rem;
-	padding: 1.1rem 1.25rem;
-	border: 1px solid #e5c165;
-	border-left: 5px solid #c58b13;
-	border-radius: 0.75rem;
-	background: #fff7df;
-	color: #704900;
-	transition: background-color .2s ease, border-color .2s ease;
+// A typographic distinction within the introduction.
+.home-honor {
+	display: grid;
+	grid-template-columns: 7rem minmax(0, 1fr);
+	align-items: baseline;
+	column-gap: 1.5rem;
+	margin: 0 0 1.75rem;
+	padding: 1.1rem 0 1.2rem;
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
 }
 
-.home-award:hover {
-	background: #fff0c2;
-	border-color: #c58b13;
-	text-decoration: none;
+.home-honor-venue {
+	color: $mid-gray;
+	font-size: 0.72rem;
+	font-weight: 600;
+	letter-spacing: 0.06em;
+	line-height: 1.5;
 }
 
-.home-award:focus-visible {
-	outline: 3px solid $blue;
-	outline-offset: 3px;
-}
-
-.home-award-icon {
-	font-size: 2rem;
-	flex-shrink: 0;
-	color: #ad770a;
-}
-
-.home-award-copy {
+.home-honor-body {
 	display: flex;
 	flex-direction: column;
-	gap: 0.25rem;
+	gap: 0.2rem;
 }
 
-.home-award-copy strong {
-	font-size: 1.15rem;
+.home-honor-title {
+	color: $title-color;
+	font-size: 1.4rem;
+	font-weight: 600;
+	letter-spacing: -0.015em;
 	line-height: 1.35;
 }
 
-.home-award-copy > span {
-	font-size: 0.85rem;
-	line-height: 1.45;
+.home-honor-paper {
+	color: $gray;
+	font-size: 0.875rem;
+	line-height: 1.5;
 }
 
-.home-award-arrow {
-	margin-left: auto;
-	font-size: 1.3rem;
-	flex-shrink: 0;
+.home-honor-paper a {
+	color: $blue;
+	text-decoration: underline;
+	text-decoration-color: $light-blue;
+	text-underline-offset: 0.2em;
 }
 
-[data-theme="dark"] .home-award {
-	background: #302714;
-	border-color: #8e6927;
-	color: #f6d580;
-}
-
-[data-theme="dark"] .home-award:hover {
-	background: #3b3018;
-	border-color: #d5a142;
-}
-
-[data-theme="dark"] .home-award-icon {
-	color: #efbd51;
+.home-honor-paper a:hover {
+	text-decoration-color: currentColor;
 }
 
 @media screen and (max-width: $mobile) {
-	.home-award {
-		gap: 0.75rem;
-		padding: 1rem;
-	}
-	.home-award-copy strong {
-		font-size: 1.05rem;
-	}
-	.home-award-venue {
-		display: block;
-		margin-bottom: 0.2rem;
-		font-size: 0.8rem;
-		letter-spacing: 0.04em;
-	}
-	.home-award-title {
-		display: block;
+	.home-honor {
+		grid-template-columns: 1fr;
+		row-gap: 0.45rem;
+		padding: 1rem 0;
 	}
 }
 
