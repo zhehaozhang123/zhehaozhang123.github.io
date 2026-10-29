@@ -146,62 +146,48 @@ $cv-icon-aspect-ratio: 1.33;
 	box-sizing: content-box;
 }
 
-// A typographic distinction within the introduction.
-.home-honor {
-	display: grid;
-	grid-template-columns: 7rem minmax(0, 1fr);
-	align-items: baseline;
-	column-gap: 1.5rem;
-	margin: 0 0 1.75rem;
-	padding: 1.1rem 0 1.2rem;
-	border-top: 1px solid $border-color;
-	border-bottom: 1px solid $border-color;
-}
-
-.home-honor-venue {
-	color: $mid-gray;
-	font-size: 0.72rem;
-	font-weight: 600;
-	letter-spacing: 0.06em;
-	line-height: 1.5;
-}
-
-.home-honor-body {
+// An editorial note within the identity block.
+.intro-distinction {
 	display: flex;
 	flex-direction: column;
-	gap: 0.2rem;
+	align-items: flex-start;
+	gap: 0.25rem;
+	margin: 0.7rem 0 0.65rem;
 }
 
-.home-honor-title {
-	color: $title-color;
+.intro-distinction > a {
+	color: #855341;
+	font-family: Georgia, "Times New Roman", serif;
 	font-size: 1.4rem;
-	font-weight: 600;
-	letter-spacing: -0.015em;
-	line-height: 1.35;
+	font-style: italic;
+	line-height: 1.25;
+	text-decoration: none;
 }
 
-.home-honor-paper {
-	color: $gray;
-	font-size: 0.875rem;
-	line-height: 1.5;
-}
-
-.home-honor-paper a {
-	color: $blue;
+.intro-distinction > a:hover {
 	text-decoration: underline;
-	text-decoration-color: $light-blue;
+	text-decoration-thickness: 1px;
 	text-underline-offset: 0.2em;
 }
 
-.home-honor-paper a:hover {
-	text-decoration-color: currentColor;
+.intro-distinction > span {
+	color: $gray;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	letter-spacing: 0.025em;
 }
 
-@media screen and (max-width: $mobile) {
-	.home-honor {
-		grid-template-columns: 1fr;
-		row-gap: 0.45rem;
-		padding: 1rem 0;
+.intro-distinction > span > span {
+	padding: 0 0.3rem;
+}
+
+[data-theme="dark"] .intro-distinction > a {
+	color: #d6ad98;
+}
+
+@media screen and (max-width: 360px) {
+	.intro-distinction > a {
+		font-size: 1.15rem;
 	}
 }
 
