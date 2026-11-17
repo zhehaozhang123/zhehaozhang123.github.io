@@ -3,7 +3,7 @@
   html: '&#x1F3A5; My <a href="https://osu-nlp-group.github.io/SkillHarm/">SkillHarm</a> oral presentation at EMNLP 2026 is now <a href="https://drive.google.com/file/d/13qwpLEpJjJJVGGnf113K8bYIl8rAJFY7/view?usp=sharing">available to watch</a>.'
 
 - date: "2026 Oct"
-  html: '<img class="news-logo news-meta-logo" src="/images/meta-logo-primary.png?v=20261117" alt="Meta logo"> <b>Meta</b> adopted <a href="https://osu-nlp-group.github.io/AutoElicit/">AutoElicit</a> to evaluate Muse Spark 1.3 through its API. <a href="https://research.meta.ai/static/muse-spark-1-3-evaluation-report">Meta’s evaluation report</a> documents this use (Section 4.1.3, Figure 39).'
+  html: '<img class="news-logo news-meta-logo" src="/images/meta-logo-primary.png?v=20261117" alt="Meta logo"> <b>Meta</b> adopted <a href="https://osu-nlp-group.github.io/AutoElicit/">AutoElicit</a> to evaluate Muse Spark 1.3. <a href="https://research.meta.ai/static/muse-spark-1-3-evaluation-report">Meta’s evaluation report</a> documents this use (Section 4.1.3, Figure 39).'
 
 - date: "2026 Oct"
   html: '&#x1F3C6; <a href="https://osu-nlp-group.github.io/SkillHarm/">SkillHarm</a> received an <b>Outstanding Paper Award at EMNLP 2026</b>.'
