@@ -28,7 +28,13 @@
 <div class="cv-description"><i>{{ pub.venue }}{% if pub.venue-shorthand %} ({{ pub.venue-shorthand }}){% endif %}. {% if pub.location %}{{ pub.location }},{% endif %} {{ pub.year }}.</i></div>
 
 {% if pub.evaluation_report and pub.evaluation_note %}
-<div class="cv-description cv-evaluation"><span class="cv-evaluation-label">Research use</span> <a href="{{ pub.evaluation_report }}">{{ pub.evaluation_link_label }}</a> {{ pub.evaluation_note }}</div>
+<div class="cv-description cv-evaluation">
+	<a class="cv-evaluation-link" href="{{ pub.evaluation_report }}" aria-label="{{ pub.evaluation_label }}. {{ pub.evaluation_note }}">
+		<img class="meta-evaluation-logo meta-evaluation-logo--light" src="{{ pub.evaluation_logo | relative_url }}" alt="">
+		<img class="meta-evaluation-logo meta-evaluation-logo--dark" src="{{ pub.evaluation_logo_dark | relative_url }}" alt="">
+		<span class="cv-evaluation-copy"><strong>{{ pub.evaluation_label }}</strong><span>{{ pub.evaluation_note }}</span></span>
+	</a>
+</div>
 {% endif %}
 
 <div class="pub-misc">

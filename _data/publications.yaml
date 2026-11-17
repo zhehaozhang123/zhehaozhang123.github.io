@@ -118,8 +118,10 @@
   code: https://github.com/OSU-NLP-Group/AutoElicit
   data: https://huggingface.co/collections/osunlp/autoelicit
   evaluation_report: https://research.meta.ai/static/muse-spark-1-3-evaluation-report
-  evaluation_link_label: "Meta used AutoElicit"
-  evaluation_note: "to evaluate Muse Spark 1.3 (API) (Fig. 39)."
+  evaluation_logo: /images/meta-logo-primary.png
+  evaluation_logo_dark: /images/meta-logo-negative.png
+  evaluation_label: "Meta used AutoElicit prompts to evaluate Muse Spark 1.3 API"
+  evaluation_note: "Meta evaluation report · Section 4.1.3 · Figure 39"
   feature-title: "Benign Inputs, Severe Harms"
   feature-description: "Eliciting unsafe unintended behaviors of computer-use agents"
   image: /images/benign-harms.png

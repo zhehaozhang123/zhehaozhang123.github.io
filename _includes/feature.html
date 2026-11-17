@@ -35,8 +35,11 @@
 
 		{% if feature.evaluation_report and feature.evaluation_note %}
 		<div class="pub-row-evaluation">
-			<span class="pub-row-evaluation-label">Research use</span>
-			<a href="{{ feature.evaluation_report }}">{{ feature.evaluation_link_label }}</a> <span class="pub-row-evaluation-detail">{{ feature.evaluation_note }}</span>
+			<a class="pub-row-evaluation-link" href="{{ feature.evaluation_report }}" aria-label="{{ feature.evaluation_label }}. {{ feature.evaluation_note }}">
+				<img class="meta-evaluation-logo meta-evaluation-logo--light" src="{{ feature.evaluation_logo | relative_url }}" alt="">
+				<img class="meta-evaluation-logo meta-evaluation-logo--dark" src="{{ feature.evaluation_logo_dark | relative_url }}" alt="">
+				<span class="pub-row-evaluation-copy"><strong>{{ feature.evaluation_label }}</strong><span>{{ feature.evaluation_note }}</span></span>
+			</a>
 		</div>
 		{% endif %}
 

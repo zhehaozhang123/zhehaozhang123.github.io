@@ -328,6 +328,8 @@ $cover-width: 8.5px;
 }
 
 .pub-row-evaluation {
+  display: flex;
+  align-items: center;
   margin-top: 0.6rem;
   padding-left: 0.65rem;
   border-left: 2px solid $light-blue;
@@ -336,18 +338,52 @@ $cover-width: 8.5px;
   line-height: 1.5;
 }
 
-.pub-row-evaluation-label {
-  color: $blue;
-  font-weight: 600;
-  margin-right: 0.4rem;
+.pub-row-evaluation-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
 }
 
-.pub-row-evaluation a {
+.meta-evaluation-logo {
+  display: block;
+  flex: 0 0 auto;
+  width: 6rem;
+  height: auto;
+  max-width: none;
+}
+
+.meta-evaluation-logo--dark,
+[data-theme="dark"] .meta-evaluation-logo--light {
+  display: none;
+}
+
+[data-theme="dark"] .meta-evaluation-logo--dark {
+  display: block;
+}
+
+.pub-row-evaluation-copy,
+.cv-evaluation-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.pub-row-evaluation-copy strong {
   color: $text-color;
   font-weight: 600;
-  text-decoration: underline;
-  text-decoration-color: $light-blue;
-  text-underline-offset: 2px;
+}
+
+.pub-row-evaluation-copy > span {
+  color: $gray;
+  font-size: 0.9em;
+}
+
+.pub-row-evaluation-link:hover .pub-row-evaluation-copy strong,
+.cv-evaluation-link:hover .cv-evaluation-copy strong {
+  color: $blue;
 }
 
 // Venue: quiet journal-style label — a small accent dot + uppercase text,

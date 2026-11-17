@@ -171,17 +171,22 @@
 	margin-top: 0.2rem;
 }
 
-.cv-evaluation-label {
-	color: $blue;
-	font-weight: 600;
+.cv-evaluation-link {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	min-width: 0;
+	color: inherit !important;
+	text-decoration: none;
 }
 
-.cv-evaluation a {
+.cv-evaluation-copy strong {
 	color: $text-color;
-	font-weight: 600;
-	text-decoration: underline;
-	text-decoration-color: $light-blue;
-	text-underline-offset: 2px;
+	font-weight: 700;
+}
+
+.cv-evaluation-copy > span {
+	font-size: 0.85em;
 }
 
 .cv-spacer-large {
