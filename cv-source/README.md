@@ -32,6 +32,6 @@ Distractor at COLM 2026, and SkillHarm at EMNLP 2026 with an Outstanding Paper
 Award. The current sources also link AutoElicit to Meta's Muse Spark 1.3 API
 evaluation report and SkillHarm to its EMNLP oral recording.
 
-The Meta company lockup is used beside the factual evaluation statement. The
-light and dark web assets and CV raster asset come from Meta's official Brand
-Resource Center company lockup pack.
+The Meta symbol only is used beside the factual evaluation statement. It is
+cropped from Meta's official company lockup artwork in the Brand Resource Center
+pack; the mark itself is not redrawn.

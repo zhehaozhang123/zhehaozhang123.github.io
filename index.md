@@ -20,8 +20,8 @@ title: Home
 						{% include social-link.html link=link %}
 					{% endif %}
 				{% endfor %}
-				<a class="cv-chip" href="{{ '/images/Zhehao_Zhang_CV.pdf' | relative_url }}?v=20261116-meta-logo"><i class="far fa-file-pdf"></i> CV (Full)</a>
-				<a class="cv-chip" href="{{ '/images/Zhehao_Zhang_CV_Short.pdf' | relative_url }}?v=20261116-meta-logo"><i class="far fa-file-pdf"></i> CV (Short)</a>
+				<a class="cv-chip" href="{{ '/images/Zhehao_Zhang_CV.pdf' | relative_url }}?v=20261116-meta-icon"><i class="far fa-file-pdf"></i> CV (Full)</a>
+				<a class="cv-chip" href="{{ '/images/Zhehao_Zhang_CV_Short.pdf' | relative_url }}?v=20261116-meta-icon"><i class="far fa-file-pdf"></i> CV (Short)</a>
 			</div>
 		</div>
 	</div>
