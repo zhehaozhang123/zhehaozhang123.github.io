@@ -29,6 +29,11 @@ This website is based on the template from [Fred Hohman's website](https://githu
 
 ## Development
 
+The current Overleaf sources for the full and short CV are organized under
+[`cv-source/`](cv-source/README.md). Compile each project separately and copy
+the reviewed PDFs to `images/`; the website does not build PDFs from LaTeX.
+
+
 Install Ruby and Bundler, run `bundle install`, then `npm start` to serve Jekyll locally. A production build uses `JEKYLL_ENV=production bundle exec jekyll build`.
 
 The [Video-Cut-Bench article](https://zhehaozhang123.github.io/blog/video-cut-bench/) uses `_layouts/research-post.html`. Its English source lives in `_posts/blog/2026-09-18-video-cut-bench.md`; interactive modules, figure media and the frozen aggregate result data live in `assets/blog/video-cut-bench/`. Plotly is loaded locally only when the performance figure is approached. The figures preserve static image fallbacks and respect reduced-motion preferences.

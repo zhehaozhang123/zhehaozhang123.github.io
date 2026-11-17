@@ -2,6 +2,18 @@ title: Zhehao Zhang
 tagline: PhD Student in Computer Science at The Ohio State University
 url: https://zhehaozhang123.github.io
 baseurl: ""
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - cv-source
 # gems: [jekyll-paginate]
 # paginate: 5
 

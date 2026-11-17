@@ -1,0 +1,185 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.5in]{geometry}
+% Core formatting packages
+\usepackage{longtable}
+\usepackage{array}
+
+% Remove default longtable top/bottom padding
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+\usepackage{bookmark}
+\usepackage{fontawesome}
+\usepackage{ragged2e}
+\usepackage{soul}
+\usepackage{kpfonts}
+\usepackage[T1]{fontenc}
+\pagenumbering{gobble}
+% Bibliography setup
+\usepackage[
+    style=numeric,
+    block=none,
+    maxnames=99,
+    sorting=none,
+    urldate=long,
+    uniquelist=false,
+    uniquename=false,
+    terseinits=true,
+    defernumbers=true
+]{biblatex}
+
+% Add this after the package loading to control indentation
+\setlength{\bibhang}{0pt}
+\setlength{\emergencystretch}{2em}
+% mars-tin style bracketed prefixed labels: [C1], [J1], [PP1] ...
+% labelprefix is injected per group via \begin{refcontext}[labelprefix=...] in the body.
+\DeclareFieldFormat{labelnumberwidth}{[#1]}
+\setlength{\biblabelsep}{0.5em}
+% Paper title in quotes, followed by a period (mars-tin style)
+\DeclareFieldFormat[inproceedings]{title}{\mkbibquote{#1}\addperiod}
+% Venue (booktitle) in italics
+\DeclareFieldFormat[inproceedings]{booktitle}{\mkbibemph{#1}}
+% "In:" prefix kept (default for @inproceedings); year prints as ". YEAR."
+
+\setlength{\bibitemsep}{0.5em}
+\setlength{\bibnamesep}{0pt}
+\setlength{\bibinitsep}{0pt}
+
+% Standard biblatex numeric list, prints [<prefix><number>] as a hanging label.
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
+     {\setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}%
+      \setlength{\topsep}{0pt}%
+      \renewcommand*{\makelabel}[1]{\hss##1}}}
+  {\endlist}
+  {\item}
+
+\addbibresource{ref.bib}
+
+% Hyperlink and color settings
+\usepackage{xcolor}
+% mars-tin style light-blue hyperlinks
+\definecolor{linkblue}{RGB}{70,130,220}
+\definecolor{awardgold}{RGB}{166,112,0}
+\newcommand{\paperaward}{\textcolor{awardgold}{\faTrophy}\,\textbf{Outstanding Paper Award}}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    breaklinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    anchorcolor=linkblue,
+    citecolor=linkblue,
+    pdftitle={Zhehao Zhang - CV},
+    pdfauthor={Zhehao Zhang},
+    bookmarksopen=true,
+}
+\usepackage{titlesec}
+
+% Section spacing (before, after)
+\titlespacing*{\section}
+{0pt}
+{12pt}
+{3pt}
+
+% Title formatting
+\newcommand{\mytitle}[3]{
+    \begin{center}
+        \huge\textbf{#1}\normalsize \\[4pt]
+        \normalsize\faEnvelope\ \href{mailto:#2}{#2} $\;|\;$ \faHome\ \href{#3}{zhehaozhang123.github.io} $\;|\;$ \faGraduationCap\ \href{https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en}{Google Scholar}
+    \end{center}
+}
+
+% mars-tin style: own name bold + underlined in author lists
+\newcommand{\myname}[1]{\textbf{\ul{#1}}}
+
+\begin{document}
+\mytitle{Zhehao Zhang}{zhang.16420@osu.edu}{https://zhehaozhang123.github.io}
+\begin{center}
+\rule{2.2cm}{0.4pt}\\[4pt]
+\small\textit{Last updated: \today}
+\end{center}
+\RaggedRight
+
+% Research Interests
+\pdfbookmark[1]{Research Interests}{research_interests}
+\section*{Research Interests}
+\label{research_interests}
+\input{research_interests.tex}
+
+% Industry Experience
+\pdfbookmark[1]{Industry Experience}{exp_industry}
+\section*{Industry Experience}
+\label{exp_industry}
+\input{exp_industry.tex}
+
+% Academic Experience
+\pdfbookmark[1]{Academic Experience}{exp_academic}
+\section*{Academic Experience}
+\label{exp_academic}
+\input{exp_academic.tex}
+
+% Education
+\pdfbookmark[1]{Education}{education}
+\section*{Education}
+\label{education}
+\input{education.tex}
+
+% Selected Awards & Honors
+\pdfbookmark[1]{Selected Awards \& Honors}{awards}
+\section*{Selected Awards \& Honors}
+\label{awards}
+\input{awards.tex}
+
+% Publications  (mars-tin style: [G] link to Google Scholar next to the heading)
+\pdfbookmark[1]{Publications}{pubs}
+\section*{Publications \texorpdfstring{{\normalsize\href{https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en}{[\faGoogle]}}}{}}
+\label{pubs}
+{\small $^*$Equal contribution.}\par\vspace{0.3em}
+\nocite{*}
+{\noindent\textbf{Conference Papers}}\par\vspace{0.3em}
+\begin{refcontext}[labelprefix=C]
+\printbibliography[keyword=conf,heading=none,resetnumbers=true]
+\end{refcontext}
+\vspace{0.5em}
+{\noindent\textbf{Journal Articles}}\par\vspace{0.3em}
+\begin{refcontext}[labelprefix=J]
+\printbibliography[keyword=journal,heading=none,resetnumbers=true]
+\end{refcontext}
+\vspace{0.5em}
+{\noindent\textbf{Preprints}}\par\vspace{0.3em}
+\begin{refcontext}[labelprefix=PP]
+\printbibliography[keyword=preprint,heading=none,resetnumbers=true]
+\end{refcontext}
+
+% Media Coverage
+\pdfbookmark[1]{Media Coverage}{press}
+\section*{Media Coverage}
+\label{press}
+\input{press.tex}
+
+% Invited Talks
+\pdfbookmark[1]{Invited Talks}{talks}
+\section*{Invited Talks}
+\label{talks}
+\input{talks.tex}
+
+% Academic Service
+\pdfbookmark[1]{Academic Service}{service}
+\section*{Academic Service}
+\label{service}
+\input{service.tex}
+
+% Skills
+\pdfbookmark[1]{Skills}{skills}
+\section*{Skills}
+\label{skills}
+\input{skills.tex}
+
+\end{document}

@@ -1,0 +1,16 @@
+$pdflatex = 'pdflatex %O -shell-escape %S';
+$pdf_mode = 1;
+$pdf_previewer = 'start evince';
+
+$ENV{'TEXINPUTS'} = './/:' . ($ENV{'TEXINPUTS'} // '');
+
+# Template metadata
+$ENV{'METADATA'} = qq(
+Title: Zhehao Zhang - Short CV
+Author: Zhehao Zhang
+Description: Two-page academic and research CV for Zhehao Zhang.
+Tags: academic, research, curriculum vitae
+Version: 2026.11
+Last Updated: 2026-11-16
+License: Creative Commons CC BY 4.0
+);

@@ -10,15 +10,6 @@ _drafts/
 .preview/
 linkedin/
 
-# Local LaTeX CV templates (not part of the site)
-cv-latex/
-cv-kpfonts-template/
-cv-kpfonts-template.zip
-
 # Local-only drafts and source files (not part of the site)
 github_profile/
-CV_short/
-Long_cv.pdf
-Short_CV.pdf
-cv1.zip
 *.pptx

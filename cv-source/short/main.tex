@@ -1,0 +1,290 @@
+%
+% Zhehao Zhang — 2-page CV (frontier-lab / industry résumé)
+% Base template: Academic CV by Dubasi Pavan Kumar (MIT License)
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{cfr-lm}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{awardgold}{RGB}{166,112,0}
+\newcommand{\paperaward}{\textcolor{awardgold}{\faTrophy}\,\textbf{Outstanding Paper Award}}
+
+% Page layout
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt}
+
+% Hyperlink setup
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={Zhehao Zhang - Short CV},
+    pdfauthor={Zhehao Zhang},
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt, right=0pt, top=0pt, bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{ \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}} }
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+
+% Hugging Face logo (official brand asset) sized to match FontAwesome icons
+\newcommand{\hficon}{\raisebox{-0.18em}{\includegraphics[height=1em]{hf-logo.png}}}
+
+% Clickable name that stays in the body text color (no blue), for advisors/hosts
+\newcommand{\pname}[2]{\href{#1}{\color{black}#2}}
+
+% Font: Palatino-like elegant serif
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont}
+
+\begin{document}
+\headerfontiii
+
+% ---------------- Header ----------------
+\begin{center}
+    {\Huge\textbf{Zhehao Zhang}}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{Language Agents $\cdot$ Agent Safety $\cdot$ LLM Alignment}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faEnvelope}~\href{mailto:zhang.16420@osu.edu}{zhang.16420@osu.edu} $\;|\;$
+    \socialicon{\faGlobe}~\href{https://zhehaozhang123.github.io}{zhehaozhang123.github.io} $\;|\;$
+    \socialicon{\faGoogle}~\href{https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en}{Google Scholar} $\;|\;$
+    \socialicon{\faGithub}~\href{https://github.com/zzh-SJTU}{zzh-SJTU} $\;|\;$
+    \socialicon{\faLinkedin}~\href{https://www.linkedin.com/in/zhehao-zhang-044428289/}{zhehao-zhang}
+    }
+\end{center}
+\vspace{-6mm}
+
+% ---------------- Education ----------------
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {The Ohio State University}{Columbus, OH}
+    {Ph.D. in Computer Science and Engineering (Advisor: \pname{https://ysu1989.github.io/}{Yu Su})}{2025 -- Present}
+\resumeSubheading
+    {Dartmouth College}{Hanover, NH}
+    {M.S. in Computer Science}{2023 -- 2024}
+\resumeSubheading
+    {Shanghai Jiao Tong University}{Shanghai, China}
+    {B.Eng. in Artificial Intelligence (Honor Class)}{2019 -- 2023}
+\resumeSubHeadingListEnd
+\vspace{-7mm}
+
+% ---------------- Experience ----------------
+\section{\textbf{Research Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Netflix}{Los Gatos, CA}
+    {Machine Learning Intern (Host: William Harvey)}{Jun 2026 -- Aug 2026}
+    \resumeItemListStart
+      \item Building a \textbf{terminal-based agentic benchmark} for video cutting, with \textbf{agent harnesses} using \textbf{self-distilled agent skills} and \textbf{multi-agent orchestration} to elicit reflective cognitive behavior and prevent long-horizon reasoning collapse. \href{https://zhehaozhang123.github.io/blog/video-cut-bench/}{Blog}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Amazon}{Seattle, WA}
+    {Applied Scientist Intern (Hosts: \pname{https://weijiexu.com/}{Weijie Xu}, \pname{https://creddy.net/}{Chandan K. Reddy})}{Nov 2024 -- Jun 2025}
+    \resumeItemListStart
+      \item Built \textbf{FalseReject} (COLM 2025): a 16K-prompt resource across 44 safety categories to benchmark over-refusal in 29 SOTA LLMs; used SFT and RL to cut unnecessary refusals while preserving helpfulness. Featured on the \href{https://www.amazon.science/blog/falsereject-reducing-overcautiousness-in-llms-through-reasoning-aware-safety-evaluation}{Amazon Science Blog}. \href{https://huggingface.co/datasets/AmazonScience/FalseReject}{\hficon}
+      \item Led \textbf{Distractor Injection Attacks} (COLM 2026): characterized reasoning-distraction vulnerabilities in large reasoning models (up to 60\% accuracy drop) and built an SFT+RL defense improving robustness by 50+ points. \href{https://huggingface.co/collections/groupfairnessllm/tulu3-with-distraction-mitigation-data}{\hficon}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Stanford University -- SALT Lab}{Stanford, CA}
+    {Research Intern (Host: \pname{https://cs.stanford.edu/~diyiy/}{Diyi Yang})}{2022 -- 2024}
+    \resumeItemListStart
+      \item Developed \textbf{DARG} (NeurIPS 2024): an adaptive-reasoning-graph framework that dynamically generates test data with controlled complexity, exposing accuracy drops across 15 SOTA LLMs. \href{https://github.com/SALT-NLP/DARG}{\faGithub}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Adobe Research}{San Jose, CA}
+    {Research Intern (Host: \pname{https://ryanrossi.com/}{Ryan A. Rossi})}{Jun 2024 -- Aug 2024}
+    \resumeItemListStart
+      \item Designed \textbf{VipAct} (AAAI 2026): a multi-agent framework coupling VLMs with vision-expert models for fine-grained visual perception; with GPT-4o it consistently outperformed all prompting and agent baselines across every sub-task on the BLINK and MMVP benchmarks.
+      \item Led \textbf{Personalization of LLMs: A Survey} (TMLR 2025), one of the most impactful surveys in the domain (250+ citations), introducing unifying taxonomies for personalized LLMs.
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Microsoft Research Lab -- Asia}{Beijing, China}
+    {Research Intern (Host: Yan Gao)}{Dec 2022 -- Aug 2023}
+    \resumeItemListStart
+      \item Engineered \textbf{E5} (NAACL 2024): a tool-augmented agent for hierarchical-table QA (+44.38 EM over prior SOTA), with an adaptive variant for token-limited settings \href{https://github.com/zzh-SJTU/E5-Hierarchical-Table-Analysis}{\faGithub}; created \textbf{CRT-QA} (EMNLP 2023), a complex table-reasoning dataset \href{https://github.com/zzh-SJTU/CRT-QA}{\faGithub}.
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-8mm}
+
+% ---------------- Publications ----------------
+\section{\textbf{Publications} \hfill \textcolor{darkblue}{\scriptsize $^*$equal contribution; 2000+ citations, full list on \href{https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en}{Google Scholar}}}
+\vspace{0.5mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, itemindent=0em, label={\textbf{[\arabic*]}}]
+
+\item Jaylen Jones$^*$, \textbf{Zhehao Zhang}$^*$, Yuting Ning, Eric Fosler-Lussier, Pierre-Luc St-Charles, Yoshua Bengio, Dawn Song, Yu Su, Huan Sun. \href{https://arxiv.org/abs/2602.08235}{When Benign Inputs Lead to Severe Harms: Eliciting Unsafe Unintended Behaviors of Computer-Use Agents}. \textit{ICML}, 2026. \href{https://research.meta.ai/static/muse-spark-1-3-evaluation-report}{Meta API evaluation (Fig.~39)}.
+
+\item \textbf{Zhehao Zhang}, Ryan A. Rossi, Tong Yu, Franck Dernoncourt, Ruiyi Zhang, Jiuxiang Gu, Sungchul Kim, Xiang Chen, Zichao Wang, Nedim Lipka. \href{https://arxiv.org/abs/2410.16400}{VipAct: Visual-Perception Enhancement via Specialized VLM Agent Collaboration and Tool-use}. \textit{AAAI}, 2026.
+
+\item \textbf{Zhehao Zhang}, Weijie Xu, Shixian Cui, Chandan K. Reddy. \href{https://arxiv.org/abs/2510.16259}{Distractor Injection Attacks on Large Reasoning Models: Characterization and Defense}. \textit{COLM}, 2026.
+
+\item \textbf{Zhehao Zhang}, Weijie Xu, Fanyou Wu, Chandan K. Reddy. \href{https://arxiv.org/abs/2505.08054}{FalseReject: A Resource for Improving Contextual Safety and Mitigating Over-Refusals in LLMs via Structured Reasoning}. \textit{COLM}, 2025.
+
+\item \textbf{Zhehao Zhang}, Jiaao Chen, Diyi Yang. \href{https://proceedings.neurips.cc/paper_files/paper/2024/hash/f5198bc255e1d5f959edd6d1d1a86fab-Abstract-Conference.html}{DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph}. \textit{NeurIPS}, 2024.
+
+\item \textbf{Zhehao Zhang}, Weicheng Ma, Soroush Vosoughi. \href{https://aclanthology.org/2024.findings-emnlp.485/}{Is GPT-4V(ision) All You Need for Automating Academic Data Visualization? Exploring Vision-Language Models' Capability in Reproducing Academic Charts}. \textit{Findings of EMNLP}, 2024.
+
+\item \textbf{Zhehao Zhang}, Yan Gao, Jian-Guang Lou. \href{https://aclanthology.org/2024.naacl-long.68/}{E5: Zero-shot Hierarchical Table Analysis using Augmented LLMs via Explain, Extract, Execute, Exhibit, and Extrapolate}. \textit{NAACL}, 2024.
+
+\item \textbf{Zhehao Zhang}, Tong Yu, Handong Zhao, Kaige Xie, Lina Yao, Shuai Li. \href{https://ieeexplore.ieee.org/document/10448063}{Exploring Soft Prompt Initialization Strategy for Few-Shot Continual Text Classification}. \textit{ICASSP}, 2024.
+
+\item \textbf{Zhehao Zhang}, Xitao Li, Yan Gao, Jian-Guang Lou. \href{https://aclanthology.org/2023.emnlp-main.132/}{CRT-QA: A Dataset of Complex Reasoning Question Answering over Tabular Data}. \textit{EMNLP}, 2023.
+
+\item \textbf{Zhehao Zhang}, Jiaao Chen, Diyi Yang. \href{https://aclanthology.org/2023.findings-emnlp.440/}{Mitigating Biases in Hate Speech Detection from A Causal Perspective}. \textit{Findings of EMNLP}, 2023.
+
+\item \textbf{Zhehao Zhang}, Ryan A. Rossi, Branislav Kveton, Yijia Shao, Diyi Yang, Hamed Zamani, Franck Dernoncourt, et al. \href{https://openreview.net/forum?id=tf6A9EYMo6}{Personalization of Large Language Models: A Survey}. \textit{TMLR}, 2025.
+
+\item Yuting Ning$^*$, \textbf{Zhehao Zhang}$^*$, Yash Kumar Lal, Boyu Gou, Junyi Li, Weitong Ruan, Chentao Ye, Rahul Gupta, Diyi Yang, Yu Su, Huan Sun. \href{https://arxiv.org/abs/2606.02540}{SkillHarm: Lifecycle-Aware Skill-Based Attacks via Automated Construction}. \textit{EMNLP}, 2026. \paperaward. \href{https://drive.google.com/file/d/13qwpLEpJjJJVGGnf113K8bYIl8rAJFY7/view?usp=sharing}{Oral video}.
+
+\item Yuting Ning, Jaylen Jones, \textbf{Zhehao Zhang}, Chentao Ye, Weitong Ruan, Junyi Li, Rahul Gupta, Huan Sun. \href{https://arxiv.org/abs/2602.08995}{When Actions Go Off-Task: Detecting and Correcting Misaligned Actions in Computer-Use Agents}. \textit{ICML}, 2026.
+
+\item Yu Xia, Subhojyoti Mukherjee, Zhouhang Xie, \dots, \textbf{Zhehao Zhang}, et al. \href{https://aclanthology.org/2025.acl-long.708/}{From Selection to Generation: A Survey of LLM-based Active Learning}. \textit{ACL}, 2025.
+
+\item Chien Van Nguyen, Xuan Shen, Ryan Aponte, \dots, \textbf{Zhehao Zhang}, et al. \href{https://aclanthology.org/2025.ranlp-1.93/}{A Survey on Small Language Models}. \textit{RANLP}, 2025.
+
+\item Reuben Luera, Ryan A. Rossi, Franck Dernoncourt, \dots, \textbf{Zhehao Zhang}, Seon Gyeom Kim, Tak Yeon Lee. \href{https://dl.acm.org/doi/10.1145/3701716.3715452}{Personalizing Data Delivery: Investigating User Characteristics and Enhancing LLM Predictions}. \textit{WWW Companion}, 2025.
+
+\item Jian Xie, Tianhe Lin, Zilu Wang, Yuting Ning, Yuekun Yao, Tianci Xue, \textbf{Zhehao Zhang}, et al. \href{https://arxiv.org/abs/2605.24218}{QUEST: Training Frontier Deep Research Agents with Fully Synthetic Tasks}. \textit{NeurIPS}, 2026.
+
+\item Caleb Ziems, William Held, Omar Shaikh, Jiaao Chen, \textbf{Zhehao Zhang}, Diyi Yang. \href{https://direct.mit.edu/coli/article/50/1/237/118498}{Can Large Language Models Transform Computational Social Science?}. \textit{Computational Linguistics}, 2024.
+
+\item Jingyu Tang$^*$, Xu Yang$^*$, \textbf{Zhehao Zhang}$^*$, Zheng Wang, Qi Cheng, Haozhe Zhao, Manling Li, Wenxuan Li, Xide Xia, Jiaxin Pei. \href{https://arxiv.org/abs/2610.22155}{Realtime-Bench: Can Frontier Models Solve Real-time Interactive Problems?}. \textit{arXiv preprint arXiv:2610.22155}, 2026.
+
+\item Junda Wu, Hanjia Lyu, Yu Xia, \textbf{Zhehao Zhang}, et al. \href{https://arxiv.org/abs/2412.02142}{Personalized Multimodal Large Language Models: A Survey}. \textit{arXiv preprint}, 2024.
+
+\item Junda Wu, \textbf{Zhehao Zhang}, Yu Xia, Xintong Li, Zhaoyang Xia, et al. \href{https://arxiv.org/abs/2409.15310}{Visual Prompting in Multimodal Large Language Models: A Survey}. \textit{arXiv preprint}, 2024.
+
+\item Reuben Luera, Ryan Rossi, Franck Dernoncourt, \dots, \textbf{Zhehao Zhang}, Seon Gyeom Kim, Tak Yeon Lee. \href{https://arxiv.org/abs/2411.07451}{Optimizing Data Delivery: Insights from User Preferences on Visuals, Tables, and Text}. \textit{arXiv preprint}, 2024.
+
+\end{enumerate}
+}
+\vspace{-4mm}
+
+% ---------------- Skills ----------------
+\section{\textbf{Skills}}
+\vspace{-0.2mm}
+\resumeHeadingSkillStart
+  \resumeSubItem{Programming:}
+    {Python, C/C++, JavaScript, \LaTeX}
+  \resumeSubItem{Post-Training \& Inference:}
+    {PyTorch, Jax, verl, vLLM, Harbor; SFT, RLHF/RLVR, OPD, LoRA}
+  \resumeSubItem{Agent Systems:}
+    {Agent harnesses (Claude Code / Codex), tool-use, multi-agent orchestration, MCP, Agent Skills}
+  \resumeSubItem{Research Areas:}
+    {LLM Safety \& Alignment, Language Agents, AI Red-Teaming, LLM Evaluation, Synthetic Data}
+\resumeHeadingSkillEnd
+
+% ---------------- Honors ----------------
+\section{\textbf{Honors \& Service}}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+  \resumeItem{\paperaward, EMNLP (SkillHarm)}{ \hfill \footnotesize{2026}}
+  \resumeItem{Graduate Fellowship, The Ohio State University}{ \hfill \footnotesize{2025}}
+  \resumeItem{ICML Gold Reviewer; ICLR Notable Reviewer}{ \hfill \footnotesize{2025 -- 2026}}
+  \resumeItem{COLM 2025 Travel Grant}{ \hfill \footnotesize{2025}}
+  \resumeItem{Zhiyuan Honor Scholarship \& Merit Scholarship, SJTU}{ \hfill \footnotesize{2019 -- 2023}}
+  \resumeItem{Reviewer:}{ ICML, NeurIPS, ICLR, AAAI, ACL, EMNLP, NAACL, COLM, IJCAI, CIKM; TMLR, IEEE TNNLS}
+\resumeSubHeadingListEnd
+
+\end{document}

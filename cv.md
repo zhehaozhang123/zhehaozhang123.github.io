@@ -36,7 +36,7 @@ I am a second year PhD student in <b><span class="cv-vis">Computer Science & Eng
 <div class="cv-spacer"></div>
 
 <div>
-Previously I have worked as an Applied Scientist Intern at Amazon and have collaborated with researchers at Stanford SALT Lab, Adobe Research, and Microsoft Research Lab – Asia, working on cutting-edge NLP research and applications.
+Previously, I worked as a Machine Learning Intern at Netflix and an Applied Scientist Intern at Amazon. I have also collaborated with researchers at Stanford SALT Lab, Adobe Research, and Microsoft Research Asia on NLP research and applications.
 </div>
 
 <div class="cv-spacer"></div>
@@ -92,7 +92,7 @@ Previously I have worked as an Applied Scientist Intern at Amazon and have colla
 
 ## Publications
 
-*For the most up-to-date list of publications, please refer to my [Google Scholar profile](https://scholar.google.com/).*
+*For the most up-to-date list of publications, please refer to my [Google Scholar profile](https://scholar.google.com/citations?user=QG-BAGwAAAAJ&hl=en).*
 
 {% assign selectedBoolForBibtex = false %}
 

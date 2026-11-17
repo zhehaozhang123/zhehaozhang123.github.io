@@ -327,6 +327,29 @@ $cover-width: 8.5px;
   color: #f6d580;
 }
 
+.pub-row-evaluation {
+  margin-top: 0.6rem;
+  padding-left: 0.65rem;
+  border-left: 2px solid $light-blue;
+  color: $black-70;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.pub-row-evaluation-label {
+  color: $blue;
+  font-weight: 600;
+  margin-right: 0.4rem;
+}
+
+.pub-row-evaluation a {
+  color: $text-color;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: $light-blue;
+  text-underline-offset: 2px;
+}
+
 // Venue: quiet journal-style label — a small accent dot + uppercase text,
 // no filled pill (the solid color block read as cheap).
 .pub-row-venue {

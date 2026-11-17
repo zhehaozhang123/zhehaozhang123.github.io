@@ -1,3 +1,9 @@
+{% assign hasProject = false %}
+{% if pub.url and pub.url != "" %}
+	{% unless pub.url contains "/papers/" %}{% assign hasProject = true %}{% endunless %}
+{% endif %}
+{% if hasProject %}{% assign primaryLink = pub.url %}{% else %}{% assign primaryLink = pub.pdf %}{% endif %}
+
 {% if selectedBoolForBibtex != true %}
 <div class="cv-left-date">
 	{% case pub.type %}{% when "journal" %}J{% when "conference" %}C{% when "arxiv" %}P{% when "preprint" %}P{% when "workshop" %}W{% when "poster" %}P{% when "demo" %}D{% when "misc" %}M{% when "tech-report" %}TR{% endcase %}{{ forloop.rindex }}
@@ -5,8 +11,8 @@
 {% endif %}
 
 <div>
-{% if pub.url %}
-	<a href="{{ pub.url }}"><b>{{ pub.title }}</b></a>
+{% if primaryLink %}
+	<a href="{{ primaryLink }}"><b>{{ pub.title }}</b></a>
 {% else %}
 	<b>{{ pub.title }}</b>
 {% endif %}
@@ -21,6 +27,10 @@
 
 <div class="cv-description"><i>{{ pub.venue }}{% if pub.venue-shorthand %} ({{ pub.venue-shorthand }}){% endif %}. {% if pub.location %}{{ pub.location }},{% endif %} {{ pub.year }}.</i></div>
 
+{% if pub.evaluation_report and pub.evaluation_note %}
+<div class="cv-description cv-evaluation"><span class="cv-evaluation-label">Research use</span> <a href="{{ pub.evaluation_report }}">{{ pub.evaluation_link_label }}</a> {{ pub.evaluation_note }}</div>
+{% endif %}
+
 <div class="pub-misc">
 {% if pub.url or pub.pdf or pub.coming-soon %}
 
@@ -30,7 +40,7 @@
 	  </a>
 	{% endif %}
 
-	{% if pub.url %}
+	{% if hasProject %}
 	  <a href="{{ pub.url }}">
 	    <i class="fas fa-link" aria-hidden="true"></i> Project
 	  </a>
@@ -74,7 +84,7 @@
 
 	{% if pub.recording %}
 	  <a href="{{ pub.recording }}">
-	    <i class="fas fa-video" aria-hidden="true"></i> Recording
+	    <i class="fas fa-video" aria-hidden="true"></i> {{ pub.recording_label | default: "Recording" }}
 	  </a>
 	{% endif %}
 
